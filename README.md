@@ -7,9 +7,10 @@ This project demonstrates how to use various dependency injection methodologies 
 
 | Quick Reference |
 | --- |
-| [Dagger] (https://github.com/devrath/DroidDi/blob/main/README.md#dagger "Dagger2") |
+| [Dagger](https://github.com/devrath/DroidDi/blob/main/README.md#dagger "Dagger2") |
 | Koin |
 | Hilt |
+
 
 <h2>Dagger</h2>
 
