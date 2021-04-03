@@ -1,4 +1,4 @@
-package com.demo.code.ui.gallery
+package com.demo.code.ui.hilt
 
 import android.os.Bundle
 import android.view.LayoutInflater
@@ -10,20 +10,20 @@ import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProvider
 import com.demo.code.R
 
-class GalleryFragment : Fragment() {
+class HiltSelectionFragment : Fragment() {
 
-    private lateinit var galleryViewModel: GalleryViewModel
+    private lateinit var hiltSelectionViewModel: HiltSelectionViewModel
 
     override fun onCreateView(
             inflater: LayoutInflater,
             container: ViewGroup?,
             savedInstanceState: Bundle?
     ): View? {
-        galleryViewModel =
-                ViewModelProvider(this).get(GalleryViewModel::class.java)
-        val root = inflater.inflate(R.layout.fragment_gallery, container, false)
-        val textView: TextView = root.findViewById(R.id.text_gallery)
-        galleryViewModel.text.observe(viewLifecycleOwner, Observer {
+        hiltSelectionViewModel =
+                ViewModelProvider(this).get(HiltSelectionViewModel::class.java)
+        val root = inflater.inflate(R.layout.fragment_hilt_selection, container, false)
+        val textView: TextView = root.findViewById(R.id.text_slideshow)
+        hiltSelectionViewModel.text.observe(viewLifecycleOwner, Observer {
             textView.text = it
         })
         return root

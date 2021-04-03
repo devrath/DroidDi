@@ -1,13 +1,13 @@
-package com.demo.code.ui.gallery
+package com.demo.code.ui.koin
 
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
 
-class GalleryViewModel : ViewModel() {
+class KoinSelectionViewModel : ViewModel() {
 
     private val _text = MutableLiveData<String>().apply {
-        value = "This is gallery Fragment"
+        value = "This is koin Fragment"
     }
     val text: LiveData<String> = _text
 }

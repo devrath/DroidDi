@@ -3,23 +3,23 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/mobile_navigation"
-    app:startDestination="@+id/nav_home">
+    app:startDestination="@+id/nav_koin">
 
     <fragment
-        android:id="@+id/nav_home"
-        android:name="com.demo.code.ui.home.HomeFragment"
-        android:label="@string/menu_home"
-        tools:layout="@layout/fragment_home" />
+        android:id="@+id/nav_koin"
+        android:name="com.demo.code.ui.koin.KoinSelectionFragment"
+        android:label="@string/menu_koin"
+        tools:layout="@layout/fragment_koin_selection" />
 
     <fragment
-        android:id="@+id/nav_gallery"
-        android:name="com.demo.code.ui.gallery.GalleryFragment"
-        android:label="@string/menu_gallery"
-        tools:layout="@layout/fragment_gallery" />
+        android:id="@+id/nav_dagger"
+        android:name="com.demo.code.ui.dagger.DaggerSelectionFragment"
+        android:label="@string/menu_dagger"
+        tools:layout="@layout/fragment_dagger_selection" />
 
     <fragment
-        android:id="@+id/nav_slideshow"
-        android:name="com.demo.code.ui.slideshow.SlideshowFragment"
-        android:label="@string/menu_slideshow"
-        tools:layout="@layout/fragment_slideshow" />
+        android:id="@+id/nav_hilt"
+        android:name="com.demo.code.ui.hilt.HiltSelectionFragment"
+        android:label="@string/menu_hilt"
+        tools:layout="@layout/fragment_hilt_selection" />
 </navigation>
