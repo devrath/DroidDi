@@ -13,7 +13,7 @@
 
     <fragment
         android:id="@+id/nav_dagger"
-        android:name="com.demo.code.ui.dagger.DaggerSelectionFragment"
+        android:name="com.demo.code.ui.dagger.selection.DaggerSelectionFragment"
         android:label="@string/menu_dagger"
         tools:layout="@layout/fragment_dagger_selection" />
 

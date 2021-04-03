@@ -1,4 +1,4 @@
-package com.demo.code.ui.dagger
+package com.demo.code.ui.dagger.selection
 
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
