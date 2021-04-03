@@ -9,8 +9,12 @@ import androidx.fragment.app.Fragment
 import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProvider
 import com.demo.code.R
+import com.demo.code.databinding.FragmentDaggerSelectionBinding
 
 class DaggerSelectionFragment : Fragment() {
+
+    private var _binding: FragmentDaggerSelectionBinding? = null
+    private val binding get() = _binding!!
 
     private lateinit var daggerSelectionViewModel: DaggerSelectionViewModel
 
@@ -19,13 +23,8 @@ class DaggerSelectionFragment : Fragment() {
             container: ViewGroup?,
             savedInstanceState: Bundle?
     ): View? {
-        daggerSelectionViewModel =
-                ViewModelProvider(this).get(DaggerSelectionViewModel::class.java)
-        val root = inflater.inflate(R.layout.fragment_dagger_selection, container, false)
-        val textView: TextView = root.findViewById(R.id.text_gallery)
-        daggerSelectionViewModel.text.observe(viewLifecycleOwner, Observer {
-            textView.text = it
-        })
-        return root
+        daggerSelectionViewModel =ViewModelProvider(this).get(DaggerSelectionViewModel::class.java)
+        _binding = FragmentDaggerSelectionBinding.inflate(inflater, container, false)
+        return binding.root
     }
 }
