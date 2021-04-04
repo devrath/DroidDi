@@ -25,7 +25,9 @@ This project demonstrates how to use various dependency injection methodologies 
 * Now some of the dependencies can be same, like if we have a driver who delivers the car from manifacturing center to storage, instead of using a new driver again and again, we can use the same driver. We can call this as a singleton in terms of software.
 
 
+### Do we require a tool like (`dagger`,`koin`,`hilt`) to inject dependencies 
 
+We don't requre a tool to inject dependencies, But using a tool, what it does it it donstructs the dependenciees in the right order as we need them and provide them to the dependent object avoiding the boiler plate code.
 
 
 | Quick Reference |
