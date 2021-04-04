@@ -44,3 +44,59 @@ We don't requre a tool to inject dependencies, But using a tool, what it does is
 <p align="center">
   <img width="400" height="200" src="https://github.com/devrath/DroidDi/blob/main/images/dagger.jpeg">
 </p>
+
+
+### Simple Injection
+
+`AutomobileFragment.kt`
+```kotlin
+class AutomobileFragment : Fragment() {
+
+    private lateinit var _binding: AutomobileFragmentBinding
+    private val binding get() = _binding
+
+    private lateinit var viewModel: AutomobileViewModel
+
+    private lateinit var carComponent: CarComponent
+
+    override fun onCreateView(
+        inflater: LayoutInflater, container: ViewGroup?,
+        savedInstanceState: Bundle?
+    ): View? {
+        viewModel = ViewModelProvider(this).get(AutomobileViewModel::class.java)
+        _binding = AutomobileFragmentBinding.inflate(inflater, container, false)
+        return binding.root
+    }
+
+    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+        super.onViewCreated(view, savedInstanceState)
+
+        DaggerCarComponent.builder().build().getCar().drive()
+
+    }
+
+}
+```
+
+`Car.kt`
+```kotlin
+class Car @Inject constructor(var engine: Engine, var wheels: Wheels) {
+
+    fun drive() {
+        Log.d(TAG, "Car is Driving")
+    }
+
+}
+```
+
+`Engine.kt`
+```kotlin
+class Engine @Inject constructor() {}
+```
+
+`Wheels.kt`
+```kotlin
+class Wheels @Inject constructor() {}
+```
+
+---
