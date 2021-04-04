@@ -177,6 +177,8 @@ class Car @Inject constructor(var engine: Engine, var wheels: Wheels) {
 
 
 <h3> <----------------------------------------------------------> Field Injection </h3> 
+  
+**Branch**: `main_dagger_field-injection`
 
 **Description**:
 * The field injection is used wherever the `constructor injection` is not possible.
@@ -276,4 +278,9 @@ class Wheels @Inject constructor() {
 ---
 
 <h3> <----------------------------------------------------------> Provides Annotation </h3> 
+
+**Description**:
+* From the examples above we saw that we might need to annotate the constructor of the object we are constructing.
+* Most of the time the constructor we are annotating are of third party libraries, We don't have access to third party libraries.
+* Using the `@Provides` annotation, we can use it.
 
