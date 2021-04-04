@@ -157,7 +157,11 @@ class Car @Inject constructor(var engine: Engine, var wheels: Wheels) {
     }
 }
 ```
+</p>
+</details>
 
+<details><summary>Output  -  click to view </summary>
+<p>
 **OUTPUT**
 
 ```
