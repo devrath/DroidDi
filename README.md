@@ -457,6 +457,7 @@ class Car @Inject constructor(var engine: Engine, var wheels: Wheels) {
 * Now there are scenarios when we need to inject a `interface` instead of a `class`, In such scenarios we use `Binds` annotation
 * We can't create a module directly for a interface but instead, we will make a class implement the imterface and create a module of that class
 * We shall keep the class as `abstract` as a standard practice, even though we can implement in a standard way
+* Now in a scenario, if we have two modules implementing same interface, then we will get a error because dagger dosen't know which one to use
 
 
 <details><summary>Code  -  click to view </summary>
