@@ -286,3 +286,164 @@ class Wheels @Inject constructor() {
 * Most of the time the constructor we are annotating are of third party libraries, We don't have access to third party libraries.
 * Using the `@Provides` annotation, we can use it.
 
+
+
+<details><summary>Code  -  click to view </summary>
+<p>
+
+`AutomobileFragment.kt`
+```kotlin
+class AutomobileFragment : Fragment() {
+
+    private lateinit var _binding: AutomobileFragmentBinding
+    private val binding get() = _binding
+
+    private lateinit var viewModel: AutomobileViewModel
+
+    // Field Injection - It is done here
+    @Inject
+    lateinit var car: Car
+
+    override fun onCreateView(
+            inflater: LayoutInflater, container: ViewGroup?,
+            savedInstanceState: Bundle?
+    ): View? {
+        viewModel = ViewModelProvider(this).get(AutomobileViewModel::class.java)
+        _binding = AutomobileFragmentBinding.inflate(inflater, container, false)
+        return binding.root
+    }
+
+    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+        super.onViewCreated(view, savedInstanceState)
+        // Here we inject the car instance for this calss
+        DaggerCarComponent.create().inject(this)
+        car.drive()
+    }
+
+}
+```
+
+`CarComponent.kt`
+```kotlin
+@Component(modules = [WheelsModule::class])
+interface CarComponent {
+   fun inject(automobileFragment : AutomobileFragment)
+}
+```
+
+`WheelsModule.kt`
+```kotlin
+@Module
+class WheelsModule {
+
+    @Provides
+    fun providesRims() : Rims {
+        return Rims()
+    }
+
+    @Provides
+    fun providesTires() : Tires {
+        // This is optional, If we need to define how the tire to be constructed
+        val configuredTires = Tires()
+        configuredTires.constructTires()
+        return configuredTires
+    }
+
+    @Provides
+    fun providesWheels(rims:Rims,tires:Tires) : Wheels {
+        return Wheels(rims,tires)
+    }
+
+}
+```
+
+`Wheels.kt`
+```kotlin
+/**
+ * Here this class is a third party - So we can't edit it and add provides method
+ * Also it has dependency on two other classes rims and tires which is further a third party classes
+ */
+class Wheels constructor(var rims: Rims,var tires: Tires) {
+    //we don't own this class so we can't annotate it with @Inject
+
+    private val TAG = "Dagger"
+
+    init {
+        Log.d(TAG, "Wheel is constructed")
+    }
+
+
+}
+```
+
+`Rims.kt`
+```kotlin
+class Rims {
+    //we don't own this class so we can't annotate it with @Inject
+
+    private val TAG = "Dagger"
+
+    init {
+        Log.d(TAG, "Rims are constructed")
+    }
+
+}
+```
+
+`Tires.kt`
+```kotlin
+class Tires {
+    //we don't own this class so we can't annotate it with @Inject
+
+    private val TAG = "Dagger"
+
+    init {
+        Log.d(TAG, "Tires are constructed")
+    }
+
+    fun constructTires() {
+        Log.d(TAG, "Tires inflated")
+    }
+
+}
+```
+
+`Engine.kt`
+```kotlin
+class Engine @Inject constructor() {
+    private val TAG = "Dagger"
+    init {
+        Log.d(TAG, "Engine is constructed")
+    }
+}
+```
+
+`Car.kt`
+```kotlin
+class Car @Inject constructor(var engine: Engine, var wheels: Wheels) {
+    private val TAG = "Dagger"
+    fun drive() {
+        Log.d(TAG, "Car is Driving")
+    }
+}
+```
+
+</p>
+</details>
+
+
+
+<details><summary>Output  -  click to view </summary>
+<p>
+  
+```
+2021-04-04 19:04:12.607 7964-7964/com.demo.code D/Dagger: Engine is constructed
+2021-04-04 19:04:12.607 7964-7964/com.demo.code D/Dagger: Rims are constructed
+2021-04-04 19:04:12.607 7964-7964/com.demo.code D/Dagger: Tires are constructed
+2021-04-04 19:04:12.607 7964-7964/com.demo.code D/Dagger: Tires inflated
+2021-04-04 19:04:12.607 7964-7964/com.demo.code D/Dagger: Wheel is constructed
+2021-04-04 19:04:12.607 7964-7964/com.demo.code D/Dagger: Car is Driving
+```
+
+</p>
+</details>
