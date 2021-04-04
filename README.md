@@ -53,6 +53,8 @@ We don't requre a tool to inject dependencies, But using a tool, what it does is
 
 
 <h3>Simple Injection</h3>
+<details><summary>Code</summary>
+<p>
 
 `AutomobileFragment.kt`
 ```kotlin
@@ -156,6 +158,10 @@ class Car @Inject constructor(var engine: Engine, var wheels: Wheels) {
 2021-04-04 12:19:24.877 22966-22966/com.demo.code D/Dagger: Wheel is constructed
 2021-04-04 12:19:24.877 22966-22966/com.demo.code D/Dagger: Car is Driving
 ```
+</p>
+</details>
+
+
 
 ---
 
