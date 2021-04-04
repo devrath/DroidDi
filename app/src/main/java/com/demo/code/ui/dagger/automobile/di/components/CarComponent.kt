@@ -13,7 +13,5 @@ import dagger.Component
  */
 @Component
 interface CarComponent {
-
    fun inject(atomobileFragment : AutomobileFragment)
-
 }
