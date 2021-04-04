@@ -1,6 +1,7 @@
 package com.demo.code.ui.dagger.automobile.di.components
 
 import com.demo.code.ui.dagger.automobile.vehicleParts.Car
+import com.demo.code.ui.dagger.automobile.view.AutomobileFragment
 import dagger.Component
 
 /**
@@ -13,12 +14,6 @@ import dagger.Component
 @Component
 interface CarComponent {
 
-    /**
-     * Return type: It is the Class object we are trying to build
-     * Name of the function is not important but it makes sense to have something meaningful.
-     * **************************
-     * We don't have to specify how to build this class, because dagger does this for us
-     */
-    fun getCar() : Car
+   fun inject(atomobileFragment : AutomobileFragment)
 
 }
