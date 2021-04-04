@@ -49,7 +49,7 @@ We don't requre a tool to inject dependencies, But using a tool, what it does is
 
 | Quick Reference |
 | --- |
-| [Constructor Injection](https://github.com/devrath/DroidDi/blob/main/README.md#usage-of-component) |
+| [Constructor Injection](https://github.com/devrath/DroidDi/blob/main/README.md#------------------------------------------------------------constructor-injection-) |
 | [Field Injection](https://github.com/devrath/DroidDi/blob/main/README.md#------------------------------------------------------------field-injection-) |
 
 
