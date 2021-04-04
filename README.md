@@ -181,7 +181,7 @@ class Car @Inject constructor(var engine: Engine, var wheels: Wheels) {
 * The field injection is used wherever the `constructor injection` is not possible.
 * Most of the scenarios in android, where we want to use a third party library, we use `field injection`
 * We use `@Inject` annotation with public access specifier.
-
+* As a thumb rule, Field Injection is used for framework types
 
 <details><summary>Code  -  click to view </summary>
 <p>
