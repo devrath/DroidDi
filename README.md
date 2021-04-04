@@ -162,8 +162,6 @@ class Car @Inject constructor(var engine: Engine, var wheels: Wheels) {
 
 <details><summary>Output  -  click to view </summary>
 <p>
-**OUTPUT**
-
 ```
 2021-04-04 12:19:24.877 22966-22966/com.demo.code D/Dagger: Engine is constructed
 2021-04-04 12:19:24.877 22966-22966/com.demo.code D/Dagger: Wheel is constructed
