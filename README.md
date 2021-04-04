@@ -61,7 +61,7 @@ We don't requre a tool to inject dependencies, But using a tool, what it does is
 * Here we have `Car` class. The class has 2 dependencies `Wheels`,`Engine`. Here using the process of dependency injection, we create the dependencies of the `Wheels` and `Engine` outside and provide the dependecy via the constructor, so that the instantiation of the components inside the car is not necessary be done inside the car class.
 * We need to use constructor injection wherever necessary.  
 
-<details><summary>Code  -  click to view </summary>
+<details><summary>Code  -  click to view</summary>
 <p>
 
 `AutomobileFragment.kt`
@@ -176,6 +176,96 @@ class Car @Inject constructor(var engine: Engine, var wheels: Wheels) {
 
 
 <h3>Field Injection</h3> 
+
+
+<details><summary>Code  -  click to view </summary>
+<p>
+  
+`AutomobileFragment.kt`
+```kotlin
+class AutomobileFragment : Fragment() {
+
+    private lateinit var _binding: AutomobileFragmentBinding
+    private val binding get() = _binding
+
+    private lateinit var viewModel: AutomobileViewModel
+
+    // Field Injection - It is done here
+    @Inject
+    lateinit var car: Car
+
+    override fun onCreateView(
+            inflater: LayoutInflater, container: ViewGroup?,
+            savedInstanceState: Bundle?
+    ): View? {
+        viewModel = ViewModelProvider(this).get(AutomobileViewModel::class.java)
+        _binding = AutomobileFragmentBinding.inflate(inflater, container, false)
+        return binding.root
+    }
+
+    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+        super.onViewCreated(view, savedInstanceState)
+        // Here we inject the car instance for this calss
+        DaggerCarComponent.create().inject(this)
+        car.drive()
+    }
+
+}
+```
+
+`CarComponent.kt`
+```kotlin
+@Component
+interface CarComponent {
+   fun inject(atomobileFragment : AutomobileFragment)
+}
+```
+
+`Car.kt`
+```kotlin
+class Car @Inject constructor(var engine: Engine, var wheels: Wheels) {
+    private val TAG = "Dagger"
+    fun drive() {
+        Log.d(TAG, "Car is Driving")
+    }
+}
+```
+
+`Engine.kt`
+```kotlin
+class Engine @Inject constructor() {
+    private val TAG = "Dagger"
+    init {
+        Log.d(TAG, "Engine is constructed")
+    }
+}
+```
+
+`Wheels.kt`
+```kotlin
+class Wheels @Inject constructor() {
+    private val TAG = "Dagger"
+    init {
+        Log.d(TAG, "Wheel is constructed")
+    }
+}
+```
+
+</p>
+</details>
+
+
+<details><summary>Output  -  click to view </summary>
+<p>
+  
+```
+2021-04-04 12:19:24.877 22966-22966/com.demo.code D/Dagger: Engine is constructed
+2021-04-04 12:19:24.877 22966-22966/com.demo.code D/Dagger: Wheel is constructed
+2021-04-04 12:19:24.877 22966-22966/com.demo.code D/Dagger: Car is Driving
+```
+
+</p>
+</details>
 
 ---
 
