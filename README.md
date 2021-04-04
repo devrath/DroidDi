@@ -49,7 +49,7 @@ We don't requre a tool to inject dependencies, But using a tool, what it does is
 
 | Quick Reference |
 | --- |
-| [Simple Injection](https://github.com/devrath/DroidDi/blob/main/README.md#dagger "Simple Injection") |
+| [Simple Injection](https://github.com/devrath/DroidDi/blob/main/README.md#simple-injection "Simple Injection") |
 | Koin |
 | Hilt |
 
