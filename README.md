@@ -49,10 +49,14 @@ We don't requre a tool to inject dependencies, But using a tool, what it does is
 
 | Quick Reference |
 | --- |
-| [Usage of component](https://github.com/devrath/DroidDi/blob/main/README.md#usage-of-component) |
+| [Constructor Injection](https://github.com/devrath/DroidDi/blob/main/README.md#usage-of-component) |
 
 
 <h3>Usage of component</h3> 
+
+**Description**: 
+* Here we have `Car` class. The class has 2 dependencies `Wheels`,`Engine`. Here using the process of dependency injection, we create the dependencies of the `Wheels` and `Engine` outside and provide the dependecy via the constructor, so that the instantiation of the components inside the car is not necessary be done inside the car class.
+* We need to use constructor injection wherever necessary. 
 
 <details><summary>Code  -  click to view </summary>
 <p>
