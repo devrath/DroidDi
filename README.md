@@ -279,6 +279,8 @@ class Wheels @Inject constructor() {
 
 <h3> <----------------------------------------------------------> Provides Annotation </h3> 
 
+**Branch**: `main_dagger_provides-annotation`
+
 **Description**:
 * From the examples above we saw that we might need to annotate the constructor of the object we are constructing.
 * Most of the time the constructor we are annotating are of third party libraries, We don't have access to third party libraries.
