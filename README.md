@@ -46,11 +46,11 @@ We don't requre a tool to inject dependencies, But using a tool, what it does is
   <img width="400" height="200" src="https://github.com/devrath/DroidDi/blob/main/images/dagger.jpeg">
 </p>
 
-<p align="center">
+
 | Quick Reference |
 | --- |
 | [Simple Injection](https://github.com/devrath/DroidDi/blob/main/README.md#simple-injection "Simple Injection") |
-</p>
+
 
 <h3>Simple Injection</h3>
 
