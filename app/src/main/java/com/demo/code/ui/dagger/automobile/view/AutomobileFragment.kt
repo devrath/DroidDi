@@ -18,8 +18,6 @@ class AutomobileFragment : Fragment() {
 
     private lateinit var viewModel: AutomobileViewModel
 
-    private lateinit var carComponent: CarComponent
-
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
@@ -31,9 +29,8 @@ class AutomobileFragment : Fragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-
+        // Here using the generated Car component - we can access the interface method -- then get hold of drive method
         DaggerCarComponent.builder().build().getCar().drive()
-
     }
 
 }
