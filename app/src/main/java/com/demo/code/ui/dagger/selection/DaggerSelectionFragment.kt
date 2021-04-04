@@ -6,12 +6,14 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.ViewModelProvider
+import androidx.navigation.fragment.findNavController
+import com.demo.code.R
 import com.demo.code.databinding.FragmentDaggerSelectionBinding
 
 class DaggerSelectionFragment : Fragment() {
 
-    private var _binding: FragmentDaggerSelectionBinding? = null
-    private val binding get() = _binding!!
+    private lateinit var _binding: FragmentDaggerSelectionBinding
+    private val binding get() = _binding
 
     private lateinit var daggerSelectionViewModel: DaggerSelectionViewModel
 
@@ -23,5 +25,14 @@ class DaggerSelectionFragment : Fragment() {
         daggerSelectionViewModel =ViewModelProvider(this).get(DaggerSelectionViewModel::class.java)
         _binding = FragmentDaggerSelectionBinding.inflate(inflater, container, false)
         return binding.root
+    }
+
+    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+        super.onViewCreated(view, savedInstanceState)
+        binding.apply {
+            btnOneId.setOnClickListener {
+                findNavController().navigate(R.id.automobileFragment)
+            }
+        }
     }
 }

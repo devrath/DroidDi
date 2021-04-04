@@ -10,4 +10,5 @@
     <string name="menu_koin">Koin</string>
     <string name="menu_dagger">Dagger</string>
     <string name="menu_hilt">Hilt</string>
+    <string name="automobile_example">Automobile Example</string>
 </resources>
