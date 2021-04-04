@@ -40,7 +40,7 @@ We don't requre a tool to inject dependencies, But using a tool, what it does is
 
 ---
 
-<h2>Dagger</h2>
+<center><h2>Dagger</h2></center>
 
 <p align="center">
   <img width="400" height="200" src="https://github.com/devrath/DroidDi/blob/main/images/dagger.jpeg">
@@ -49,11 +49,19 @@ We don't requre a tool to inject dependencies, But using a tool, what it does is
 
 | Quick Reference |
 | --- |
-| [Simple Injection](https://github.com/devrath/DroidDi/blob/main/README.md#simple-injection "Simple Injection") |
+| [Constructor Injection](https://github.com/devrath/DroidDi/blob/main/README.md#usage-of-component) |
+| [Field Injection](https://github.com/devrath/DroidDi/blob/main/README.md#field-injection) |
 
 
-<h3>Simple Injection</h3> 
-<details><summary>Code</summary>
+
+<h3>Constructor Injection</h3> 
+
+**Description**:
+
+* Here we have `Car` class. The class has 2 dependencies `Wheels`,`Engine`. Here using the process of dependency injection, we create the dependencies of the `Wheels` and `Engine` outside and provide the dependecy via the constructor, so that the instantiation of the components inside the car is not necessary be done inside the car class.
+* We need to use constructor injection wherever necessary.  
+
+<details><summary>Code  -  click to view </summary>
 <p>
 
 `AutomobileFragment.kt`
@@ -150,18 +158,24 @@ class Car @Inject constructor(var engine: Engine, var wheels: Wheels) {
     }
 }
 ```
+</p>
+</details>
 
-**OUTPUT**
-
+<details><summary>Output  -  click to view </summary>
+<p>
+  
 ```
 2021-04-04 12:19:24.877 22966-22966/com.demo.code D/Dagger: Engine is constructed
 2021-04-04 12:19:24.877 22966-22966/com.demo.code D/Dagger: Wheel is constructed
 2021-04-04 12:19:24.877 22966-22966/com.demo.code D/Dagger: Car is Driving
 ```
+
 </p>
 </details>
 
 
+
+<h3>Field Injection</h3> 
 
 ---
 
