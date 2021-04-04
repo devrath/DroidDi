@@ -455,6 +455,8 @@ class Car @Inject constructor(var engine: Engine, var wheels: Wheels) {
 
 **Description**:
 * Now there are scenarios when we need to inject a `interface` instead of a `class`, In such scenarios we use `Binds` annotation
+* We can't create a module directly for a interface but instead, we will make a class implement the imterface and create a module of that class
+* We shall keep the class as `abstract` as a standard practice, even though we can implement in a standard way
 
 
 
