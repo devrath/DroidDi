@@ -40,7 +40,7 @@ We don't requre a tool to inject dependencies, But using a tool, what it does is
 
 ---
 
-<h2>Dagger</h2>
+<center><h2>Dagger</h2></center>
 
 <p align="center">
   <img width="400" height="200" src="https://github.com/devrath/DroidDi/blob/main/images/dagger.jpeg">
@@ -52,7 +52,7 @@ We don't requre a tool to inject dependencies, But using a tool, what it does is
 | [Constructor Injection](https://github.com/devrath/DroidDi/blob/main/README.md#usage-of-component) |
 
 
-<h3>Usage of component</h3> 
+<h3>Constructor Injection</h3> 
 
 **Description**: 
 * Here we have `Car` class. The class has 2 dependencies `Wheels`,`Engine`. Here using the process of dependency injection, we create the dependencies of the `Wheels` and `Engine` outside and provide the dependecy via the constructor, so that the instantiation of the components inside the car is not necessary be done inside the car class.
