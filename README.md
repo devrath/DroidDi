@@ -447,3 +447,14 @@ class Car @Inject constructor(var engine: Engine, var wheels: Wheels) {
 
 </p>
 </details>
+
+<h3> <----------------------------------------------------------> Binds Annotation </h3> 
+ 
+**Branch**: `main_dagger_binds`
+
+**Description**:
+* Now there are scenarios when we need to inject a `interface` instead of a `class`, In such scenarios we use `Binds` annotation
+
+
+
+
