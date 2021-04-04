@@ -49,12 +49,12 @@ We don't requre a tool to inject dependencies, But using a tool, what it does is
 
 | Quick Reference |
 | --- |
-| [Usage of component] () |
+| [Usage of component](https://github.com/devrath/DroidDi/blob/main/README.md#usage-of-component) |
 
 
 <h3>Usage of component</h3> 
 
-<details><summary>Code</summary>
+<details><summary>Code  -  click to view </summary>
 <p>
 
 `AutomobileFragment.kt`
