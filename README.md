@@ -47,12 +47,12 @@ We don't requre a tool to inject dependencies, But using a tool, what it does is
 </p>
 
 
-| Quick Reference |
-| --- |
-| [Constructor Injection](https://github.com/devrath/DroidDi/blob/main/README.md#------------------------------------------------------------constructor-injection-) |
-| [Field Injection](https://github.com/devrath/DroidDi/blob/main/README.md#------------------------------------------------------------field-injection-) |
-| [Provides Annotation](https://github.com/devrath/DroidDi/blob/main/README.md#------------------------------------------------------------provides-annotation-) |
-| [Binds Annotation](https://github.com/devrath/DroidDi/blob/main/README.md#------------------------------------------------------------binds-annotation-) |
+| Quick Reference | sample branch | Demo classes |
+| --- | --- | --- |
+| [Constructor Injection](https://github.com/devrath/DroidDi/blob/main/README.md#------------------------------------------------------------constructor-injection-) | description | demo |
+| [Field Injection](https://github.com/devrath/DroidDi/blob/main/README.md#------------------------------------------------------------field-injection-) | description | demo |
+| [Provides Annotation](https://github.com/devrath/DroidDi/blob/main/README.md#------------------------------------------------------------provides-annotation-) | description | demo |
+| [Binds Annotation](https://github.com/devrath/DroidDi/blob/main/README.md#------------------------------------------------------------binds-annotation-) | description | demo |
 
 
 
