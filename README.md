@@ -50,6 +50,8 @@ We don't requre a tool to inject dependencies, But using a tool, what it does is
 | Quick Reference |
 | --- |
 | [Constructor Injection](https://github.com/devrath/DroidDi/blob/main/README.md#usage-of-component) |
+| [Field Injection](https://github.com/devrath/DroidDi/blob/main/README.md#usage-of-component) |
+
 
 
 <h3>Constructor Injection</h3> 
@@ -167,6 +169,7 @@ class Car @Inject constructor(var engine: Engine, var wheels: Wheels) {
 </details>
 
 
+<h3>Field Injection</h3> 
 
 ---
 
