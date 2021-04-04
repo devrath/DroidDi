@@ -35,7 +35,7 @@ class AutomobileFragment : Fragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-        // Here using the generated Car component - we can access the interface method -- then get hold of drive method
+        // Here we inject the car instance for this calss
         DaggerCarComponent.create().inject(this)
         car.drive()
     }
