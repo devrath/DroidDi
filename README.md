@@ -54,7 +54,7 @@ We don't requre a tool to inject dependencies, But using a tool, what it does is
 
 
 
-<h3>Constructor Injection</h3> 
+<h3> <----------------------------> Constructor Injection <----------------------------> </h3> 
 
 **Description**:
 
@@ -175,7 +175,7 @@ class Car @Inject constructor(var engine: Engine, var wheels: Wheels) {
 
 
 
-<h3>Field Injection</h3> 
+<h3> <----------------------------> Field Injection <----------------------------> </h3> 
 
 
 <details><summary>Code  -  click to view </summary>
