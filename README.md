@@ -81,7 +81,7 @@ class AutomobileFragment : Fragment() {
 }
 ```
 
-`Car.kt`
+`CarComponent.kt`
 ```kotlin
 /**
  * Component is the backbone of dagger - >
@@ -110,7 +110,12 @@ interface CarComponent {
  * Engine is a object which is annotated with @Inject
  * With this annotation Engine is made available for the dependency graph
  */
-class Engine @Inject constructor() {}
+class Engine @Inject constructor() {
+    private val TAG = "Dagger"
+    init {
+        Log.d(TAG, "Engine is constructed")
+    }
+}
 ```
 
 `Wheels.kt`
@@ -119,7 +124,29 @@ class Engine @Inject constructor() {}
  * Wheels is a object which is annotated with @Inject
  * With this annotation Wheels is made available for the dependency graph
  */
-class Wheels @Inject constructor() {}
+class Wheels @Inject constructor() {
+    private val TAG = "Dagger"
+    init {
+        Log.d(TAG, "Wheel is constructed")
+    }
+}
+```
+
+`Car.kt`
+```kotlin
+/**
+ * Car object - requires two parameters Engine and Wheels
+ * There is constructor injection which is injecting 2 objects
+ * Car object consumes Engine and Wheels
+ * ******************
+ * Car is having the dependency on two objects Engine and Wheels
+ */
+class Car @Inject constructor(var engine: Engine, var wheels: Wheels) {
+    private val TAG = "Dagger"
+    fun drive() {
+        Log.d(TAG, "Car is Driving")
+    }
+}
 ```
 
 ---
