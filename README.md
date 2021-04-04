@@ -50,9 +50,9 @@ We don't requre a tool to inject dependencies, But using a tool, what it does is
 | Quick Reference | sample branch | Demo classes |
 | --- | --- | --- |
 | [Constructor Injection](https://github.com/devrath/DroidDi/blob/main/README.md#------------------------------------------------------------constructor-injection-) | description | demo |
-| [Field Injection](https://github.com/devrath/DroidDi/blob/main/README.md#------------------------------------------------------------field-injection-) | description | demo |
-| [Provides Annotation](https://github.com/devrath/DroidDi/blob/main/README.md#------------------------------------------------------------provides-annotation-) | description | demo |
-| [Binds Annotation](https://github.com/devrath/DroidDi/blob/main/README.md#------------------------------------------------------------binds-annotation-) | description | demo |
+| [Field Injection](https://github.com/devrath/DroidDi/blob/main/README.md#------------------------------------------------------------field-injection-) | `main_dagger_field-injection` | demo |
+| [Provides Annotation](https://github.com/devrath/DroidDi/blob/main/README.md#------------------------------------------------------------provides-annotation-) | `main_dagger_provides-annotation` | demo |
+| [Binds Annotation](https://github.com/devrath/DroidDi/blob/main/README.md#------------------------------------------------------------binds-annotation-) | `main_dagger_binds` | demo |
 
 
 
