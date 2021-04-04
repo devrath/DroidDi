@@ -62,9 +62,7 @@ class AutomobileFragment : Fragment() {
     private val binding get() = _binding
 
     private lateinit var viewModel: AutomobileViewModel
-
-    private lateinit var carComponent: CarComponent
-
+    
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
@@ -76,32 +74,51 @@ class AutomobileFragment : Fragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-
+        // Here using the generated Car component - we can access the interface method -- then get hold of drive method 
         DaggerCarComponent.builder().build().getCar().drive()
-
     }
-
+    
 }
 ```
 
 `Car.kt`
 ```kotlin
-class Car @Inject constructor(var engine: Engine, var wheels: Wheels) {
+/**
+ * Component is the backbone of dagger - >
+ * The component of dagger generates something called the dependency graph
+ * The dependency graph is unidirectional - meaning there is no cyclic interdependency among them
+ * **************************
+ * The annotation is something that turns a class into usable code
+ */
+@Component
+interface CarComponent {
 
-    fun drive() {
-        Log.d(TAG, "Car is Driving")
-    }
+    /**
+     * Return type: It is the Class object we are trying to build
+     * Name of the function is not important but it makes sense to have something meaningful.
+     * **************************
+     * We don't have to specify how to build this class, because dagger does this for us
+     */
+    fun getCar() : Car
 
 }
 ```
 
 `Engine.kt`
 ```kotlin
+/**
+ * Engine is a object which is annotated with @Inject
+ * With this annotation Engine is made available for the dependency graph
+ */
 class Engine @Inject constructor() {}
 ```
 
 `Wheels.kt`
 ```kotlin
+/**
+ * Wheels is a object which is annotated with @Inject
+ * With this annotation Wheels is made available for the dependency graph
+ */
 class Wheels @Inject constructor() {}
 ```
 
