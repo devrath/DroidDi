@@ -1,4 +1,4 @@
-package com.demo.code.typesOfDi.dagger.`Sample-1`.concepts.constructorInjection.view
+package com.demo.code.typesOfDi.dagger.SampleOne.concepts.constructorInjection.view
 
 import androidx.lifecycle.ViewModelProvider
 import android.os.Bundle
