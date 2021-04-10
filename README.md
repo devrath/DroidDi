@@ -72,6 +72,18 @@ We don't requre a tool to inject dependencies, But using a tool, what it does is
      **[PhoneComponent](app/src/main/java/com/demo/code/ui/dagger/automobile/concepts/constructorInjection/di/components/PhoneComponent.kt)**
      <->
      **[View](app/src/main/java/com/demo/code/ui/dagger/automobile/concepts/constructorInjection/view/ConstructorInjectionFragment.kt)**
+     
+<details><summary>Output  -  click to view</summary>
+<p>
+
+```
+2021-04-10 21:24:16.553 26840-26840/com.demo.code D/Dagger: Battery Init is invoked
+2021-04-10 21:24:16.553 26840-26840/com.demo.code D/Dagger: SdCard Init is invoked
+2021-04-10 21:24:16.554 26840-26840/com.demo.code D/Dagger: Phone Init is invoked
+2021-04-10 21:24:16.554 26840-26840/com.demo.code D/Dagger: Phone Initialize function is invoked
+```
+</p>
+</details>
 
 <h3> <----------------------------------------------------------> Field Injection </h3> 
   
