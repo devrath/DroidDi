@@ -63,7 +63,9 @@ We don't requre a tool to inject dependencies, But using a tool, what it does is
 * Here we have `Car` class. The class has 2 dependencies `Wheels`,`Engine`. Here using the process of dependency injection, we create the dependencies of the `Wheels` and `Engine` outside and provide the dependecy via the constructor, so that the instantiation of the components inside the car is not necessary be done inside the car class.
 * We need to use constructor injection wherever necessary.
 
-`DEMO:: `
+<details><summary>DEMO  -  click to view</summary>
+<p>
+
 **[Battery](app/src/main/java/com/demo/code/typesOfDi/dagger/automobile/concepts/constructorInjection/phoneParts/Battery.kt)**
      <->
      **[Phone](app/src/main/java/com/demo/code/typesOfDi/dagger/automobile/concepts/constructorInjection/phoneParts/Phone.kt)**
@@ -73,6 +75,9 @@ We don't requre a tool to inject dependencies, But using a tool, what it does is
      **[PhoneComponent](app/src/main/java/com/demo/code/typesOfDi/dagger/automobile/concepts/constructorInjection/di/components/PhoneComponent.kt)**
      <->
      **[View](app/src/main/java/com/demo/code/typesOfDi/dagger/automobile/concepts/constructorInjection/view/ConstructorInjectionFragment.kt)**
+</p>
+</details>
+
      
 <details><summary>Output  -  click to view</summary>
 <p>
