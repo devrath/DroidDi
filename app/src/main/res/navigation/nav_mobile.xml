@@ -7,7 +7,7 @@
 
     <fragment
         android:id="@+id/nav_dagger"
-        android:name="com.demo.code.typesOfDi.dagger.selection.DaggerSelectionFragment"
+        android:name="com.demo.code.typesofdi.dagger.selection.DaggerSelectionFragment"
         android:label="@string/menu_dagger"
         tools:layout="@layout/fragment_dagger_selection" >
         <action
@@ -16,13 +16,13 @@
     </fragment>
     <fragment
         android:id="@+id/nav_koin"
-        android:name="com.demo.code.typesOfDi.koin.KoinSelectionFragment"
+        android:name="com.demo.code.typesofdi.koin.KoinSelectionFragment"
         android:label="@string/menu_koin"
         tools:layout="@layout/fragment_koin_selection" />
 
     <fragment
         android:id="@+id/nav_hilt"
-        android:name="com.demo.code.typesOfDi.hilt.HiltSelectionFragment"
+        android:name="com.demo.code.typesofdi.hilt.HiltSelectionFragment"
         android:label="@string/menu_hilt"
         tools:layout="@layout/fragment_hilt_selection" />
 
