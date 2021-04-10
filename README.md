@@ -66,15 +66,15 @@ We don't requre a tool to inject dependencies, But using a tool, what it does is
 <details><summary>DEMO  -  click to view</summary>
 <p>
 
-**[Battery](app/src/main/java/com/demo/code/typesOfDi/dagger/automobile/concepts/constructorInjection/phoneParts/Battery.kt)**
+**[Battery](app/src/main/java/com/demo/code/typesofdi/dagger/sampleone/concepts/constructorInjection/phoneParts/Battery.kt)**
      <->
-     **[Phone](app/src/main/java/com/demo/code/typesOfDi/dagger/automobile/concepts/constructorInjection/phoneParts/Phone.kt)**
+     **[Phone](app/src/main/java/com/demo/code/typesofdi/dagger/sampleone/concepts/constructorInjection/phoneParts/Phone.kt)**
      <->
-     **[SdCard](app/src/main/java/com/demo/code/typesOfDi/dagger/automobile/concepts/constructorInjection/phoneParts/SdCard.kt)**
+     **[SdCard](app/src/main/java/com/demo/code/typesofdi/dagger/sampleone/concepts/constructorInjection/phoneParts/SdCard.kt)**
      <-> 
-     **[PhoneComponent](app/src/main/java/com/demo/code/typesOfDi/dagger/automobile/concepts/constructorInjection/di/components/PhoneComponent.kt)**
+     **[PhoneComponent](app/src/main/java/com/demo/code/typesofdi/dagger/sampleone/concepts/constructorInjection/di/components/PhoneComponent.kt)**
      <->
-     **[View](app/src/main/java/com/demo/code/typesOfDi/dagger/automobile/concepts/constructorInjection/view/ConstructorInjectionFragment.kt)**
+     **[View](app/src/main/java/com/demo/code/typesofdi/dagger/sampleone/concepts/constructorInjection/view/ConstructorInjectionFragment.kt)**
 </p>
 </details>
 
