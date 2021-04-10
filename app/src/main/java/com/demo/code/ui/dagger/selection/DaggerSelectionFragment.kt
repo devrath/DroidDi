@@ -10,6 +10,8 @@ import androidx.navigation.fragment.findNavController
 import com.demo.code.R
 import com.demo.code.databinding.FragmentDaggerSelectionBinding
 
+const val TAG_DAGGER = "Dagger"
+
 class DaggerSelectionFragment : Fragment() {
 
     private lateinit var _binding: FragmentDaggerSelectionBinding
