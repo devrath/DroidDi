@@ -6,29 +6,26 @@
     app:startDestination="@+id/nav_dagger">
 
     <fragment
+        android:id="@+id/nav_dagger"
+        android:name="com.demo.code.ui.dagger.selection.DaggerSelectionFragment"
+        android:label="@string/menu_dagger"
+        tools:layout="@layout/fragment_dagger_selection" >
+        <action
+            android:id="@+id/action_nav_dagger_to_dagger_navigation"
+            app:destination="@id/dagger_navigation" />
+    </fragment>
+
+    <fragment
         android:id="@+id/nav_koin"
         android:name="com.demo.code.ui.koin.KoinSelectionFragment"
         android:label="@string/menu_koin"
         tools:layout="@layout/fragment_koin_selection" />
 
     <fragment
-        android:id="@+id/nav_dagger"
-        android:name="com.demo.code.ui.dagger.selection.DaggerSelectionFragment"
-        android:label="@string/menu_dagger"
-        tools:layout="@layout/fragment_dagger_selection" >
-        <action
-            android:id="@+id/action_nav_dagger_to_automobileFragment"
-            app:destination="@id/automobileFragment" />
-    </fragment>
-
-    <fragment
         android:id="@+id/nav_hilt"
         android:name="com.demo.code.ui.hilt.HiltSelectionFragment"
         android:label="@string/menu_hilt"
         tools:layout="@layout/fragment_hilt_selection" />
-    <fragment
-        android:id="@+id/automobileFragment"
-        android:name="com.demo.code.ui.dagger.automobile.selection.AutomobileFragment"
-        android:label="automobile_fragment"
-        tools:layout="@layout/automobile_fragment" />
+
+    <include app:graph="@navigation/nav_mobile_dagger" />
 </navigation>

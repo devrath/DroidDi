@@ -1,5 +1,21 @@
 <?xml version="1.0" encoding="utf-8"?>
 <navigation xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto" android:id="@+id/dagger_navigation">
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/dagger_navigation"
+    app:startDestination="@id/daggerSelectionFragment">
+
+    <fragment
+        android:id="@+id/daggerSelectionFragment"
+        android:name="com.demo.code.ui.dagger.selection.DaggerSelectionFragment"
+        android:label="fragment_dagger_selection"
+        tools:layout="@layout/fragment_dagger_selection" >
+        <action
+            android:id="@+id/action_daggerSelectionFragment_to_navigation_mobile_dagger_automobile"
+            app:destination="@id/navigation_mobile_dagger_automobile" />
+    </fragment>
+
+
+    <include app:graph="@navigation/nav_mobile_dagger_automobile" />
 
 </navigation>

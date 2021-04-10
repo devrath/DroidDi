@@ -31,7 +31,7 @@ class DaggerSelectionFragment : Fragment() {
         super.onViewCreated(view, savedInstanceState)
         binding.apply {
             btnOneId.setOnClickListener {
-                findNavController().navigate(R.id.automobileFragment)
+                findNavController().navigate(R.id.dagger_navigation)
             }
         }
     }
