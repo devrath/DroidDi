@@ -11,10 +11,9 @@
         android:label="@string/menu_dagger"
         tools:layout="@layout/fragment_dagger_selection" >
         <action
-            android:id="@+id/action_nav_dagger_to_dagger_navigation"
-            app:destination="@id/dagger_navigation" />
+            android:id="@+id/action_nav_dagger_to_automobileFragment"
+            app:destination="@id/nav_dagger_automobile" />
     </fragment>
-
     <fragment
         android:id="@+id/nav_koin"
         android:name="com.demo.code.ui.koin.KoinSelectionFragment"
@@ -27,5 +26,7 @@
         android:label="@string/menu_hilt"
         tools:layout="@layout/fragment_hilt_selection" />
 
-    <include app:graph="@navigation/nav_mobile_dagger" />
+    <include app:graph="@navigation/nav_dagger_automobile" />
+
+
 </navigation>

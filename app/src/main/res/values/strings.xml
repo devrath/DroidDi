@@ -15,4 +15,5 @@
     <string name="field_injection">Field Injection</string>
     <string name="provides_annotation">Provides Annotation</string>
     <string name="binds_annotation">Binds Annotation</string>
+    <string name="auto_mobile_example">Automobile Example</string>
 </resources>

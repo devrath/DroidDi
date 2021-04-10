@@ -31,19 +31,19 @@ class AutomobileFragment : Fragment() {
         super.onViewCreated(view, savedInstanceState)
         binding.apply {
             constructorInjectionId.setOnClickListener {
-                
+                findNavController().navigate(R.id.action_automobileFragment_to_constructorInjectionFragment)
             }
 
             fieldInjectionId.setOnClickListener {
-
+                findNavController().navigate(R.id.action_automobileFragment_to_fieldInjectionFragment)
             }
 
             providesAnnotationId.setOnClickListener {
-
+                findNavController().navigate(R.id.action_automobileFragment_to_providesAnnotationFragment)
             }
 
             bindsAnnotationId.setOnClickListener {
-
+                findNavController().navigate(R.id.action_automobileFragment_to_bindsAnnotationFragment)
             }
         }
     }

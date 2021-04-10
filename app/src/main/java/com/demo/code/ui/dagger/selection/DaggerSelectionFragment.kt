@@ -30,8 +30,8 @@ class DaggerSelectionFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
         binding.apply {
-            btnOneId.setOnClickListener {
-                findNavController().navigate(R.id.dagger_navigation)
+            automobileSampleId.setOnClickListener {
+                findNavController().navigate(R.id.action_nav_dagger_to_automobileFragment)
             }
         }
     }
