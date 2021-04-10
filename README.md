@@ -58,10 +58,11 @@ We don't requre a tool to inject dependencies, But using a tool, what it does is
 
 <h3> <----------------------------------------------------------> Constructor Injection </h3> 
 
-**Description**:
-
+<details><summary>Description  -  click to view</summary>
+<p>
 * Here we have `Car` class. The class has 2 dependencies `Wheels`,`Engine`. Here using the process of dependency injection, we create the dependencies of the `Wheels` and `Engine` outside and provide the dependecy via the constructor, so that the instantiation of the components inside the car is not necessary be done inside the car class.
 * We need to use constructor injection wherever necessary.
+</details>
 
 <details><summary>DEMO  -  click to view</summary>
 <p>
