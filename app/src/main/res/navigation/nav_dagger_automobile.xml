@@ -6,7 +6,7 @@
     app:startDestination="@id/automobileFragment">
 <fragment
     android:id="@+id/automobileFragment"
-    android:name="com.demo.code.typesOfDi.dagger.automobile.selection.AutomobileFragment"
+    android:name="com.demo.code.typesOfDi.dagger.SampleOne.selection.AutomobileFragment"
     android:label="@string/auto_mobile_example"
     tools:layout="@layout/automobile_fragment">
     <action
@@ -24,22 +24,22 @@
 </fragment>
 <fragment
     android:id="@+id/providesAnnotationFragment"
-    android:name="com.demo.code.typesOfDi.dagger.automobile.concepts.providesAnnotation.view.ProvidesAnnotationFragment"
+    android:name="com.demo.code.typesOfDi.dagger.SampleOne.concepts.providesAnnotation.view.ProvidesAnnotationFragment"
     android:label="@string/provides_annotation"
     tools:layout="@layout/provides_annotation_fragment" />
 <fragment
     android:id="@+id/bindsAnnotationFragment"
-    android:name="com.demo.code.typesOfDi.dagger.automobile.concepts.bindsAnnotaion.view.BindsAnnotationFragment"
+    android:name="com.demo.code.typesOfDi.dagger.SampleOne.concepts.bindsAnnotaion.view.BindsAnnotationFragment"
     android:label="@string/binds_annotation"
     tools:layout="@layout/binds_annotation_fragment" />
 <fragment
     android:id="@+id/fieldInjectionFragment"
-    android:name="com.demo.code.typesOfDi.dagger.automobile.concepts.fieldInjection.view.FieldInjectionFragment"
+    android:name="com.demo.code.typesOfDi.dagger.SampleOne.concepts.fieldInjection.view.FieldInjectionFragment"
     android:label="@string/field_injection"
     tools:layout="@layout/field_injection_fragment" />
 <fragment
     android:id="@+id/constructorInjectionFragment"
-    android:name="com.demo.code.typesOfDi.dagger.automobile.concepts.constructorInjection.view.ConstructorInjectionFragment"
+    android:name="com.demo.code.typesOfDi.dagger.SampleOne.concepts.constructorInjection.view.ConstructorInjectionFragment"
     android:label="@string/constructor_injection"
     tools:layout="@layout/constructor_injection_fragment" />
 </navigation>

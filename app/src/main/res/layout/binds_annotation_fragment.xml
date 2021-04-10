@@ -4,7 +4,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    tools:context=".typesOfDi.dagger.automobile.concepts.bindsAnnotaion.view.BindsAnnotationFragment">
+    tools:context=".typesOfDi.dagger.SampleOne.concepts.bindsAnnotaion.view.BindsAnnotationFragment">
 
     <com.google.android.material.floatingactionbutton.FloatingActionButton
         android:id="@+id/actionId"
