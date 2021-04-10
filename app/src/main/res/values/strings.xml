@@ -16,4 +16,5 @@
     <string name="provides_annotation">Provides Annotation</string>
     <string name="binds_annotation">Binds Annotation</string>
     <string name="auto_mobile_example">Automobile Example</string>
+    <string name="start_action">Start Action</string>
 </resources>
