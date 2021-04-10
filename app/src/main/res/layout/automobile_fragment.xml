@@ -1,13 +1,53 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ui.dagger.automobile.view.AutomobileFragment">
+    tools:context="com.demo.code.ui.dagger.automobile.selection.AutomobileFragment">
 
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="Automobile" />
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/constructorInjectionId"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:layout_width="392dp"
+        android:layout_height="wrap_content"
+        android:text="@string/constructor_injection"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
-</FrameLayout>
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/fieldInjectionId"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:layout_width="392dp"
+        android:layout_height="wrap_content"
+        android:text="@string/field_injection"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/constructorInjectionId" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/providesAnnotationId"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:layout_width="392dp"
+        android:layout_height="wrap_content"
+        android:text="@string/provides_annotation"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/fieldInjectionId" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/bindsAnnotationId"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:layout_width="392dp"
+        android:layout_height="wrap_content"
+        android:text="@string/binds_annotation"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/providesAnnotationId" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

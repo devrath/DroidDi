@@ -28,7 +28,7 @@
         tools:layout="@layout/fragment_hilt_selection" />
     <fragment
         android:id="@+id/automobileFragment"
-        android:name="com.demo.code.ui.dagger.automobile.view.AutomobileFragment"
+        android:name="com.demo.code.ui.dagger.automobile.selection.AutomobileFragment"
         android:label="automobile_fragment"
         tools:layout="@layout/automobile_fragment" />
 </navigation>

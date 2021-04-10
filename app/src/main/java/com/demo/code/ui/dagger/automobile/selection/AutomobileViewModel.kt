@@ -1,4 +1,4 @@
-package com.demo.code.ui.dagger.automobile.vm
+package com.demo.code.ui.dagger.automobile.selection
 
 import androidx.lifecycle.ViewModel
 

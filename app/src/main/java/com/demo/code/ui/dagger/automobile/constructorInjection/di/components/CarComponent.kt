@@ -1,7 +1,6 @@
-package com.demo.code.ui.dagger.automobile.di.components
+package com.demo.code.ui.dagger.automobile.constructorInjection.di.components
 
-import com.demo.code.ui.dagger.automobile.vehicleParts.Car
-import com.demo.code.ui.dagger.automobile.view.AutomobileFragment
+import com.demo.code.ui.dagger.automobile.selection.AutomobileFragment
 import dagger.Component
 
 /**

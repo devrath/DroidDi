@@ -1,4 +1,4 @@
-package com.demo.code.ui.dagger.automobile.vehicleParts
+package com.demo.code.ui.dagger.automobile.constructorInjection.vehicleParts
 
 import android.util.Log
 import javax.inject.Inject
