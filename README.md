@@ -47,7 +47,7 @@ We don't requre a tool to inject dependencies, But using a tool, what it does is
 </p>
 
 
-| Quick Reference | sample branch | Demo classes |
+| Concept | Quick Reference | Demo classes |
 | --- | --- | --- |
 | [Constructor Injection](https://github.com/devrath/DroidDi/blob/main/README.md#------------------------------------------------------------constructor-injection-) | `main_dagger_constructor-injection` | demo |
 | [Field Injection](https://github.com/devrath/DroidDi/blob/main/README.md#------------------------------------------------------------field-injection-) | `main_dagger_field-injection` | demo |
