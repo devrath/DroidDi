@@ -58,8 +58,6 @@ We don't requre a tool to inject dependencies, But using a tool, what it does is
 
 <h3> <----------------------------------------------------------> Constructor Injection </h3> 
 
-**Branch**: `main_dagger_constructor-injection`
-
 **Description**:
 
 * Here we have `Car` class. The class has 2 dependencies `Wheels`,`Engine`. Here using the process of dependency injection, we create the dependencies of the `Wheels` and `Engine` outside and provide the dependecy via the constructor, so that the instantiation of the components inside the car is not necessary be done inside the car class.
@@ -68,8 +66,6 @@ We don't requre a tool to inject dependencies, But using a tool, what it does is
 
 <h3> <----------------------------------------------------------> Field Injection </h3> 
   
-**Branch**: `main_dagger_field-injection`
-
 **Description**:
 * The field injection is used wherever the `constructor injection` is not possible.
 * Most of the scenarios in android, where we want to use a third party library, we use `field injection`
@@ -79,8 +75,6 @@ We don't requre a tool to inject dependencies, But using a tool, what it does is
 
 <h3> <----------------------------------------------------------> Provides Annotation </h3> 
 
-**Branch**: `main_dagger_provides-annotation`
-
 **Description**:
 * From the examples above we saw that we might need to annotate the constructor of the object we are constructing.
 * Most of the time the constructor we are annotating are of third party libraries, We don't have access to third party libraries.
@@ -89,8 +83,6 @@ We don't requre a tool to inject dependencies, But using a tool, what it does is
 
 <h3> <----------------------------------------------------------> Binds Annotation </h3> 
  
-**Branch**: `main_dagger_binds`
-
 **Description**:
 * Now there are scenarios when we need to inject a `interface` instead of a `class`, In such scenarios we use `Binds` annotation
 * We can't create a module directly for a interface but instead, we will make a class implement the imterface and create a module of that class
