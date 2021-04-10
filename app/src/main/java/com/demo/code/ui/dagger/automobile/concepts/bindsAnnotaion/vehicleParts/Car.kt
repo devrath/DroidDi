@@ -1,6 +1,7 @@
-package com.demo.code.ui.dagger.automobile.concepts.constructorInjection.vehicleParts
+package com.demo.code.ui.dagger.automobile.concepts.bindsAnnotaion.vehicleParts
 
 import android.util.Log
+import com.demo.code.ui.dagger.automobile.concepts.constructorInjection.vehicleParts.Wheels
 import com.demo.code.ui.dagger.automobile.concepts.providesAnnotation.vehicleParts.Engine
 import javax.inject.Inject
 
