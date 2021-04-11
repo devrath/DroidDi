@@ -3,13 +3,16 @@ package com.demo.code.typesofdi.dagger.sampleone.concepts.bindsAnnotaion.vehicle
 import android.util.Log
 import javax.inject.Inject
 
-class Wheels @Inject constructor() {
+class PetrolEngine @Inject constructor() : Engine{
+
     private val TAG = "Dagger"
+
     init {
-        Log.d(TAG, "Wheel is constructed")
+        Log.d(TAG, "Petrol engine is constructed")
     }
 
-    fun constructWheels(){
-        Log.d(TAG, "Wheel method is invoked")
+    override fun startEngine() {
+        Log.d(TAG, "Petrol engine is started")
     }
+
 }

@@ -1,16 +1,13 @@
 package com.demo.code.typesofdi.dagger.sampleone.concepts.bindsAnnotaion.di.components
 
+import com.demo.code.typesofdi.dagger.sampleone.concepts.bindsAnnotaion.di.module.PetrolEngineModule
+import com.demo.code.typesofdi.dagger.sampleone.concepts.bindsAnnotaion.di.module.WheelsModule
+import com.demo.code.typesofdi.dagger.sampleone.concepts.bindsAnnotaion.view.BindsAnnotationFragment
 import com.demo.code.typesofdi.dagger.sampleone.selection.AutomobileFragment
 import dagger.Component
 
-/**
- * Component is the backbone of dagger - >
- * The component of dagger generates something called the dependency graph
- * The dependency graph is unidirectional - meaning there is no cyclic interdependency among them
- * **************************
- * The annotation is something that turns a class into usable code
- */
-@Component
+
+@Component(modules = [PetrolEngineModule::class, WheelsModule::class])
 interface CarComponent {
-   fun inject(atomobileFragment : AutomobileFragment)
+   fun inject(bindsAnnotationFragment : BindsAnnotationFragment)
 }
