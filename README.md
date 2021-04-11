@@ -93,7 +93,7 @@ We don't requre a tool to inject dependencies, But using a tool, what it does is
 
 <h3> <----------------------------------------------------------> Field Injection </h3> 
   
-**Description**:
+`Description::`
 * The field injection is used wherever the `constructor injection` is not possible.
 * Most of the scenarios in android, where we want to use a third party library, we use `field injection`
 * We use `@Inject` annotation with public access specifier.
