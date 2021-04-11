@@ -99,6 +99,45 @@ We don't requre a tool to inject dependencies, But using a tool, what it does is
 * We use `@Inject` annotation with public access specifier.
 * As a thumb rule, Field Injection is used for framework types
 
+<details><summary>DEMO  -  click to view</summary>
+<p>
+  
+**[ThirdPartyCapacitor](app/src/main/java/com/demo/code/typesofdi/dagger/sampleone/concepts/fieldInjection/tvParts/ThirdPartyCapacitor.kt)**
+     <->
+     **[ThirdPartyMotor](app/src/main/java/com/demo/code/typesofdi/dagger/sampleone/concepts/fieldInjection/tvParts/ThirdPartyMotor.kt)**
+     <->
+     **[Tv](app/src/main/java/com/demo/code/typesofdi/dagger/sampleone/concepts/fieldInjection/tvParts/Tv.kt)**
+     <-> 
+     **[ThirdPartyCapacitorModule](app/src/main/java/com/demo/code/typesofdi/dagger/sampleone/concepts/fieldInjection/di/modules/ThirdPartyCapacitorModule.kt)**
+     <->
+     **[ThirdPartyMotorModule](app/src/main/java/com/demo/code/typesofdi/dagger/sampleone/concepts/fieldInjection/di/modules/ThirdPartyMotorModule.kt)**
+     <->
+     **[TvModule](app/src/main/java/com/demo/code/typesofdi/dagger/sampleone/concepts/fieldInjection/di/modules/TvModule.kt)** 
+     <->
+     **[TvComponent](app/src/main/java/com/demo/code/typesofdi/dagger/sampleone/concepts/fieldInjection/di/components/TvComponent.kt)** 
+     <->
+     **[FieldInjectionFragment](app/src/main/java/com/demo/code/typesofdi/dagger/sampleone/concepts/fieldInjection/view/FieldInjectionFragment.kt)**
+</p>
+</details>
+
+<details><summary>Output  -  click to view</summary>
+<p>
+
+When we load the fragment dependent classes are instantiated since we inject the variable tv 
+
+```
+2021-04-11 19:50:41.599 10800-10800/com.demo.code D/Dagger: ThirdPartyCapacitor is charging
+2021-04-11 19:50:41.599 10800-10800/com.demo.code D/Dagger: ThirdPartyMotor is running
+2021-04-11 19:50:41.599 10800-10800/com.demo.code D/Dagger: Tv is constructed
+```
+
+When we click the button we can acces the method of tv class
+```
+2021-04-11 19:51:28.808 10800-10800/com.demo.code D/Dagger: Tv has turned on!
+```
+
+</p>
+</details>
 
 <h3> <----------------------------------------------------------> Provides Annotation </h3> 
 
