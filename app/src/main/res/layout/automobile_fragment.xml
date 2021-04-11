@@ -29,17 +29,6 @@
         app:layout_constraintTop_toBottomOf="@+id/constructorInjectionId" />
 
     <com.google.android.material.button.MaterialButton
-        android:id="@+id/providesAnnotationId"
-        style="@style/Widget.AppCompat.Button.Colored"
-        android:layout_width="392dp"
-        android:layout_height="wrap_content"
-        android:text="@string/provides_annotation"
-        android:textColor="@color/white"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/fieldInjectionId" />
-
-    <com.google.android.material.button.MaterialButton
         android:id="@+id/bindsAnnotationId"
         style="@style/Widget.AppCompat.Button.Colored"
         android:layout_width="392dp"
