@@ -148,3 +148,41 @@ When we click the button we can access the method of tv class
 * We shall keep the class as `abstract` as a standard practice, even though we can implement in a standard way
 * Now in a scenario, if we have two modules implementing same interface, then we will get a error because dagger dosen't know which one to use
 
+<details><summary>DEMO  -  click to view</summary>
+<p>
+
+**[PetrolEngineModule](app/src/main/java/com/demo/code/typesofdi/dagger/sampleone/concepts/bindsAnnotaion/di/module/PetrolEngineModule.kt)**
+     <->
+     **[WheelsModule](app/src/main/java/com/demo/code/typesofdi/dagger/sampleone/concepts/bindsAnnotaion/di/module/WheelsModule.kt)**
+     <->
+     **[CarComponent](app/src/main/java/com/demo/code/typesofdi/dagger/sampleone/concepts/bindsAnnotaion/di/components/CarComponent.kt)**
+     <-> 
+     **[Car](app/src/main/java/com/demo/code/typesofdi/dagger/sampleone/concepts/bindsAnnotaion/vehicleParts/Car.kt)**
+     <->
+     **[Engine](app/src/main/java/com/demo/code/typesofdi/dagger/sampleone/concepts/bindsAnnotaion/vehicleParts/Engine.kt)**
+     <->
+     **[PetrolEngine](app/src/main/java/com/demo/code/typesofdi/dagger/sampleone/concepts/bindsAnnotaion/vehicleParts/PetrolEngine.kt)** 
+     <->
+     **[Wheels](app/src/main/java/com/demo/code/typesofdi/dagger/sampleone/concepts/bindsAnnotaion/vehicleParts/Wheels.kt)** 
+     <->
+     **[BindsAnnotationFragment](app/src/main/java/com/demo/code/typesofdi/dagger/sampleone/concepts/bindsAnnotaion/view/BindsAnnotationFragment.kt)**
+</p>
+</details>
+
+<details><summary>Output  -  click to view</summary>
+<p>
+
+When we load the fragment dependent classes are instantiated since we inject the variable tv 
+
+```
+2021-04-11 22:08:20.333 8028-8028/com.demo.code D/Dagger: Petrol engine is constructed
+2021-04-11 22:08:20.333 8028-8028/com.demo.code D/Dagger: Wheel is constructed
+```
+
+When we click the button we can access the method of car class
+```
+2021-04-11 22:08:38.237 8028-8028/com.demo.code D/Dagger: Car is Driving
+```
+
+</p>
+</details>
