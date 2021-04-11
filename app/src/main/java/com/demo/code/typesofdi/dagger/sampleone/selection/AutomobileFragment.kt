@@ -37,7 +37,7 @@ class AutomobileFragment : Fragment() {
             fieldInjectionId.setOnClickListener {
                 findNavController().navigate(R.id.action_automobileFragment_to_fieldInjectionFragment)
             }
-            
+
             bindsAnnotationId.setOnClickListener {
                 findNavController().navigate(R.id.action_automobileFragment_to_bindsAnnotationFragment)
             }
