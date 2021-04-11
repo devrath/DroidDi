@@ -50,7 +50,7 @@ We don't requre a tool to inject dependencies, But using a tool, what it does is
 | Concept |
 | --- |
 | [Constructor Injection](https://github.com/devrath/DroidDi/blob/main/README.md#------------------------------------------------------------constructor-injection-) |
-| [Field Injection](https://github.com/devrath/DroidDi/blob/main/README.md#------------------------------------------------------------field-injection-) |
+| [Field Injection & Provides Annotation](https://github.com/devrath/DroidDi/blob/main/README.md#------------------------------------------------------------field-injection-) |
 | [Provides Annotation](https://github.com/devrath/DroidDi/blob/main/README.md#------------------------------------------------------------provides-annotation-) |
 | [Binds Annotation](https://github.com/devrath/DroidDi/blob/main/README.md#------------------------------------------------------------binds-annotation-) |
 
@@ -98,6 +98,8 @@ We don't requre a tool to inject dependencies, But using a tool, what it does is
 * Most of the scenarios in android, where we want to use a third party library, we use `field injection`
 * We use `@Inject` annotation with public access specifier.
 * As a thumb rule, Field Injection is used for framework types
+* Most of the time the constructor we are annotating are of third party libraries, We don't have access to third party libraries.
+* Using the `@Provides` annotation, we can use it.
 
 <details><summary>DEMO  -  click to view</summary>
 <p>
@@ -138,14 +140,6 @@ When we click the button we can access the method of tv class
 
 </p>
 </details>
-
-<h3> <----------------------------------------------------------> Provides Annotation </h3> 
-
-**Description**:
-* From the examples above we saw that we might need to annotate the constructor of the object we are constructing.
-* Most of the time the constructor we are annotating are of third party libraries, We don't have access to third party libraries.
-* Using the `@Provides` annotation, we can use it.
-
 
 <h3> <----------------------------------------------------------> Binds Annotation </h3> 
  
