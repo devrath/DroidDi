@@ -131,7 +131,7 @@ When we load the fragment dependent classes are instantiated since we inject the
 2021-04-11 19:50:41.599 10800-10800/com.demo.code D/Dagger: Tv is constructed
 ```
 
-When we click the button we can acces the method of tv class
+When we click the button we can access the method of tv class
 ```
 2021-04-11 19:51:28.808 10800-10800/com.demo.code D/Dagger: Tv has turned on!
 ```
