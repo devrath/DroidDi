@@ -186,3 +186,10 @@ When we click the button we can access the method of car class
 
 </p>
 </details>
+
+
+<h3> <----------------------------------------------------------> Adding Dynamic Values </h3> 
+
+**Description**:
+* Sometimes we need to pass values to the dependency injection on runtime. Such instances also can be achieved using the Dagger framework
+* Example, When we need to inject a `Retrofit` into the screen, And we need to dynamically add a property for it.
