@@ -17,4 +17,5 @@
     <string name="binds_annotation">Binds Annotation</string>
     <string name="auto_mobile_example">Automobile Example</string>
     <string name="start_action">Start Action</string>
+    <string name="dynamic_value_injection">Dynamic value Injection</string>
 </resources>

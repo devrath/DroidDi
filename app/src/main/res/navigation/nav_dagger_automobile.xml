@@ -4,42 +4,50 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/nav_dagger_automobile"
     app:startDestination="@id/automobileFragment">
-<fragment
-    android:id="@+id/automobileFragment"
-    android:name="com.demo.code.typesofdi.dagger.sampleone.selection.AutomobileFragment"
-    android:label="@string/auto_mobile_example"
-    tools:layout="@layout/automobile_fragment">
-    <action
-        android:id="@+id/action_automobileFragment_to_constructorInjectionFragment"
-        app:destination="@id/constructorInjectionFragment" />
-    <action
-        android:id="@+id/action_automobileFragment_to_fieldInjectionFragment"
-        app:destination="@id/fieldInjectionFragment" />
-    <action
-        android:id="@+id/action_automobileFragment_to_providesAnnotationFragment"
-        app:destination="@id/providesAnnotationFragment" />
-    <action
-        android:id="@+id/action_automobileFragment_to_bindsAnnotationFragment"
-        app:destination="@id/bindsAnnotationFragment" />
-</fragment>
-<fragment
-    android:id="@+id/providesAnnotationFragment"
-    android:name="com.demo.code.typesofdi.dagger.sampleone.concepts.providesAnnotation.view.ProvidesAnnotationFragment"
-    android:label="@string/provides_annotation"
-    tools:layout="@layout/provides_annotation_fragment" />
-<fragment
-    android:id="@+id/bindsAnnotationFragment"
-    android:name="com.demo.code.typesofdi.dagger.sampleone.concepts.bindsAnnotaion.view.BindsAnnotationFragment"
-    android:label="@string/binds_annotation"
-    tools:layout="@layout/binds_annotation_fragment" />
-<fragment
-    android:id="@+id/fieldInjectionFragment"
-    android:name="com.demo.code.typesofdi.dagger.sampleone.concepts.fieldInjection.view.FieldInjectionFragment"
-    android:label="@string/field_injection"
-    tools:layout="@layout/field_injection_fragment" />
-<fragment
-    android:id="@+id/constructorInjectionFragment"
-    android:name="com.demo.code.typesofdi.dagger.sampleone.concepts.constructorInjection.view.ConstructorInjectionFragment"
-    android:label="@string/constructor_injection"
-    tools:layout="@layout/constructor_injection_fragment" />
+    <fragment
+        android:id="@+id/automobileFragment"
+        android:name="com.demo.code.typesofdi.dagger.sampleone.selection.AutomobileFragment"
+        android:label="@string/auto_mobile_example"
+        tools:layout="@layout/automobile_fragment">
+        <action
+            android:id="@+id/action_automobileFragment_to_constructorInjectionFragment"
+            app:destination="@id/constructorInjectionFragment" />
+        <action
+            android:id="@+id/action_automobileFragment_to_fieldInjectionFragment"
+            app:destination="@id/fieldInjectionFragment" />
+        <action
+            android:id="@+id/action_automobileFragment_to_providesAnnotationFragment"
+            app:destination="@id/providesAnnotationFragment" />
+        <action
+            android:id="@+id/action_automobileFragment_to_bindsAnnotationFragment"
+            app:destination="@id/bindsAnnotationFragment" />
+        <action
+            android:id="@+id/action_automobileFragment_to_dynamicValueInjectionFragment"
+            app:destination="@id/dynamicValueInjectionFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/providesAnnotationFragment"
+        android:name="com.demo.code.typesofdi.dagger.sampleone.concepts.providesAnnotation.view.ProvidesAnnotationFragment"
+        android:label="@string/provides_annotation"
+        tools:layout="@layout/provides_annotation_fragment" />
+    <fragment
+        android:id="@+id/bindsAnnotationFragment"
+        android:name="com.demo.code.typesofdi.dagger.sampleone.concepts.bindsAnnotaion.view.BindsAnnotationFragment"
+        android:label="@string/binds_annotation"
+        tools:layout="@layout/binds_annotation_fragment" />
+    <fragment
+        android:id="@+id/fieldInjectionFragment"
+        android:name="com.demo.code.typesofdi.dagger.sampleone.concepts.fieldInjection.view.FieldInjectionFragment"
+        android:label="@string/field_injection"
+        tools:layout="@layout/field_injection_fragment" />
+    <fragment
+        android:id="@+id/constructorInjectionFragment"
+        android:name="com.demo.code.typesofdi.dagger.sampleone.concepts.constructorInjection.view.ConstructorInjectionFragment"
+        android:label="@string/constructor_injection"
+        tools:layout="@layout/constructor_injection_fragment" />
+    <fragment
+        android:id="@+id/dynamicValueInjectionFragment"
+        android:name="com.demo.code.typesofdi.dagger.sampleone.concepts.dynamicValueInjection.view.DynamicValueInjectionFragment"
+        android:label="@string/dynamic_value_injection"
+        tools:layout="@layout/dynamic_value_injection_fragment" />
 </navigation>

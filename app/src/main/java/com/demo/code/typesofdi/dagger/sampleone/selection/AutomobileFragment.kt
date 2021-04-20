@@ -41,6 +41,10 @@ class AutomobileFragment : Fragment() {
             bindsAnnotationId.setOnClickListener {
                 findNavController().navigate(R.id.action_automobileFragment_to_bindsAnnotationFragment)
             }
+
+            dynamicValueInjectionId.setOnClickListener {
+                findNavController().navigate(R.id.action_automobileFragment_to_dynamicValueInjectionFragment)
+            }
         }
     }
 
