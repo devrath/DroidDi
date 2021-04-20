@@ -7,6 +7,9 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import com.demo.code.R
+import com.demo.code.databinding.ConstructorInjectionFragmentBinding
+import com.demo.code.databinding.DynamicValueInjectionFragmentBinding
+import com.demo.code.typesofdi.dagger.sampleone.concepts.constructorInjection.di.components.DaggerPhoneComponent
 
 class DynamicValueInjectionFragment : Fragment() {
 
@@ -14,19 +17,30 @@ class DynamicValueInjectionFragment : Fragment() {
         fun newInstance() = DynamicValueInjectionFragment()
     }
 
+    private lateinit var _binding: DynamicValueInjectionFragmentBinding
+    private val binding get() = _binding
+
     private lateinit var viewModel: DynamicValueInjectionViewModel
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        return inflater.inflate(R.layout.dynamic_value_injection_fragment, container, false)
+        _binding = DynamicValueInjectionFragmentBinding.inflate(inflater, container, false)
+        return binding.root
     }
 
     override fun onActivityCreated(savedInstanceState: Bundle?) {
         super.onActivityCreated(savedInstanceState)
         viewModel = ViewModelProvider(this).get(DynamicValueInjectionViewModel::class.java)
-        // TODO: Use the ViewModel
+
+        binding.apply {
+            actionId.setOnClickListener {
+                // Build the phone
+
+            }
+        }
+
     }
 
 }
