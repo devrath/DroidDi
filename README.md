@@ -52,7 +52,7 @@ We don't requre a tool to inject dependencies, But using a tool, what it does is
 | [Constructor Injection](https://github.com/devrath/DroidDi/blob/main/README.md#------------------------------------------------------------constructor-injection-) |
 | [Field Injection & Provides Annotation](https://github.com/devrath/DroidDi/blob/main/README.md#------------------------------------------------------------field-injection-) |
 | [Binds Annotation](https://github.com/devrath/DroidDi/blob/main/README.md#------------------------------------------------------------binds-annotation-) |
-
+| [Dynamic Values Injection](https://github.com/devrath/DroidDi#------------------------------------------------------------adding-dynamic-values-) |
 
 
 <h3> <----------------------------------------------------------> Constructor Injection </h3> 
