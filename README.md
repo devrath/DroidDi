@@ -226,3 +226,10 @@ When we click the button we can access the method of car class
 ```
 </p>
 </details>
+
+<h3> <----------------------------------------------------------> Singleton Scope </h3> 
+
+**Description**:
+* Without a singleton scope if we inject a variable each time, A new instance of it is created each time.
+* But using a Singleton scope, we can make sure whenever and no matter how many times we inject a variable, same instance is injected.
+* Real world android example is using a Retrofit, every time in android, whenever we use it, can use same instance of it and such a way its efficient.
