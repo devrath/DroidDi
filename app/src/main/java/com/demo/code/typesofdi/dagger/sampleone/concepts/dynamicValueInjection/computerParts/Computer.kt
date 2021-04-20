@@ -14,9 +14,9 @@ class Computer @Inject constructor(var ram :Ram, var storage: Storage){
         // Computer initialize is invoked
         Log.d(TAG_DAGGER,"Computer member function is invoked")
         // Ram initialize is invoked
-        ram.initilize()
+        ram.initialize()
         // Storage initialize is invoked
-        storage.initilize()
+        storage.initialize()
     }
 
 }

@@ -3,14 +3,19 @@ package com.demo.code.typesofdi.dagger.sampleone.concepts.dynamicValueInjection.
 import android.util.Log
 import com.demo.code.typesofdi.dagger.selection.TAG_DAGGER
 
-class Storage constructor(sizeInGB : Int) {
+class Storage constructor(var sizeInGB : Int) {
 
     init {
         Log.d(TAG_DAGGER,"Storage Init is invoked")
     }
 
-    fun initilize() {
-        Log.d(TAG_DAGGER,"Storage member function is invoked")
+    fun initialize() {
+        Log.d(TAG_DAGGER,"Storage member function is invoked"
+            .plus(" :: ")
+            .plus("Size of storage")
+            .plus(" ")
+            .plus(sizeInGB)
+        )
     }
 
 }

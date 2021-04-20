@@ -193,3 +193,35 @@ When we click the button we can access the method of car class
 **Description**:
 * Sometimes we need to pass values to the dependency injection on runtime. Such instances also can be achieved using the Dagger framework
 * Example, When we need to inject a `Retrofit` into the screen, And we need to dynamically add a property for it.
+* In the example we can see we are injecting a dynamic value of `storage` which is a integer and then the variable for `ram` stating if it is a boolean value.  
+
+<details><summary>DEMO  -  click to view</summary>
+<p>
+
+**[Computer](app/src/main/java/com/demo/code/typesofdi/dagger/sampleone/concepts/dynamicValueInjection/computerParts/Computer.kt)**
+     <->
+     **[Ram](app/src/main/java/com/demo/code/typesofdi/dagger/sampleone/concepts/dynamicValueInjection/computerParts/Ram.kt)**
+     <->
+     **[Storage](app/src/main/java/com/demo/code/typesofdi/dagger/sampleone/concepts/dynamicValueInjection/computerParts/Storage.kt)**
+     <-> 
+     **[ComputerComponent](app/src/main/java/com/demo/code/typesofdi/dagger/sampleone/concepts/dynamicValueInjection/di/components/ComputerComponent.kt)**
+     <->
+     **[ComputerModule](app/src/main/java/com/demo/code/typesofdi/dagger/sampleone/concepts/dynamicValueInjection/di/modules/ComputerModule.kt)**
+     <->
+     **[DynamicValueInjectionFragment](app/src/main/java/com/demo/code/typesofdi/dagger/sampleone/concepts/dynamicValueInjection/view/DynamicValueInjectionFragment.kt)**
+</p>
+</details>
+
+<details><summary>Output  -  click to view</summary>
+<p>
+
+```
+2021-04-20 20:05:34.870 9462-9462/com.demo.code D/Dagger: Ram Init is invoked
+2021-04-20 20:05:34.872 9462-9462/com.demo.code D/Dagger: Storage Init is invoked
+2021-04-20 20:05:34.872 9462-9462/com.demo.code D/Dagger: Computer Init is invoked
+2021-04-20 20:05:34.873 9462-9462/com.demo.code D/Dagger: Computer member function is invoked
+2021-04-20 20:05:34.874 9462-9462/com.demo.code D/Dagger: Ram member function is invoked :: Is it a 2-GB RAM true
+2021-04-20 20:05:34.874 9462-9462/com.demo.code D/Dagger: Storage member function is invoked :: Size of storage 250
+```
+</p>
+</details>
