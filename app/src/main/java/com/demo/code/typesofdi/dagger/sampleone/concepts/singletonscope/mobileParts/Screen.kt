@@ -7,11 +7,18 @@ class Screen {
     private val TAG = "Dagger"
 
     init {
-        Log.d(TAG, "Screen init block is invoked")
+        Log.d(TAG, "Screen init block is invoked"
+            .plus(" ")
+            .plus("::")
+            .plus(this)
+        )
     }
 
     fun initilize(){
-
+        Log.d(TAG, "Currently"
+            .plus(" ")
+            .plus("Screen").plus(" :: ").plus("used is").plus(" ").plus(this)
+        )
     }
 
 }

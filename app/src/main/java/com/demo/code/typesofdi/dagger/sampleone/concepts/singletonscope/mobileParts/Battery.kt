@@ -7,11 +7,18 @@ class Battery {
     private val TAG = "Dagger"
 
     init {
-        Log.d(TAG, "Battery init block is invoked")
+        Log.d(TAG, "Battery init block is invoked"
+            .plus(" ")
+            .plus("::")
+            .plus(this)
+        )
     }
 
     fun initilize(){
-
+        Log.d(TAG, "Currently"
+            .plus(" ")
+            .plus("Battery").plus(" :: ").plus("used is").plus(" ").plus(this)
+        )
     }
 
 }

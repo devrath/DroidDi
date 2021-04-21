@@ -10,6 +10,12 @@ import com.demo.code.R
 import com.demo.code.databinding.FieldInjectionFragmentBinding
 import com.demo.code.databinding.FragmentSingletonScopeBinding
 import com.demo.code.typesofdi.dagger.sampleone.concepts.fieldInjection.view.FieldInjectionViewModel
+import com.demo.code.typesofdi.dagger.sampleone.concepts.singletonscope.di.components.DaggerUserComponent
+import com.demo.code.typesofdi.dagger.sampleone.concepts.singletonscope.di.modules.BatteryModule
+import com.demo.code.typesofdi.dagger.sampleone.concepts.singletonscope.di.modules.MobileModule
+import com.demo.code.typesofdi.dagger.sampleone.concepts.singletonscope.di.modules.ScreenModule
+import com.demo.code.typesofdi.dagger.sampleone.concepts.singletonscope.mobileParts.User
+import javax.inject.Inject
 
 class SingletonScopeFragment : Fragment() {
 
@@ -22,6 +28,13 @@ class SingletonScopeFragment : Fragment() {
     private lateinit var _binding: FragmentSingletonScopeBinding
     private val binding get() = _binding
 
+
+    @Inject
+    lateinit var user1 : User
+
+    @Inject
+    lateinit var user2 : User
+
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?,
                               savedInstanceState: Bundle?): View {
         _binding = FragmentSingletonScopeBinding.inflate(inflater, container, false)
@@ -32,9 +45,20 @@ class SingletonScopeFragment : Fragment() {
         super.onActivityCreated(savedInstanceState)
         viewModel = ViewModelProvider(this).get(SingletonScopeViewModel::class.java)
 
+
+        val component = DaggerUserComponent.builder()
+            .batteryModule(BatteryModule())
+            .mobileModule(MobileModule())
+            .screenModule(ScreenModule())
+            .build()
+
+        component.inject(this@SingletonScopeFragment)
+
+
         binding.apply {
             actionId.setOnClickListener {
-
+                user1.initilize()
+                user2.initilize()
             }
         }
 

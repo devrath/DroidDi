@@ -3,17 +3,28 @@ package com.demo.code.typesofdi.dagger.sampleone.concepts.singletonscope.mobileP
 import android.util.Log
 import javax.inject.Inject
 
-class User @Inject constructor(mobile: Mobile) {
+class User @Inject constructor(private var mobile: Mobile) {
 
     private val TAG = "Dagger"
 
     init {
-        Log.d(TAG, "Screen init block is invoked")
+        Log.d(TAG, "User init block is invoked"
+            .plus(" ")
+            .plus("::")
+            .plus(this)
+        )
     }
 
 
     fun initilize(){
 
+        mobile.initilize()
+
+        Log.d(TAG, "Currently"
+            .plus(" ")
+            .plus("User").plus(" :: ").plus(this).plus(" ")
+            .plus("is using the mobile").plus(" ").plus(mobile)
+        )
     }
 
 }
