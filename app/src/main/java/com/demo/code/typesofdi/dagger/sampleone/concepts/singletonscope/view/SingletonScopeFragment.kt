@@ -32,6 +32,12 @@ class SingletonScopeFragment : Fragment() {
         super.onActivityCreated(savedInstanceState)
         viewModel = ViewModelProvider(this).get(SingletonScopeViewModel::class.java)
 
+        binding.apply {
+            actionId.setOnClickListener {
+
+            }
+        }
+
     }
 
 }
