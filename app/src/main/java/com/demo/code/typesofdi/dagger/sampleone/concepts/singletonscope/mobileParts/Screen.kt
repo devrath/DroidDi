@@ -1,7 +1,6 @@
 package com.demo.code.typesofdi.dagger.sampleone.concepts.singletonscope.mobileParts
 
 import android.util.Log
-import javax.inject.Singleton
 
 class Screen {
 
@@ -15,7 +14,7 @@ class Screen {
         )
     }
 
-    fun initilize(){
+    fun initialize(){
         Log.d(TAG, "Currently"
             .plus(" ")
             .plus("Screen").plus(" :: ").plus("used is").plus(" ").plus(this)

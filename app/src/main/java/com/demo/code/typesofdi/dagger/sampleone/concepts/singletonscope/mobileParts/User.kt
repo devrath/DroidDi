@@ -18,9 +18,9 @@ class User @Inject constructor(private var mobile: Mobile) {
     }
 
 
-    fun initilize(){
+    fun initialize(){
 
-        mobile.initilize()
+        mobile.initialize()
 
         Log.d(TAG, "Currently"
             .plus(" ")

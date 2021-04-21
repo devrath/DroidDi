@@ -1,7 +1,6 @@
 package com.demo.code.typesofdi.dagger.sampleone.concepts.singletonscope.mobileParts
 
 import android.util.Log
-import javax.inject.Singleton
 
 class Battery {
 
@@ -15,7 +14,7 @@ class Battery {
         )
     }
 
-    fun initilize(){
+    fun initialize(){
         Log.d(TAG, "Currently"
             .plus(" ")
             .plus("Battery").plus(" :: ").plus("used is").plus(" ").plus(this)

@@ -15,10 +15,10 @@ class Mobile @Inject constructor(private var battery: Battery,private var screen
         )
     }
 
-    fun initilize(){
+    fun initialize(){
 
-        battery.initilize()
-        screen.initilize()
+        battery.initialize()
+        screen.initialize()
 
         Log.d(TAG, "Currently"
             .plus(" ")

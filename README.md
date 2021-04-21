@@ -233,3 +233,57 @@ When we click the button we can access the method of car class
 * Without a singleton scope if we inject a variable each time, A new instance of it is created each time.
 * But using a Singleton scope, we can make sure whenever and no matter how many times we inject a variable, same instance is injected.
 * Real world android example is using a Retrofit, every time in android, whenever we use it, can use same instance of it and such a way its efficient.
+
+<details><summary>DEMO  -  click to view</summary>
+<p>
+
+**[UserComponent](app/src/main/java/com/demo/code/typesofdi/dagger/sampleone/concepts/singletonscope/di/components/UserComponent.kt)**
+     <->
+     **[BatteryModule](app/src/main/java/com/demo/code/typesofdi/dagger/sampleone/concepts/singletonscope/di/modules/BatteryModule.kt)**
+     <->
+     **[MobileModule](app/src/main/java/com/demo/code/typesofdi/dagger/sampleone/concepts/singletonscope/di/modules/MobileModule.kt)**
+     <-> 
+     **[ScreenModule](app/src/main/java/com/demo/code/typesofdi/dagger/sampleone/concepts/singletonscope/di/modules/ScreenModule.kt)**
+     <->
+     **[Battery](app/src/main/java/com/demo/code/typesofdi/dagger/sampleone/concepts/singletonscope/mobileParts/Battery.kt)**
+     <->
+     **[Mobile](app/src/main/java/com/demo/code/typesofdi/dagger/sampleone/concepts/singletonscope/mobileParts/Mobile.kt)**
+      <->
+     **[Screen](app/src/main/java/com/demo/code/typesofdi/dagger/sampleone/concepts/singletonscope/mobileParts/Screen.kt)**
+      <->
+     **[User](app/src/main/java/com/demo/code/typesofdi/dagger/sampleone/concepts/singletonscope/mobileParts/User.kt)**
+      <->
+     **[SingletonScopeFragment](app/src/main/java/com/demo/code/typesofdi/dagger/sampleone/concepts/singletonscope/view/SingletonScopeFragment.kt)**
+</p>
+</details>
+
+
+<details><summary>Output  -  click to view</summary>
+<p>
+
+Once the class is loaded, we can see the single instances. Even though we we inject the user class twice, one instance is injected
+
+```
+2021-04-21 10:43:26.245 13148-13148/com.demo.code D/Dagger: Battery init block is invoked ::com.demo.code.typesofdi.dagger.sampleone.concepts.singletonscope.mobileParts.Battery@c58e585
+2021-04-21 10:43:26.245 13148-13148/com.demo.code D/Dagger: Screen init block is invoked ::com.demo.code.typesofdi.dagger.sampleone.concepts.singletonscope.mobileParts.Screen@1a66fda
+2021-04-21 10:43:26.246 13148-13148/com.demo.code D/Dagger: Mobile init block is invoked ::com.demo.code.typesofdi.dagger.sampleone.concepts.singletonscope.mobileParts.Mobile@68e3c0b
+2021-04-21 10:43:26.246 13148-13148/com.demo.code D/Dagger: User init block is invoked ::com.demo.code.typesofdi.dagger.sampleone.concepts.singletonscope.mobileParts.User@c5d1ae8
+```
+
+Then when we execute the execute button on the screen. Observe the address of the objects, No duplicate objects are there. Also point to note that we annotate the module and the components as singleton and not the actual classes the module is instantiating. Only the user class we have annotated with module.
+
+```
+2021-04-21 10:44:15.047 13148-13148/com.demo.code D/Dagger: Currently Battery :: used is com.demo.code.typesofdi.dagger.sampleone.concepts.singletonscope.mobileParts.Battery@c58e585
+2021-04-21 10:44:15.047 13148-13148/com.demo.code D/Dagger: Currently Screen :: used is com.demo.code.typesofdi.dagger.sampleone.concepts.singletonscope.mobileParts.Screen@1a66fda
+2021-04-21 10:44:15.047 13148-13148/com.demo.code D/Dagger: Currently Mobile :: com.demo.code.typesofdi.dagger.sampleone.concepts.singletonscope.mobileParts.Mobile@68e3c0b are using the components Battery :: com.demo.code.typesofdi.dagger.sampleone.concepts.singletonscope.mobileParts.Battery@c58e585 Screen :: com.demo.code.typesofdi.dagger.sampleone.concepts.singletonscope.mobileParts.Screen@1a66fda
+2021-04-21 10:44:15.047 13148-13148/com.demo.code D/Dagger: Currently User :: com.demo.code.typesofdi.dagger.sampleone.concepts.singletonscope.mobileParts.User@c5d1ae8 is using the mobile com.demo.code.typesofdi.dagger.sampleone.concepts.singletonscope.mobileParts.Mobile@68e3c0b
+2021-04-21 10:44:15.047 13148-13148/com.demo.code D/Dagger: Currently Battery :: used is com.demo.code.typesofdi.dagger.sampleone.concepts.singletonscope.mobileParts.Battery@c58e585
+2021-04-21 10:44:15.048 13148-13148/com.demo.code D/Dagger: Currently Screen :: used is com.demo.code.typesofdi.dagger.sampleone.concepts.singletonscope.mobileParts.Screen@1a66fda
+2021-04-21 10:44:15.048 13148-13148/com.demo.code D/Dagger: Currently Mobile :: com.demo.code.typesofdi.dagger.sampleone.concepts.singletonscope.mobileParts.Mobile@68e3c0b are using the components Battery :: com.demo.code.typesofdi.dagger.sampleone.concepts.singletonscope.mobileParts.Battery@c58e585 Screen :: com.demo.code.typesofdi.dagger.sampleone.concepts.singletonscope.mobileParts.Screen@1a66fda
+2021-04-21 10:44:15.048 13148-13148/com.demo.code D/Dagger: Currently User :: com.demo.code.typesofdi.dagger.sampleone.concepts.singletonscope.mobileParts.User@c5d1ae8 is using the mobile com.demo.code.typesofdi.dagger.sampleone.concepts.singletonscope.mobileParts.Mobile@68e3c0b
+```
+
+
+
+</p>
+</details>

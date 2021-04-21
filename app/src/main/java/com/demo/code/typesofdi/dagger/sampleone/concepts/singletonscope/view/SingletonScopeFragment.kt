@@ -57,8 +57,8 @@ class SingletonScopeFragment : Fragment() {
 
         binding.apply {
             actionId.setOnClickListener {
-                user1.initilize()
-                user2.initilize()
+                user1.initialize()
+                user2.initialize()
             }
         }
 
