@@ -18,4 +18,5 @@
     <string name="auto_mobile_example">Automobile Example</string>
     <string name="start_action">Start Action</string>
     <string name="dynamic_value_injection">Dynamic value Injection</string>
+    <string name="singleton_scope">Singleton Scope</string>
 </resources>

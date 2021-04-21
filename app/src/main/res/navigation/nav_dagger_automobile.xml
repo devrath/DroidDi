@@ -24,6 +24,9 @@
         <action
             android:id="@+id/action_automobileFragment_to_dynamicValueInjectionFragment"
             app:destination="@id/dynamicValueInjectionFragment" />
+        <action
+            android:id="@+id/action_automobileFragment_to_singletonScopeFragment"
+            app:destination="@id/singletonScopeFragment" />
     </fragment>
     <fragment
         android:id="@+id/providesAnnotationFragment"
@@ -50,4 +53,9 @@
         android:name="com.demo.code.typesofdi.dagger.sampleone.concepts.dynamicValueInjection.view.DynamicValueInjectionFragment"
         android:label="@string/dynamic_value_injection"
         tools:layout="@layout/dynamic_value_injection_fragment" />
+    <fragment
+        android:id="@+id/singletonScopeFragment"
+        android:name="com.demo.code.typesofdi.dagger.sampleone.concepts.singletonscope.view.SingletonScopeFragment"
+        android:label="@string/singleton_scope"
+        tools:layout="@layout/fragment_singleton_scope" />
 </navigation>

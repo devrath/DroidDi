@@ -51,4 +51,16 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/bindsAnnotationId" />
 
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/singletonScopeId"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:layout_width="392dp"
+        android:layout_height="wrap_content"
+        android:text="@string/singleton_scope"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.526"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/dynamicValueInjectionId" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>

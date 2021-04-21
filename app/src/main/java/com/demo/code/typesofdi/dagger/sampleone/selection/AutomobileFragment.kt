@@ -45,6 +45,10 @@ class AutomobileFragment : Fragment() {
             dynamicValueInjectionId.setOnClickListener {
                 findNavController().navigate(R.id.action_automobileFragment_to_dynamicValueInjectionFragment)
             }
+
+            singletonScopeId.setOnClickListener {
+                findNavController().navigate(R.id.action_automobileFragment_to_singletonScopeFragment)
+            }
         }
     }
 
