@@ -54,7 +54,7 @@ We don't requre a tool to inject dependencies, But using a tool, what it does is
 | [Binds Annotation](https://github.com/devrath/DroidDi/blob/main/README.md#------------------------------------------------------------binds-annotation-) |
 | [Dynamic Values Injection](https://github.com/devrath/DroidDi#------------------------------------------------------------adding-dynamic-values-) |
 | [Singleton scope](https://github.com/devrath/DroidDi/blob/main/README.md#------------------------------------------------------------singleton-scope-) |
-| [Custom scope](https://github.com/devrath/DroidDi/blob/main/README.md#------------------------------------------------------------singleton-scope-) |
+| [Custom scope](https://github.com/devrath/DroidDi#------------------------------------------------------------custom-scope-) |
 
 <h3> <----------------------------------------------------------> Constructor Injection </h3> 
 
