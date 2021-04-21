@@ -234,6 +234,7 @@ When we click the button we can access the method of car class
 * But using a Singleton scope, we can make sure whenever and no matter how many times we inject a variable, same instance is injected.
 * Real world android example is using a Retrofit, every time in android, whenever we use it, can use same instance of it and such a way its efficient.
 * Important point to note here is that, the singleton instance was a component level and not the application level.
+* This is also a point when device gets rotated and component is recreated. So does the instance under it, even though its singleton, new instance is created.
 
 <details><summary>DEMO  -  click to view</summary>
 <p>
