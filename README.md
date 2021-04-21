@@ -54,7 +54,7 @@ We don't requre a tool to inject dependencies, But using a tool, what it does is
 | [Binds Annotation](https://github.com/devrath/DroidDi/blob/main/README.md#------------------------------------------------------------binds-annotation-) |
 | [Dynamic Values Injection](https://github.com/devrath/DroidDi#------------------------------------------------------------adding-dynamic-values-) |
 | [Singleton scope](https://github.com/devrath/DroidDi/blob/main/README.md#------------------------------------------------------------singleton-scope-) |
-
+| [Custom scope](https://github.com/devrath/DroidDi/blob/main/README.md#------------------------------------------------------------singleton-scope-) |
 
 <h3> <----------------------------------------------------------> Constructor Injection </h3> 
 
@@ -264,7 +264,7 @@ When we click the button we can access the method of car class
 <details><summary>Output  -  click to view</summary>
 <p>
 
-Once the class is loaded, we can see the single instances. Even though we we inject the user class twice, one instance is injected
+Once the class is loaded, we can see the `single instances`. Even though we we inject the user class twice, one instance is injected
 
 ```
 2021-04-21 10:43:26.245 13148-13148/com.demo.code D/Dagger: Battery init block is invoked ::com.demo.code.typesofdi.dagger.sampleone.concepts.singletonscope.mobileParts.Battery@c58e585
@@ -273,7 +273,7 @@ Once the class is loaded, we can see the single instances. Even though we we inj
 2021-04-21 10:43:26.246 13148-13148/com.demo.code D/Dagger: User init block is invoked ::com.demo.code.typesofdi.dagger.sampleone.concepts.singletonscope.mobileParts.User@c5d1ae8
 ```
 
-Then when we execute the execute button on the screen. Observe the address of the objects, No duplicate objects are there. Also point to note that we annotate the module and the components as singleton and not the actual classes the module is instantiating. Only the user class we have annotated with module.
+Then when we execute the execute button on the screen. Observe the address of the objects, No duplicate objects are there. Also point to note that we annotate the module and the components as `singleton` and not the actual classes the module is instantiating. Only the user class we have annotated with `module`.
 
 ```
 2021-04-21 10:44:15.047 13148-13148/com.demo.code D/Dagger: Currently Battery :: used is com.demo.code.typesofdi.dagger.sampleone.concepts.singletonscope.mobileParts.Battery@c58e585
@@ -290,3 +290,11 @@ Then when we execute the execute button on the screen. Observe the address of th
 
 </p>
 </details>
+
+
+<h3> <----------------------------------------------------------> Custom Scope </h3> 
+
+
+**Description**:
+* Sometimes we need to create the scopes just on a `fragment level` of an `activity level`.
+* Such instances we use `Custom Scopes`
