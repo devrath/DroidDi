@@ -5,7 +5,9 @@ import com.demo.code.typesofdi.dagger.sampleone.concepts.singletonscope.di.modul
 import com.demo.code.typesofdi.dagger.sampleone.concepts.singletonscope.di.modules.ScreenModule
 import com.demo.code.typesofdi.dagger.sampleone.concepts.singletonscope.view.SingletonScopeFragment
 import dagger.Component
+import javax.inject.Singleton
 
+@Singleton
 @Component(modules = [BatteryModule::class,
                       MobileModule::class,
                       ScreenModule::class])

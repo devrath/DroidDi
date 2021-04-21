@@ -1,6 +1,7 @@
 package com.demo.code.typesofdi.dagger.sampleone.concepts.singletonscope.mobileParts
 
 import android.util.Log
+import javax.inject.Singleton
 
 class Screen {
 
