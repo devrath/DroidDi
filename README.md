@@ -235,6 +235,7 @@ When we click the button we can access the method of car class
 * Real world android example is using a Retrofit, every time in android, whenever we use it, can use same instance of it and such a way its efficient.
 * Important point to note here is that, the singleton instance was a component level and not the application level.
 * This is also a point when device gets rotated and component is recreated. So does the instance under it, even though its singleton, new instance is created.
+* We can achieve this by adding the component into the application class. Because application class instance is not destroyed until the app is destroyed.
 
 <details><summary>DEMO  -  click to view</summary>
 <p>
