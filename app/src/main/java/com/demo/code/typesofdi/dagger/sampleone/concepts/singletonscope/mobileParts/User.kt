@@ -2,7 +2,9 @@ package com.demo.code.typesofdi.dagger.sampleone.concepts.singletonscope.mobileP
 
 import android.util.Log
 import javax.inject.Inject
+import javax.inject.Singleton
 
+@Singleton
 class User @Inject constructor(private var mobile: Mobile) {
 
     private val TAG = "Dagger"
