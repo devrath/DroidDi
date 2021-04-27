@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_hilt_sampleone"
+    app:startDestination="@id/hiltConceptsSelectionFragment">
+
+    <fragment
+        android:id="@+id/hiltConceptsSelectionFragment"
+        android:name="com.demo.code.typesofdi.hilt.sampleone.selection.HiltConceptsSelectionFragment"
+        tools:layout="@layout/fragment_hilt_selection"
+        android:label="HiltConceptsSelectionFragment" >
+        <action
+            android:id="@+id/action_hiltConceptsSelectionFragment_to_hiltConstructorInjectionFragment"
+            app:destination="@id/hiltConstructorInjectionFragment" />
+        <action
+            android:id="@+id/action_hiltConceptsSelectionFragment_to_hiltFieldInjectionFragment"
+            app:destination="@id/hiltFieldInjectionFragment" />
+        <action
+            android:id="@+id/action_hiltConceptsSelectionFragment_to_hiltMethodInjectionFragment"
+            app:destination="@id/hiltMethodInjectionFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/hiltConstructorInjectionFragment"
+        android:name="com.demo.code.typesofdi.hilt.sampleone.concepts.constructorInjection.view.HiltConstructorInjectionFragment"
+        android:label="@string/constructor_injection"
+        tools:layout="@layout/hilt_constructor_injection_fragment" />
+    <fragment
+        android:id="@+id/hiltFieldInjectionFragment"
+        android:name="com.demo.code.typesofdi.hilt.sampleone.concepts.fieldInjection.view.HiltFieldInjectionFragment"
+        android:label="@string/field_injection"
+        tools:layout="@layout/hilt_field_injection_fragment" />
+    <fragment
+        android:id="@+id/hiltMethodInjectionFragment"
+        android:name="com.demo.code.typesofdi.hilt.sampleone.concepts.methodInjection.view.HiltMethodInjectionFragment"
+        android:label="@string/method_injection"
+        tools:layout="@layout/hilt_method_injection_fragment" />
+</navigation>

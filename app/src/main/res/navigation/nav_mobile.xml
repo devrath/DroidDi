@@ -22,11 +22,18 @@
 
     <fragment
         android:id="@+id/nav_hilt"
-        android:name="com.demo.code.typesofdi.hilt.HiltSelectionFragment"
+        android:name="com.demo.code.typesofdi.hilt.selection.HiltSelectionFragment"
         android:label="@string/menu_hilt"
-        tools:layout="@layout/fragment_hilt_selection" />
+        tools:layout="@layout/hilt_selection_fragment" >
+        <action
+            android:id="@+id/action_nav_hilt_to_hilt_concepts_selection"
+            app:destination="@id/nav_hilt_sampleone" />
+    </fragment>
 
     <include app:graph="@navigation/nav_dagger_automobile" />
+
+    <include app:graph="@navigation/nav_hilt_sampleone" />
+
 
 
 </navigation>
