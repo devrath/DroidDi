@@ -9,8 +9,14 @@ import androidx.fragment.app.Fragment
 import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProvider
 import com.demo.code.R
+import com.demo.code.databinding.FragmentDaggerSelectionBinding
+import com.demo.code.databinding.FragmentHiltSelectionBinding
+import com.demo.code.typesofdi.dagger.selection.DaggerSelectionViewModel
 
 class HiltSelectionFragment : Fragment() {
+
+    private var _binding: FragmentHiltSelectionBinding? = null
+    private val binding get() = _binding!!
 
     private lateinit var hiltSelectionViewModel: HiltSelectionViewModel
 
@@ -18,14 +24,32 @@ class HiltSelectionFragment : Fragment() {
             inflater: LayoutInflater,
             container: ViewGroup?,
             savedInstanceState: Bundle?
-    ): View? {
-        hiltSelectionViewModel =
-                ViewModelProvider(this).get(HiltSelectionViewModel::class.java)
-        val root = inflater.inflate(R.layout.fragment_hilt_selection, container, false)
-        val textView: TextView = root.findViewById(R.id.text_slideshow)
-        hiltSelectionViewModel.text.observe(viewLifecycleOwner, Observer {
-            textView.text = it
-        })
-        return root
+    ): View {
+        hiltSelectionViewModel = ViewModelProvider(this).get(HiltSelectionViewModel::class.java)
+        _binding = FragmentHiltSelectionBinding.inflate(inflater, container, false)
+        return binding.root
+    }
+
+    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+        super.onViewCreated(view, savedInstanceState)
+        binding.apply {
+
+            constructorInjectionId.setOnClickListener {
+
+            }
+
+            fieldInjectionId.setOnClickListener {
+
+            }
+
+            methodInjectionId.setOnClickListener {
+
+            }
+        }
+    }
+
+    override fun onDestroyView() {
+        super.onDestroyView()
+        _binding = null
     }
 }

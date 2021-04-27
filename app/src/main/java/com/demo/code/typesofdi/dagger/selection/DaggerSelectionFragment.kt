@@ -14,8 +14,8 @@ const val TAG_DAGGER = "Dagger"
 
 class DaggerSelectionFragment : Fragment() {
 
-    private lateinit var _binding: FragmentDaggerSelectionBinding
-    private val binding get() = _binding
+    private var _binding: FragmentDaggerSelectionBinding? = null
+    private val binding get() = _binding!!
 
     private lateinit var daggerSelectionViewModel: DaggerSelectionViewModel
 
@@ -23,7 +23,7 @@ class DaggerSelectionFragment : Fragment() {
             inflater: LayoutInflater,
             container: ViewGroup?,
             savedInstanceState: Bundle?
-    ): View? {
+    ): View {
         daggerSelectionViewModel =ViewModelProvider(this).get(DaggerSelectionViewModel::class.java)
         _binding = FragmentDaggerSelectionBinding.inflate(inflater, container, false)
         return binding.root
@@ -36,5 +36,10 @@ class DaggerSelectionFragment : Fragment() {
                 findNavController().navigate(R.id.action_nav_dagger_to_automobileFragment)
             }
         }
+    }
+
+    override fun onDestroyView() {
+        super.onDestroyView()
+        _binding = null
     }
 }
