@@ -36,7 +36,7 @@ We don't requre a tool to inject dependencies, But using a tool, what it does is
 | --- |
 | [Dagger](https://github.com/devrath/DroidDi/blob/main/README.md#dagger "Dagger2") |
 | Koin |
-| Hilt |
+| [Hilt](https://github.com/devrath/DroidDi/blob/main/README.md#hilt) |
 
 ---
 
