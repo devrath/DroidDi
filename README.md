@@ -314,9 +314,9 @@ Then when we execute the execute button on the screen. Observe the address of th
 | [Constructor And Field Injection](https://github.com/devrath/DroidDi/blob/main/README.md#------------------------------------------------------constructor-and-field-injection--1) |
 | [Modules](https://github.com/devrath/DroidDi/blob/main/README.md#------------------------------------------------------------modules-) |
 | [Binds Annotation](https://github.com/devrath/DroidDi/blob/main/README.md#------------------------------------------------------------binds-annotation--1) |
-| Provides Annotation |
-| Qualifiers |
-| Context |
+| [Provides Annotation](https://github.com/devrath/DroidDi/blob/main/README.md#------------------------------------------------------------provides-annotation-) |
+| [Qualifiers](https://github.com/devrath/DroidDi/blob/main/README.md#------------------------------------------------------------qualifiers-) |
+| [Context](https://github.com/devrath/DroidDi/blob/main/README.md#------------------------------------------------------------context-) |
 
 
 <h3> <----------------------------------------------------> Constructor And Field Injection </h3> 
@@ -371,3 +371,39 @@ When the button in the screen is clicked
   
 <h3> <----------------------------------------------------------> Provides Annotation </h3> 
 
+* Observe there is no `component` part similar to dagger here :smiley:
+
+<details><summary>DEMO  -  click to view</summary>
+<p>
+
+**[HiltProvidesAnnotationFragment](app/src/main/java/com/demo/code/typesofdi/hilt/sampleone/concepts/providesAnnotation/view/HiltProvidesAnnotationFragment.kt)**
+     <->
+     **[WhatsApp](app/src/main/java/com/demo/code/typesofdi/hilt/sampleone/concepts/providesAnnotation/whatsappParts/WhatsApp.kt)**
+     <->
+     **[Retrofit](app/src/main/java/com/demo/code/typesofdi/hilt/sampleone/concepts/providesAnnotation/whatsappParts/Retrofit.kt)**
+     <-> 
+     **[Glide](app/src/main/java/com/demo/code/typesofdi/hilt/sampleone/concepts/providesAnnotation/whatsappParts/Glide.kt)**
+</p>
+</details>
+
+<details><summary>Output  -  click to view</summary>
+<p>
+
+When the class is loaded 
+```
+2021-04-28 18:46:31.295 28852-28852/com.demo.code D/HILT_DEMO: Retrofit Init is invoked
+2021-04-28 18:46:31.296 28852-28852/com.demo.code D/HILT_DEMO: Glide Init is invoked
+2021-04-28 18:46:31.297 28852-28852/com.demo.code D/HILT_DEMO: WhatsApp Init is invoked
+```
+When the button in the screen is clicked
+```
+2021-04-28 18:46:40.817 28852-28852/com.demo.code D/HILT_DEMO: Retrofit Started
+2021-04-28 18:46:40.818 28852-28852/com.demo.code D/HILT_DEMO: Glide Started
+```
+</p>
+</details>
+
+<h3> <----------------------------------------------------------> Qualifiers </h3> 
+  
+
+<h3> <----------------------------------------------------------> Context </h3> 
