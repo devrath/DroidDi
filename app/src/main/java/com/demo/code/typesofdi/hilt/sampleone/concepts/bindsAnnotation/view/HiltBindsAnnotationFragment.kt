@@ -9,7 +9,9 @@ import android.view.ViewGroup
 import com.demo.code.R
 import com.demo.code.databinding.HiltBindAnnotationFragmentBinding
 import com.demo.code.databinding.HiltConstructorFieldInjectionDemoFragmentBinding
+import com.demo.code.typesofdi.hilt.sampleone.concepts.bindsAnnotation.vehicleParts.Car
 import dagger.hilt.android.AndroidEntryPoint
+import javax.inject.Inject
 
 @AndroidEntryPoint
 class HiltBindsAnnotationFragment : Fragment() {
@@ -20,6 +22,9 @@ class HiltBindsAnnotationFragment : Fragment() {
 
     private var _binding: HiltBindAnnotationFragmentBinding? = null
     private val binding get() = _binding!!
+
+    @Inject
+    lateinit var car: Car
 
     private lateinit var viewModelHilt: HiltBindsAnnotationViewModel
 
@@ -36,7 +41,7 @@ class HiltBindsAnnotationFragment : Fragment() {
         super.onViewCreated(view, savedInstanceState)
         binding.apply {
             actionId.setOnClickListener {
-                
+                car.startCar()
             }
         }
     }
