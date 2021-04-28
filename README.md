@@ -298,3 +298,19 @@ Then when we execute the execute button on the screen. Observe the address of th
 **Description**:
 * Sometimes we need to create the scopes just on a `fragment level` of an `activity level`.
 * Such instances we use `Custom Scopes`
+
+
+
+---
+
+<center><h2>Hilt</h2></center>
+
+<p align="center">
+  <img width="400" height="200" src="https://github.com/devrath/DroidDi/blob/main/images/dagger.jpeg">
+</p>
+
+| Concept |
+| --- |
+| [Constructor And Field Injection]() |
+
+<h3> <----------------------------------------------------------> Constructor And Field Injection </h3> 
