@@ -388,6 +388,10 @@ When the button in the screen is clicked
      **[Engine](app/src/main/java/com/demo/code/typesofdi/hilt/sampleone/concepts/bindsAnnotation/vehicleParts/Engine.kt)**
      <-> 
      **[PetrolEngine](app/src/main/java/com/demo/code/typesofdi/hilt/sampleone/concepts/bindsAnnotation/vehicleParts/PetrolEngine.kt)**
+     <-> 
+     **[CarModule](app/src/main/java/com/demo/code/typesofdi/hilt/sampleone/concepts/bindsAnnotation/di/CarModule.kt)**
+     <-> 
+     **[EngineModule](app/src/main/java/com/demo/code/typesofdi/hilt/sampleone/concepts/bindsAnnotation/di/EngineModule.kt)**
 </p>
 </details>
 
