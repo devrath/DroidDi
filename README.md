@@ -313,7 +313,7 @@ Then when we execute the execute button on the screen. Observe the address of th
 | --- |
 | [Constructor And Field Injection](https://github.com/devrath/DroidDi/blob/main/README.md#------------------------------------------------------constructor-and-field-injection--1) |
 | [Modules](https://github.com/devrath/DroidDi/blob/main/README.md#------------------------------------------------------------modules-) |
-| Binds Annotation |
+| [Binds Annotation](https://github.com/devrath/DroidDi/blob/main/README.md#------------------------------------------------------------binds-annotation--1) |
 | Provides Annotation |
 | Qualifiers |
 | Context |
