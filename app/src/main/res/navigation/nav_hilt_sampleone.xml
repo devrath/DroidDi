@@ -27,9 +27,9 @@
         tools:layout="@layout/hilt_constructor_field_injection_demo_fragment" />
     <fragment
         android:id="@+id/hiltFieldInjectionFragment"
-        android:name="com.demo.code.typesofdi.hilt.sampleone.concepts.fieldInjection.view.HiltFieldInjectionFragment"
-        android:label="@string/field_injection"
-        tools:layout="@layout/hilt_field_injection_fragment" />
+        android:name="com.demo.code.typesofdi.hilt.sampleone.concepts.providesAnnotation.view.HiltProvidesAnnotationFragment"
+        android:label="@string/provides_annotation"
+        tools:layout="@layout/hilt_provides_annotation_fragment" />
     <fragment
         android:id="@+id/hiltMethodInjectionFragment"
         android:name="com.demo.code.typesofdi.hilt.sampleone.concepts.methodInjection.view.HiltMethodInjectionFragment"
