@@ -32,7 +32,7 @@
         tools:layout="@layout/hilt_provides_annotation_fragment" />
     <fragment
         android:id="@+id/hiltMethodInjectionFragment"
-        android:name="com.demo.code.typesofdi.hilt.sampleone.concepts.methodInjection.view.HiltMethodInjectionFragment"
-        android:label="@string/method_injection"
-        tools:layout="@layout/hilt_method_injection_fragment" />
+        android:name="com.demo.code.typesofdi.hilt.sampleone.concepts.bindsAnnotation.view.HiltBindsAnnotationFragment"
+        android:label="@string/binds_annotation"
+        tools:layout="@layout/hilt_bind_annotation_fragment" />
 </navigation>
