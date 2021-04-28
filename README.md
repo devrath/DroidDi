@@ -311,7 +311,7 @@ Then when we execute the execute button on the screen. Observe the address of th
 
 | Concept |
 | --- |
-| [Constructor And Field Injection](https://github.com/devrath/DroidDi/blob/main/README.md#------------------------------------------------------------constructor-and-field-injection-) |
+| [Constructor And Field Injection](https://github.com/devrath/DroidDi/blob/main/README.md#------------------------------------------------------constructor-and-field-injection-) |
 | Modules |
 | Binds Annotation |
 | Provides Annotation |
