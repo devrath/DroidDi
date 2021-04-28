@@ -367,6 +367,40 @@ When the button in the screen is clicked
 * Also when we do'nt own the type, Example a third party library, we don't have access to the constructor of the third party library to add the `@Inject` annotation for it. Thus constructor injection is not possible.
 * Modules provide a way to instantiate an object.
 
+<h3> <----------------------------------------------------------> Provides Annotation </h3> 
+
+* Observe there is no `component` part similar to dagger here :smiley:
+
+<details><summary>DEMO  -  click to view</summary>
+<p>
+
+**[HiltProvidesAnnotationFragment](app/src/main/java/com/demo/code/typesofdi/hilt/sampleone/concepts/providesAnnotation/view/HiltProvidesAnnotationFragment.kt)**
+     <->
+     **[WhatsApp](app/src/main/java/com/demo/code/typesofdi/hilt/sampleone/concepts/providesAnnotation/whatsappParts/WhatsApp.kt)**
+     <->
+     **[Retrofit](app/src/main/java/com/demo/code/typesofdi/hilt/sampleone/concepts/providesAnnotation/whatsappParts/Retrofit.kt)**
+     <-> 
+     **[Glide](app/src/main/java/com/demo/code/typesofdi/hilt/sampleone/concepts/providesAnnotation/whatsappParts/Glide.kt)**
+</p>
+</details>
+
+<details><summary>Output  -  click to view</summary>
+<p>
+
+When the class is loaded 
+```
+2021-04-28 18:46:31.295 28852-28852/com.demo.code D/HILT_DEMO: Retrofit Init is invoked
+2021-04-28 18:46:31.296 28852-28852/com.demo.code D/HILT_DEMO: Glide Init is invoked
+2021-04-28 18:46:31.297 28852-28852/com.demo.code D/HILT_DEMO: WhatsApp Init is invoked
+```
+When the button in the screen is clicked
+```
+2021-04-28 18:46:40.817 28852-28852/com.demo.code D/HILT_DEMO: Retrofit Started
+2021-04-28 18:46:40.818 28852-28852/com.demo.code D/HILT_DEMO: Glide Started
+```
+</p>
+</details>
+
 <h3> <----------------------------------------------------------> Binds Annotation </h3> 
 
 * With the help of `Binds Annotation`, we can provide a interface implementation to the dependency graph.
@@ -410,40 +444,6 @@ When the button in the screen is clicked
 ```
 </p>
 </details>  
-  
-<h3> <----------------------------------------------------------> Provides Annotation </h3> 
-
-* Observe there is no `component` part similar to dagger here :smiley:
-
-<details><summary>DEMO  -  click to view</summary>
-<p>
-
-**[HiltProvidesAnnotationFragment](app/src/main/java/com/demo/code/typesofdi/hilt/sampleone/concepts/providesAnnotation/view/HiltProvidesAnnotationFragment.kt)**
-     <->
-     **[WhatsApp](app/src/main/java/com/demo/code/typesofdi/hilt/sampleone/concepts/providesAnnotation/whatsappParts/WhatsApp.kt)**
-     <->
-     **[Retrofit](app/src/main/java/com/demo/code/typesofdi/hilt/sampleone/concepts/providesAnnotation/whatsappParts/Retrofit.kt)**
-     <-> 
-     **[Glide](app/src/main/java/com/demo/code/typesofdi/hilt/sampleone/concepts/providesAnnotation/whatsappParts/Glide.kt)**
-</p>
-</details>
-
-<details><summary>Output  -  click to view</summary>
-<p>
-
-When the class is loaded 
-```
-2021-04-28 18:46:31.295 28852-28852/com.demo.code D/HILT_DEMO: Retrofit Init is invoked
-2021-04-28 18:46:31.296 28852-28852/com.demo.code D/HILT_DEMO: Glide Init is invoked
-2021-04-28 18:46:31.297 28852-28852/com.demo.code D/HILT_DEMO: WhatsApp Init is invoked
-```
-When the button in the screen is clicked
-```
-2021-04-28 18:46:40.817 28852-28852/com.demo.code D/HILT_DEMO: Retrofit Started
-2021-04-28 18:46:40.818 28852-28852/com.demo.code D/HILT_DEMO: Glide Started
-```
-</p>
-</details>
 
 <h3> <----------------------------------------------------------> Qualifiers </h3> 
   
