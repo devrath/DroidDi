@@ -319,3 +319,21 @@ Then when we execute the execute button on the screen. Observe the address of th
 * `Annotating` the classes to be injected via the `@Inject` annotation is same as in `dagger` but, In `hilt` there is bo `component` present. Just by annotating the class with `@AndroidEntryPoint` take care of component part.
 * So there is no `component concept` in `hilt`, This makes much simpler of implementation of `dependency injection` of the `hilt` 
   
+
+
+<details><summary>Output  -  click to view</summary>
+<p>
+
+When the class is loaded 
+```
+2021-04-28 11:47:01.353 26760-26760/com.demo.code D/HILT_DEMO: Battery Init is invoked
+2021-04-28 11:47:01.353 26760-26760/com.demo.code D/HILT_DEMO: Charger Init is invoked
+2021-04-28 11:47:01.353 26760-26760/com.demo.code D/HILT_DEMO: Capasitor Init is invoked
+2021-04-28 11:47:01.353 26760-26760/com.demo.code D/HILT_DEMO: MicroOven Init is invoked
+```
+When the button in the screen is clicked
+```
+2021-04-28 11:47:15.272 26760-26760/com.demo.code D/HILT_DEMO: Micro oven is running
+```
+</p>
+</details>
