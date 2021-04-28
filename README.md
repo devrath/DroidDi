@@ -360,6 +360,7 @@ When the button in the screen is clicked
 </details>
 
 <h3> <----------------------------------------------------------> Modules </h3> 
+
 ### Some information on when to use modules in hilt 
   
 * Many scenarios the `constructor injection` and `field injection` is not sufficient to inject some dependencies. 
