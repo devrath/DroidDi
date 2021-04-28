@@ -20,4 +20,6 @@
     <string name="start_action">Start Action</string>
     <string name="dynamic_value_injection">Dynamic value Injection</string>
     <string name="singleton_scope">Singleton Scope</string>
+    <string name="hiltConcepts">Hilt Concepts Selection</string>
+    <string name="constructor_field_injection">Constructor Field Injection</string>
 </resources>

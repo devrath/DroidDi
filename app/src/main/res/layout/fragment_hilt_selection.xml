@@ -10,7 +10,7 @@
         android:id="@+id/constructor_injection_id"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:text="@string/constructor_injection"
+        android:text="@string/constructor_field_injection"
         android:layout_margin="@dimen/btn_spacing"
         style="@style/Widget.AppCompat.Button.Colored"
         android:textColor="@color/white"

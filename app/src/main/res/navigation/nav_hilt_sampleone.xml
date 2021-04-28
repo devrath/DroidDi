@@ -9,7 +9,7 @@
         android:id="@+id/hiltConceptsSelectionFragment"
         android:name="com.demo.code.typesofdi.hilt.sampleone.selection.HiltConceptsSelectionFragment"
         tools:layout="@layout/fragment_hilt_selection"
-        android:label="HiltConceptsSelectionFragment" >
+        android:label="@string/hiltConcepts" >
         <action
             android:id="@+id/action_hiltConceptsSelectionFragment_to_hiltConstructorInjectionFragment"
             app:destination="@id/hiltConstructorInjectionFragment" />
@@ -22,9 +22,9 @@
     </fragment>
     <fragment
         android:id="@+id/hiltConstructorInjectionFragment"
-        android:name="com.demo.code.typesofdi.hilt.sampleone.concepts.constructorInjection.view.HiltConstructorInjectionFragment"
+        android:name="com.demo.code.typesofdi.hilt.sampleone.concepts.constructorFieldInjection.view.HiltConstAndFieldInjectionDemoFragment"
         android:label="@string/constructor_injection"
-        tools:layout="@layout/hilt_constructor_injection_fragment" />
+        tools:layout="@layout/hilt_constructor_field_injection_demo_fragment" />
     <fragment
         android:id="@+id/hiltFieldInjectionFragment"
         android:name="com.demo.code.typesofdi.hilt.sampleone.concepts.fieldInjection.view.HiltFieldInjectionFragment"

@@ -10,6 +10,8 @@ import androidx.navigation.fragment.findNavController
 import com.demo.code.R
 import com.demo.code.databinding.FragmentHiltSelectionBinding
 
+const val TAG_HILT = "HILT_DEMO"
+
 class HiltConceptsSelectionFragment : Fragment() {
 
     private var _binding: FragmentHiltSelectionBinding? = null
