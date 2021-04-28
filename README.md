@@ -367,8 +367,6 @@ When the button in the screen is clicked
 * Also when we do'nt own the type, Example a third party library, we don't have access to the constructor of the third party library to add the `@Inject` annotation for it. Thus constructor injection is not possible.
 * Modules provide a way to instantiate an object.
 
-<h3> <----------------------------------------------------------> Binds Annotation </h3> 
-  
 <h3> <----------------------------------------------------------> Provides Annotation </h3> 
 
 * Observe there is no `component` part similar to dagger here :smiley:
@@ -402,6 +400,50 @@ When the button in the screen is clicked
 ```
 </p>
 </details>
+
+<h3> <----------------------------------------------------------> Binds Annotation </h3> 
+
+* With the help of `Binds Annotation`, we can provide a interface implementation to the dependency graph.
+* `Module` class and the `Binding` function need to be abstract, because we don't want to give a instance of the interface to the module, We let the hilt decide which instantiation will be provided. 
+* In the sample below we are injecting a `Engine` which is `interface` to the `car`. Point to note is, here we let the hilt decide, whether it wants to inject the `petrol engine` or the `diesel engine`.
+* We can inject `engine` interface directly to the fragment and hilt will decide which implementation to use, whether `pertol engine` or `diesel engine`
+* Important point to note here is that when we are injecting the interfce, we need to make the module `abstract` and the method inside it as `abstract`.
+* For the method inside the `abstract` class, we need to annotate with `binds annotation` 
+
+<details><summary>DEMO  -  click to view</summary>
+<p>
+
+**[HiltBindsAnnotationFragment](app/src/main/java/com/demo/code/typesofdi/hilt/sampleone/concepts/bindsAnnotation/view/HiltBindsAnnotationFragment.kt)**
+     <->
+     **[Car](app/src/main/java/com/demo/code/typesofdi/hilt/sampleone/concepts/bindsAnnotation/vehicleParts/Car.kt)**
+     <->
+     **[DieselEngine](app/src/main/java/com/demo/code/typesofdi/hilt/sampleone/concepts/bindsAnnotation/vehicleParts/DieselEngine.kt)**
+     <-> 
+     **[Engine](app/src/main/java/com/demo/code/typesofdi/hilt/sampleone/concepts/bindsAnnotation/vehicleParts/Engine.kt)**
+     <-> 
+     **[PetrolEngine](app/src/main/java/com/demo/code/typesofdi/hilt/sampleone/concepts/bindsAnnotation/vehicleParts/PetrolEngine.kt)**
+     <-> 
+     **[CarModule](app/src/main/java/com/demo/code/typesofdi/hilt/sampleone/concepts/bindsAnnotation/di/CarModule.kt)**
+     <-> 
+     **[EngineModule](app/src/main/java/com/demo/code/typesofdi/hilt/sampleone/concepts/bindsAnnotation/di/EngineModule.kt)**
+</p>
+</details>
+
+<details><summary>Output  -  click to view</summary>
+<p>
+
+When the class is loaded 
+```
+2021-04-28 20:33:10.243 30700-30700/com.demo.code D/HILT_DEMO: PetrolEngine init is invoked
+2021-04-28 20:33:10.244 30700-30700/com.demo.code D/HILT_DEMO: Car init is invoked
+```
+When the button in the screen is clicked
+```
+2021-04-28 20:33:17.701 30700-30700/com.demo.code D/HILT_DEMO: PetrolEngine has started
+2021-04-28 20:33:17.701 30700-30700/com.demo.code D/HILT_DEMO: Car has started
+```
+</p>
+</details>  
 
 <h3> <----------------------------------------------------------> Qualifiers </h3> 
   
