@@ -33,7 +33,7 @@
         app:layout_constraintTop_toBottomOf="@+id/constructor_injection_id" />
 
     <com.google.android.material.button.MaterialButton
-        android:id="@+id/method_injection_id"
+        android:id="@+id/binds_annotation_id"
         style="@style/Widget.AppCompat.Button.Colored"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
@@ -44,5 +44,18 @@
         app:layout_constraintHorizontal_bias="0.473"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/field_injection_id" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/qualifiers_injection_id"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/btn_spacing"
+        android:text="@string/qualifiers_demo"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.473"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/binds_annotation_id" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
