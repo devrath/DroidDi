@@ -314,3 +314,8 @@ Then when we execute the execute button on the screen. Observe the address of th
 | [Constructor And Field Injection](https://github.com/devrath/DroidDi/blob/main/README.md#------------------------------------------------------------constructor-and-field-injection-) |
 
 <h3> <----------------------------------------------------------> Constructor And Field Injection </h3> 
+
+### How different is constructor and field injection compared to dagger in hilt, Since hilt is built on top of the dagger
+* `Annotating` the classes to be injected via the `@Inject` annotation is same as in `dagger` but, In `hilt` there is bo `component` present. Just by annotating the class with `@AndroidEntryPoint` take care of component part.
+* So there is no `component concept` in `hilt`, This makes much simpler of implementation of `dependency injection` of the `hilt` 
+  
