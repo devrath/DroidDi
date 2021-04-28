@@ -306,7 +306,7 @@ Then when we execute the execute button on the screen. Observe the address of th
 <center><h2>Hilt</h2></center>
 
 <p align="center">
-  <img width="400" height="200" src="https://github.com/devrath/DroidDi/blob/main/images/dagger.jpeg">
+  <img width="400" height="200" src="https://github.com/devrath/DroidDi/blob/main/images/hilt.jpeg">
 </p>
 
 | Concept |
