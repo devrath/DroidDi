@@ -312,7 +312,8 @@ Then when we execute the execute button on the screen. Observe the address of th
 | Concept |
 | --- |
 | [Constructor And Field Injection](https://github.com/devrath/DroidDi/blob/main/README.md#------------------------------------------------------constructor-and-field-injection-) |
-| Modules |
+| [Modules](<h3> <----------------------------------------------------> Constructor And Field Injection </h3> 
+) |
 | Binds Annotation |
 | Provides Annotation |
 | Qualifiers |
@@ -359,3 +360,9 @@ When the button in the screen is clicked
 </details>
 
 <h3> <----------------------------------------------------------> Modules </h3> 
+### Some information on when to use modules in hilt 
+  
+* Many scenarios the `constructor injection` and `field injection` is not sufficient to inject some dependencies. 
+* Some scenarios include when there is the interface we need to inject, Here without knowing the `type` of the `interface`, we cannot inject it.
+* Also when we do'nt own the type, Example a third party library, we don't have access to the constructor of the third party library to add the `@Inject` annotation for it. Thus constructor injection is not possible.
+* Modules provide a way to instantiate an object.
