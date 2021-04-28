@@ -319,7 +319,21 @@ Then when we execute the execute button on the screen. Observe the address of th
 * `Annotating` the classes to be injected via the `@Inject` annotation is same as in `dagger` but, In `hilt` there is bo `component` present. Just by annotating the class with `@AndroidEntryPoint` take care of component part.
 * So there is no `component concept` in `hilt`, This makes much simpler of implementation of `dependency injection` of the `hilt` 
   
+  
+<details><summary>DEMO  -  click to view</summary>
+<p>
 
+**[HiltConstAndFieldInjectionDemoFragment](app/src/main/java/com/demo/code/typesofdi/hilt/sampleone/concepts/constructorFieldInjection/view/HiltConstAndFieldInjectionDemoFragment.kt)**
+     <->
+     **[MicroOven](app/src/main/java/com/demo/code/typesofdi/hilt/sampleone/concepts/constructorFieldInjection/di/MicroOven.kt)**
+     <->
+     **[Charger](app/src/main/java/com/demo/code/typesofdi/hilt/sampleone/concepts/constructorFieldInjection/di/Charger.kt)**
+     <-> 
+     **[Battery](app/src/main/java/com/demo/code/typesofdi/hilt/sampleone/concepts/constructorFieldInjection/di/Battery.kt)**
+     <->
+     **[Capasitor](app/src/main/java/com/demo/code/typesofdi/hilt/sampleone/concepts/constructorFieldInjection/di/Capasitor.kt)**
+</p>
+</details>
 
 <details><summary>Output  -  click to view</summary>
 <p>
