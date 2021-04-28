@@ -9,6 +9,10 @@ import android.view.ViewGroup
 import com.demo.code.databinding.FragmentHiltQualifiersBinding
 import com.demo.code.databinding.HiltBindAnnotationFragmentBinding
 import com.demo.code.typesofdi.hilt.sampleone.concepts.bindsAnnotation.vehicleParts.Car
+import com.demo.code.typesofdi.hilt.sampleone.concepts.qualifiersDemo.qualifiers.DieselEngineQualifier
+import com.demo.code.typesofdi.hilt.sampleone.concepts.qualifiersDemo.qualifiers.PetrolEngineQualifier
+import com.demo.code.typesofdi.hilt.sampleone.concepts.qualifiersDemo.vehicleParts.MarutiEngine
+import com.demo.code.typesofdi.hilt.sampleone.concepts.qualifiersDemo.vehicleParts.SwiftPetrolEngine
 import dagger.hilt.android.AndroidEntryPoint
 import javax.inject.Inject
 
@@ -22,8 +26,13 @@ class HiltQualifiersFragment : Fragment() {
     private var _binding: FragmentHiltQualifiersBinding? = null
     private val binding get() = _binding!!
 
+    @PetrolEngineQualifier
     @Inject
-    lateinit var car: Car
+    lateinit var petrolEngine : MarutiEngine
+
+    @DieselEngineQualifier
+    @Inject
+    lateinit var dieselEngine : MarutiEngine
 
     private lateinit var viewModelHilt: HiltQualifiersViewModel
 
@@ -40,10 +49,10 @@ class HiltQualifiersFragment : Fragment() {
         super.onViewCreated(view, savedInstanceState)
         binding.apply {
             actionOneId.setOnClickListener {
-
+                petrolEngine.startEngine()
             }
             actionTwoId.setOnClickListener {
-
+                dieselEngine.startEngine()
             }
         }
     }
