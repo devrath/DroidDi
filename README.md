@@ -368,3 +368,6 @@ When the button in the screen is clicked
 * Modules provide a way to instantiate an object.
 
 <h3> <----------------------------------------------------------> Binds Annotation </h3> 
+  
+<h3> <----------------------------------------------------------> Provides Annotation </h3> 
+
