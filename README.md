@@ -446,6 +446,48 @@ When the button in the screen is clicked
 </details>  
 
 <h3> <----------------------------------------------------------> Qualifiers </h3> 
-  
+ 
+ * Some times there is a issue in providing different implementation for the same type
+ * `Qualifiers`, in this scenario helps us to choose the implementation by providing an option to choose between the `bindings` when we inject the functionality
+ * You can observe, In the view class, we are `injecting` the `interface` but with the help of `qualifiers`, we are choosing the `implementation`
+
+
+<details><summary>DEMO  -  click to view</summary>
+<p>
+
+**[HiltQualifiersFragment](app/src/main/java/com/demo/code/typesofdi/hilt/sampleone/concepts/qualifiersDemo/view/HiltQualifiersFragment.kt)**
+     <->
+     **[SwiftPetrolEngine](app/src/main/java/com/demo/code/typesofdi/hilt/sampleone/concepts/qualifiersDemo/vehicleParts/SwiftPetrolEngine.kt)**
+     <->
+     **[SwiftDieselEngine](app/src/main/java/com/demo/code/typesofdi/hilt/sampleone/concepts/qualifiersDemo/vehicleParts/SwiftDieselEngine.kt)**
+     <-> 
+     **[MarutiEngine](app/src/main/java/com/demo/code/typesofdi/hilt/sampleone/concepts/qualifiersDemo/vehicleParts/MarutiEngine.kt)**
+     <-> 
+     **[PetrolEngineQualifier](app/src/main/java/com/demo/code/typesofdi/hilt/sampleone/concepts/qualifiersDemo/qualifiers/PetrolEngineQualifier.kt)**
+     <-> 
+     **[DieselEngineQualifier](app/src/main/java/com/demo/code/typesofdi/hilt/sampleone/concepts/qualifiersDemo/qualifiers/DieselEngineQualifier.kt)**
+     <-> 
+     **[EngineModule](app/src/main/java/com/demo/code/typesofdi/hilt/sampleone/concepts/qualifiersDemo/di/EngineModule.kt)**
+</p>
+</details>
+
+<details><summary>Output  -  click to view</summary>
+<p>
+
+When the class is loaded 
+```
+2021-04-28 22:58:27.069 31689-31689/com.demo.code D/HILT_DEMO: SwiftPetrolEngine init is invoked
+2021-04-28 22:58:27.071 31689-31689/com.demo.code D/HILT_DEMO: SwiftDieselEngine init is invoked
+```
+On first on click of the button 
+```
+2021-04-28 22:58:33.364 31689-31689/com.demo.code D/HILT_DEMO: SwiftPetrolEngine started
+```
+On second on click of the button 
+```
+2021-04-28 22:58:36.068 31689-31689/com.demo.code D/HILT_DEMO: SwiftDieselEngine started
+```
+</p>
+</details>  
 
 <h3> <----------------------------------------------------------> Context </h3> 
