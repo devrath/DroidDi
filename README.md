@@ -549,3 +549,6 @@ On second on click of the button
   
 <h3> <----------------------------------------------------------> Hierarchy </h3> 
 
+<p align="keft">
+  <img width="500" height="500" src="https://github.com/devrath/DroidDi/blob/main/images/hilt_components_hierarchy.jpeg">
+</p>
