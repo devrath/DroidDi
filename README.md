@@ -26,7 +26,7 @@ This project demonstrates how to use various dependency injection methodologies 
 
 ---
 
-### Do we require a tool like (`dagger`,`koin`,`hilt`) to inject dependencies 
+### Do we require a tool like (`dagger`,`hilt`) to inject dependencies 
 
 We don't requre a tool to inject dependencies, But using a tool, what it does is that it constructs the dependenciees in the right order as we need them and provide them to the dependent object avoiding the boiler plate code.
 
@@ -35,7 +35,6 @@ We don't requre a tool to inject dependencies, But using a tool, what it does is
 | Quick Reference |
 | --- |
 | [Dagger](https://github.com/devrath/DroidDi/blob/main/README.md#dagger "Dagger2") |
-| Koin |
 | [Hilt](https://github.com/devrath/DroidDi/blob/main/README.md#hilt) |
 
 ---
