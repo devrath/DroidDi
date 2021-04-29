@@ -317,6 +317,9 @@ Then when we execute the execute button on the screen. Observe the address of th
 | [Provides Annotation](https://github.com/devrath/DroidDi/blob/main/README.md#------------------------------------------------------------provides-annotation-) |
 | [Qualifiers](https://github.com/devrath/DroidDi/blob/main/README.md#------------------------------------------------------------qualifiers-) |
 | [Context](https://github.com/devrath/DroidDi/blob/main/README.md#------------------------------------------------------------context-) |
+| [Components & Lifetimes](https://github.com/devrath/DroidDi/blob/main/README.md#------------------------------------------------------------components--lifetimes-) |
+| [Singleton Scope](https://github.com/devrath/DroidDi/blob/main/README.md#------------------------------------------------------------singleton-scope--1) |
+| [Hierarchy](https://github.com/devrath/DroidDi/blob/main/README.md#------------------------------------------------------------hierarchy-) |
 
 
 <h3> <----------------------------------------------------> Constructor And Field Injection </h3> 
@@ -491,3 +494,58 @@ On second on click of the button
 </details>  
 
 <h3> <----------------------------------------------------------> Context </h3> 
+
+* Sometimes the we need context to build certain objects in android
+* In such cases, we can inject `application context` or `activity context` depending on the need to construct third party libraries or other needs
+* One such example is building retrofit
+
+<details><summary>DEMO  -  click to view</summary>
+<p>
+
+**[HiltContextUseFragment](app/src/main/java/com/demo/code/typesofdi/hilt/sampleone/concepts/contextUseDemo/view/HiltContextUseFragment.kt)**
+     <->
+     **[ApplicationContextObject](app/src/main/java/com/demo/code/typesofdi/hilt/sampleone/concepts/contextUseDemo/vehicleParts/ApplicationContextObject.kt)**
+     <->
+     **[ActivityContextObject](app/src/main/java/com/demo/code/typesofdi/hilt/sampleone/concepts/contextUseDemo/vehicleParts/ActivityContextObject.kt)**
+     <-> 
+     **[ContextModule](app/src/main/java/com/demo/code/typesofdi/hilt/sampleone/concepts/contextUseDemo/di/ContextModule.kt)**
+</p>
+</details>
+
+<details><summary>Output  -  click to view</summary>
+<p>
+
+When the class is loaded 
+```
+2021-04-29 10:46:34.060 2244-2244/com.demo.code D/HILT_DEMO: ActivityContextObject init is invoked
+2021-04-29 10:46:34.062 2244-2244/com.demo.code D/HILT_DEMO: ApplicationContextObject init is invoked
+```
+On application button click of the button 
+```
+2021-04-29 10:53:25.440 2374-2374/com.demo.code D/HILT_DEMO: Application context is not null
+```
+On second on click of the button 
+```
+2021-04-29 10:53:38.559 2374-2374/com.demo.code D/HILT_DEMO: Activity context is not null
+```
+</p>
+</details>  
+
+<h3> <----------------------------------------------------------> Components & Lifetimes </h3> 
+
+* Complexities of `components` are removed in `hilt`. It is moreover simplified, Actually components creation part is managed under the hood.
+
+| Component | Created | Destroyed |
+| --- | --- | --- |
+| ApplicationComponent | Application `onCreate()` | Application `onDestroy()` |
+| ActivityComponent | Activity `onCreate()` | Activity `onDestroy()` |
+| ActivityRetainedComponent (ViewModel) | Activity `onCreate()` | Activity `onDestroy()` |
+| FragmentComponent | Fragment `onCreate()` | Fragment `onDestroy()` |
+| ViewComponent | View `super()` | view destroyed |
+| ViewWithFragmentComponent | View `super()` | view destroyed |
+| ServiceComponent | Service `onCreate()` | Service `onDestroy()` |
+
+<h3> <----------------------------------------------------------> Singleton Scope </h3> 
+  
+<h3> <----------------------------------------------------------> Hierarchy </h3> 
+
