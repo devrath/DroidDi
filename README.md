@@ -318,7 +318,7 @@ Then when we execute the execute button on the screen. Observe the address of th
 | [Qualifiers](https://github.com/devrath/DroidDi/blob/main/README.md#------------------------------------------------------------qualifiers-) |
 | [Context](https://github.com/devrath/DroidDi/blob/main/README.md#------------------------------------------------------------context-) |
 | [Components & Lifetimes](https://github.com/devrath/DroidDi/blob/main/README.md#------------------------------------------------------------components--lifetimes-) |
-| [Singleton Scope](https://github.com/devrath/DroidDi/blob/main/README.md#------------------------------------------------------------singleton-scope--1) |
+| [Scope](https://github.com/devrath/DroidDi/blob/main/README.md#------------------------------------------------------------scope--1) |
 | [Hierarchy](https://github.com/devrath/DroidDi/blob/main/README.md#------------------------------------------------------------hierarchy-) |
 
 
@@ -545,7 +545,7 @@ On second on click of the button
 | ViewWithFragmentComponent | View `super()` | view destroyed |
 | ServiceComponent | Service `onCreate()` | Service `onDestroy()` |
 
-<h3> <----------------------------------------------------------> Singleton Scope </h3> 
+<h3> <----------------------------------------------------------> Scope </h3> 
 
 * `Scopes` are interesting because it allows us to determine how many instances are created for the bindings 
 * If we do'nt scope something, by default every `binding` is not scoped, Meaning everytime we inject, New instance is created.
