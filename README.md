@@ -561,6 +561,44 @@ By default `bindings` are not scoped
 | ViewComponent | @ViewScoped |
 | ViewWithFragmentComponent | @ViewScoped |
 | ServiceComponent | @ServiceScoped |
+
+
+<details><summary>DEMO  -  click to view</summary>
+<p>
+
+**[HiltSingletonScopeFragment](app/src/main/java/com/demo/code/typesofdi/hilt/sampleone/concepts/scopeDemo/view/HiltSingletonScopeFragment.kt)**
+     <->
+     **[FragmentScopedObject](app/src/main/java/com/demo/code/typesofdi/hilt/sampleone/concepts/scopeDemo/objects/FragmentScopedObject.kt)**
+     <->
+     **[SingletonScopeObject](app/src/main/java/com/demo/code/typesofdi/hilt/sampleone/concepts/scopeDemo/objects/SingletonScopeObject.kt)**
+     <-> 
+     **[FragmentScopeModule](app/src/main/java/com/demo/code/typesofdi/hilt/sampleone/concepts/scopeDemo/di/FragmentScopeModule.kt)**
+     <-> 
+     **[SingletonScopeModule](app/src/main/java/com/demo/code/typesofdi/hilt/sampleone/concepts/scopeDemo/di/SingletonScopeModule.kt)**
+</p>
+</details>
+
+<details><summary>Output  -  click to view</summary>
+<p>
+
+When the class is loaded 
+```
+2021-04-29 21:09:23.024 5352-5352/com.demo.code D/HILT_DEMO: ApplicationContextObject init is invoked
+2021-04-29 21:09:23.026 5352-5352/com.demo.code D/HILT_DEMO: FragmentScopedObject init is invoked
+```
+On singletion scope button click of the button 
+```
+2021-04-29 21:09:25.145 5352-5352/com.demo.code D/HILT_DEMO: Address :: 94024652
+2021-04-29 21:09:26.231 5352-5352/com.demo.code D/HILT_DEMO: Address :: 94024652
+```
+On fragment scope button click of the button 
+```
+2021-04-29 21:09:27.908 5352-5352/com.demo.code D/HILT_DEMO: Address :: 217683842
+2021-04-29 21:09:28.686 5352-5352/com.demo.code D/HILT_DEMO: Address :: 217683842
+```
+Observe the address, New instances are not created in both the cases
+</p>
+</details>  
   
 <h3> <----------------------------------------------------------> Hierarchy </h3> 
 
