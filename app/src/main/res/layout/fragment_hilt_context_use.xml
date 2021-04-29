@@ -41,7 +41,7 @@
         android:drawableLeft="@drawable/ic_two"
         android:focusable="true"
         android:src="@drawable/ic_two"
-        android:text="@string/activity_context"
+        android:text="@string/fragment_context"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.35"

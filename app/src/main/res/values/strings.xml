@@ -25,7 +25,7 @@
     <string name="qualifiers_demo">Qualifiers Demo</string>
     <string name="context_injection">Context Injection</string>
     <string name="context_demo">Context Demo</string>
-    <string name="activity_context">Activity Context</string>
+    <string name="fragment_context">Fragment Context</string>
     <string name="application_context">Application Context</string>
     <string name="hilt_singletion_scope">Hilt Singletion Scope</string>
     <string name="hilt_activity_scope">Hilt Activity Scope</string>
