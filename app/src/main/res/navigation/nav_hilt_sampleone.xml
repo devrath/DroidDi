@@ -22,6 +22,7 @@
         <action
             android:id="@+id/action_hiltConceptsSelectionFragment_to_hiltQualifiersFragment"
             app:destination="@id/hiltQualifiersFragment" />
+
     </fragment>
     <fragment
         android:id="@+id/hiltConstructorInjectionFragment"
@@ -40,7 +41,12 @@
         tools:layout="@layout/hilt_bind_annotation_fragment" />
     <fragment
         android:id="@+id/hiltQualifiersFragment"
-        android:name="com.demo.code.typesofdi.hilt.sampleone.concepts.qualifiersDemo.view.HiltQualifiersFragment"
+        android:name="com.demo.code.typesofdi.hilt.sampleone.concepts.contextUseDemo.view.HiltContextUseFragment"
         android:label="@string/qualifiers_demo"
         tools:layout="@layout/fragment_hilt_qualifiers" />
+    <fragment
+        android:id="@+id/hiltContextSelectionFragment"
+        android:name="com.demo.code.typesofdi.hilt.sampleone.selection.HiltConceptsSelectionFragment"
+        android:label="@string/context_demo"
+        tools:layout="@layout/fragment_hilt_context_use" />
 </navigation>

@@ -49,6 +49,10 @@ class HiltConceptsSelectionFragment : Fragment() {
                 findNavController().navigate(R.id.action_hiltConceptsSelectionFragment_to_hiltQualifiersFragment)
             }
 
+            contextInjectionId.setOnClickListener {
+                findNavController().navigate(R.id.action_hiltConceptsSelectionFragment_to_hiltQualifiersFragment)
+            }
+
         }
     }
 

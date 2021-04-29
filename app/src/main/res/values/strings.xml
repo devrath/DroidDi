@@ -23,4 +23,6 @@
     <string name="hiltConcepts">Hilt Concepts Selection</string>
     <string name="constructor_field_injection">Constructor Field Injection</string>
     <string name="qualifiers_demo">Qualifiers Demo</string>
+    <string name="context_injection">Context Injection</string>
+    <string name="context_demo">Context Demo</string>
 </resources>
