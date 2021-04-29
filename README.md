@@ -318,7 +318,7 @@ Then when we execute the execute button on the screen. Observe the address of th
 | [Qualifiers](https://github.com/devrath/DroidDi/blob/main/README.md#------------------------------------------------------------qualifiers-) |
 | [Context](https://github.com/devrath/DroidDi/blob/main/README.md#------------------------------------------------------------context-) |
 | [Components & Lifetimes](https://github.com/devrath/DroidDi/blob/main/README.md#------------------------------------------------------------components--lifetimes-) |
-| [Singleton Scope](https://github.com/devrath/DroidDi/blob/main/README.md#------------------------------------------------------------components--lifetimes-) |
+| [Singleton Scope](https://github.com/devrath/DroidDi/blob/main/README.md#------------------------------------------------------------singleton-scope--1) |
 
 
 <h3> <----------------------------------------------------> Constructor And Field Injection </h3> 
