@@ -531,3 +531,15 @@ On second on click of the button
 
 <h3> <----------------------------------------------------------> Components & Lifetimes </h3> 
 
+* Complexities of `components` are removed in `hilt`. It is moreover simplified, Actually components creation part is managed under the hood.
+
+| Component | Created | Destroyed |
+| --- | --- | --- |
+| ApplicationComponent | Application `onCreate()` | Application `onDestroy()` |
+| ActivityComponent | Activity `onCreate()` | Activity `onDestroy()` |
+| ActivityRetainedComponent | Activity `onCreate()` | Activity `onDestroy()` |
+| FragmentComponent | Fragment `onCreate()` | Fragment `onDestroy()` |
+| ViewComponent | View `super()` | view destroyed |
+| ViewWithFragmentComponent | View `super()` | view destroyed |
+| ServiceComponent | Service `onCreate()` | Service `onDestroy()` |
+
