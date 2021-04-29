@@ -25,4 +25,6 @@
     <string name="qualifiers_demo">Qualifiers Demo</string>
     <string name="context_injection">Context Injection</string>
     <string name="context_demo">Context Demo</string>
+    <string name="activity_context">Activity Context</string>
+    <string name="application_context">Application Demo</string>
 </resources>

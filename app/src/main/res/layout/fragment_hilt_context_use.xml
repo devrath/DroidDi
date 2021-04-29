@@ -8,7 +8,7 @@
 
 
     <androidx.appcompat.widget.AppCompatButton
-        android:id="@+id/actionOneId"
+        android:id="@+id/applicationCxtId"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="25dp"
@@ -20,7 +20,7 @@
         android:drawableStart="@drawable/ic_one"
         android:drawableLeft="@drawable/ic_one"
         android:focusable="true"
-        android:text="Application Context"
+        android:text="@string/application_context"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.358"
@@ -28,7 +28,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <androidx.appcompat.widget.AppCompatButton
-        android:id="@+id/actionTwoId"
+        android:id="@+id/activityCxtId"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="25dp"
@@ -41,12 +41,12 @@
         android:drawableLeft="@drawable/ic_two"
         android:focusable="true"
         android:src="@drawable/ic_two"
-        android:text="Activity Context"
+        android:text="@string/activity_context"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.35"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/actionOneId"
+        app:layout_constraintTop_toBottomOf="@+id/applicationCxtId"
         app:layout_constraintVertical_bias="0.286" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

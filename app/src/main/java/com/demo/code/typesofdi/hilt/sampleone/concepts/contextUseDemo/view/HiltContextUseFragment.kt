@@ -7,7 +7,10 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import com.demo.code.databinding.FragmentHiltContextUseBinding
+import com.demo.code.typesofdi.hilt.sampleone.concepts.contextUseDemo.vehicleParts.ActivityContextObject
+import com.demo.code.typesofdi.hilt.sampleone.concepts.contextUseDemo.vehicleParts.ApplicationContextObject
 import dagger.hilt.android.AndroidEntryPoint
+import javax.inject.Inject
 
 @AndroidEntryPoint
 class HiltContextUseFragment : Fragment() {
@@ -19,6 +22,12 @@ class HiltContextUseFragment : Fragment() {
     private var _binding: FragmentHiltContextUseBinding? = null
     private val binding get() = _binding!!
 
+
+    @Inject
+    lateinit var ativityContextObject : ActivityContextObject
+
+    @Inject
+    lateinit var applicationContextObject : ApplicationContextObject
 
     private lateinit var viewModelHiltHilt: HiltContextUseViewModel
 
@@ -34,11 +43,11 @@ class HiltContextUseFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
         binding.apply {
-            actionOneId.setOnClickListener {
-
+            applicationCxtId.setOnClickListener {
+                applicationContextObject.displayMessage()
             }
-            actionTwoId.setOnClickListener {
-
+            activityCxtId.setOnClickListener {
+                ativityContextObject.displayMessage()
             }
         }
     }
