@@ -1,6 +1,6 @@
-package com.demo.code.typesofdi.hilt.sampleone.concepts.singletonScope.di
+package com.demo.code.typesofdi.hilt.sampleone.concepts.scopeDemo.di
 
-import com.demo.code.typesofdi.hilt.sampleone.concepts.singletonScope.objects.FragmentScopedObject
+import com.demo.code.typesofdi.hilt.sampleone.concepts.scopeDemo.objects.FragmentScopedObject
 import dagger.Module
 import dagger.Provides
 import dagger.hilt.InstallIn

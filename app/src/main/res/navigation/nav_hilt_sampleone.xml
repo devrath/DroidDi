@@ -59,7 +59,7 @@
 
     <fragment
         android:id="@+id/SingleTonFragment"
-        android:name="com.demo.code.typesofdi.hilt.sampleone.concepts.singletonScope.view.HiltSingletonScopeFragment"
+        android:name="com.demo.code.typesofdi.hilt.sampleone.concepts.scopeDemo.view.HiltSingletonScopeFragment"
         android:label="@string/hilt_singletion_scope"
         tools:layout="@layout/fragment_hilt_singleton_scope" />
 </navigation>

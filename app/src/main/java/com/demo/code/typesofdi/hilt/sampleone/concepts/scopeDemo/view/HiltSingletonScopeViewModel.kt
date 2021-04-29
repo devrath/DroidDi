@@ -1,4 +1,4 @@
-package com.demo.code.typesofdi.hilt.sampleone.concepts.singletonScope.view
+package com.demo.code.typesofdi.hilt.sampleone.concepts.scopeDemo.view
 
 import androidx.lifecycle.ViewModel
 

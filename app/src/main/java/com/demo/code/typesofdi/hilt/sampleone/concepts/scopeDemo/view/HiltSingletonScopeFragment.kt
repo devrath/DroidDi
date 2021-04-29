@@ -1,4 +1,4 @@
-package com.demo.code.typesofdi.hilt.sampleone.concepts.singletonScope.view
+package com.demo.code.typesofdi.hilt.sampleone.concepts.scopeDemo.view
 
 import androidx.lifecycle.ViewModelProvider
 import android.os.Bundle
@@ -8,9 +8,8 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import com.demo.code.databinding.FragmentHiltSingletonScopeBinding
-import com.demo.code.typesofdi.hilt.sampleone.concepts.contextUseDemo.vehicleParts.ActivityContextObject
-import com.demo.code.typesofdi.hilt.sampleone.concepts.singletonScope.objects.FragmentScopedObject
-import com.demo.code.typesofdi.hilt.sampleone.concepts.singletonScope.objects.SingletonScopeObject
+import com.demo.code.typesofdi.hilt.sampleone.concepts.scopeDemo.objects.FragmentScopedObject
+import com.demo.code.typesofdi.hilt.sampleone.concepts.scopeDemo.objects.SingletonScopeObject
 import com.demo.code.typesofdi.hilt.sampleone.selection.TAG_HILT
 import dagger.hilt.android.AndroidEntryPoint
 import javax.inject.Inject
