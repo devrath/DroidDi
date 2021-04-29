@@ -537,7 +537,7 @@ On second on click of the button
 | --- | --- | --- |
 | ApplicationComponent | Application `onCreate()` | Application `onDestroy()` |
 | ActivityComponent | Activity `onCreate()` | Activity `onDestroy()` |
-| ActivityRetainedComponent | Activity `onCreate()` | Activity `onDestroy()` |
+| ActivityRetainedComponent (ViewModel) | Activity `onCreate()` | Activity `onDestroy()` |
 | FragmentComponent | Fragment `onCreate()` | Fragment `onDestroy()` |
 | ViewComponent | View `super()` | view destroyed |
 | ViewWithFragmentComponent | View `super()` | view destroyed |
