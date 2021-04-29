@@ -318,7 +318,7 @@ Then when we execute the execute button on the screen. Observe the address of th
 | [Qualifiers](https://github.com/devrath/DroidDi/blob/main/README.md#------------------------------------------------------------qualifiers-) |
 | [Context](https://github.com/devrath/DroidDi/blob/main/README.md#------------------------------------------------------------context-) |
 | [Components & Lifetimes](https://github.com/devrath/DroidDi/blob/main/README.md#------------------------------------------------------------components--lifetimes-) |
-| [Scope](https://github.com/devrath/DroidDi/blob/main/README.md#------------------------------------------------------------scope--1) |
+| [Scope](https://github.com/devrath/DroidDi/blob/main/README.md#------------------------------------------------------------scope-) |
 | [Hierarchy](https://github.com/devrath/DroidDi/blob/main/README.md#------------------------------------------------------------hierarchy-) |
 
 
