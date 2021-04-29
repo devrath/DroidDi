@@ -318,7 +318,7 @@ Then when we execute the execute button on the screen. Observe the address of th
 | [Qualifiers](https://github.com/devrath/DroidDi/blob/main/README.md#------------------------------------------------------------qualifiers-) |
 | [Context](https://github.com/devrath/DroidDi/blob/main/README.md#------------------------------------------------------------context-) |
 | [Components & Lifetimes](https://github.com/devrath/DroidDi/blob/main/README.md#------------------------------------------------------------components--lifetimes-) |
-| [Singleton Scope](https://github.com/devrath/DroidDi/blob/main/README.md#------------------------------------------------------------singleton-scope--1) |
+| [Scope](https://github.com/devrath/DroidDi/blob/main/README.md#------------------------------------------------------------scope-) |
 | [Hierarchy](https://github.com/devrath/DroidDi/blob/main/README.md#------------------------------------------------------------hierarchy-) |
 
 
@@ -545,7 +545,33 @@ On second on click of the button
 | ViewWithFragmentComponent | View `super()` | view destroyed |
 | ServiceComponent | Service `onCreate()` | Service `onDestroy()` |
 
-<h3> <----------------------------------------------------------> Singleton Scope </h3> 
+<h3> <----------------------------------------------------------> Scope </h3> 
+
+* `Scopes` are interesting because it allows us to determine how many instances are created for the bindings 
+* If we do'nt scope something, by default every `binding` is not scoped, Meaning everytime we inject, New instance is created.
+
+By default `bindings` are not scoped
+
+| Component | Scope |
+| --- | --- |
+| ApplicationComponent | @Singleton |
+| ActivityComponent | @ActivityScoped |
+| ActivityRetainedComponent | @ActivityRetainedScope |
+| FragmentComponent | @FragmentScoped |
+| ViewComponent | @ViewScoped |
+| ViewWithFragmentComponent | @ViewScoped |
+| ServiceComponent | @ServiceScoped |
   
 <h3> <----------------------------------------------------------> Hierarchy </h3> 
+
+<p align="keft">
+  <img width="300" height="300" src="https://github.com/devrath/DroidDi/blob/main/images/hilt_components_hierarchy.jpeg">
+</p>
+
+* Installing a `module` into a `component` allows its children to access it as well
+* As we can see in the diagram above, Top component is a `application component`.
+* `Activity Retained` component will get the bindings from the `application component`.
+* `Service Component` will similarly get the bindings from the `application component`.
+* Similarly the below blocks in the hierarchy.
+* If you have some `singletons`, we will be able to acces in activity but if some bindings are there in `activity`, we will not be able to access them from applicaiton.
 
