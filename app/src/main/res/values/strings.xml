@@ -27,4 +27,7 @@
     <string name="context_demo">Context Demo</string>
     <string name="activity_context">Activity Context</string>
     <string name="application_context">Application Context</string>
+    <string name="hilt_singletion_scope">Hilt Singletion Scope</string>
+    <string name="hilt_activity_scope">Hilt Activity Scope</string>
+    <string name="hilt_scoping">Hilt Scoping</string>
 </resources>

@@ -22,6 +22,12 @@
         <action
             android:id="@+id/action_hiltConceptsSelectionFragment_to_hiltQualifiersFragment"
             app:destination="@id/hiltQualifiersFragment" />
+        <action
+            android:id="@+id/action_hiltConceptsSelectionFragment_to_SingleTonFragment"
+            app:destination="@id/SingleTonFragment" />
+        <action
+            android:id="@+id/action_hiltConceptsSelectionFragment_to_hiltContextSelectionFragment"
+            app:destination="@id/hiltContextSelectionFragment" />
 
     </fragment>
     <fragment
@@ -41,7 +47,7 @@
         tools:layout="@layout/hilt_bind_annotation_fragment" />
     <fragment
         android:id="@+id/hiltQualifiersFragment"
-        android:name="com.demo.code.typesofdi.hilt.sampleone.concepts.contextUseDemo.view.HiltContextUseFragment"
+        android:name="com.demo.code.typesofdi.hilt.sampleone.concepts.qualifiersDemo.view.HiltQualifiersFragment"
         android:label="@string/qualifiers_demo"
         tools:layout="@layout/fragment_hilt_qualifiers" />
     <fragment
@@ -49,4 +55,11 @@
         android:name="com.demo.code.typesofdi.hilt.sampleone.selection.HiltConceptsSelectionFragment"
         android:label="@string/context_demo"
         tools:layout="@layout/fragment_hilt_context_use" />
+
+
+    <fragment
+        android:id="@+id/SingleTonFragment"
+        android:name="com.demo.code.typesofdi.hilt.sampleone.concepts.singletonScope.view.HiltSingletonScopeFragment"
+        android:label="@string/hilt_singletion_scope"
+        tools:layout="@layout/fragment_hilt_singleton_scope" />
 </navigation>
