@@ -17,7 +17,7 @@ class ActivityContextObject constructor(val context: Context) {
 
     fun displayMessage(){
         if(context!=null){
-            Log.d(TAG_HILT,"Application context is not null")
+            Log.d(TAG_HILT,"Activity context is not null")
         }
     }
 
