@@ -319,6 +319,7 @@ Then when we execute the execute button on the screen. Observe the address of th
 | [Context](https://github.com/devrath/DroidDi/blob/main/README.md#------------------------------------------------------------context-) |
 | [Components & Lifetimes](https://github.com/devrath/DroidDi/blob/main/README.md#------------------------------------------------------------components--lifetimes-) |
 | [Singleton Scope](https://github.com/devrath/DroidDi/blob/main/README.md#------------------------------------------------------------singleton-scope--1) |
+| [Hierarchy](https://github.com/devrath/DroidDi/blob/main/README.md#------------------------------------------------------------singleton-scope--1) |
 
 
 <h3> <----------------------------------------------------> Constructor And Field Injection </h3> 
@@ -545,3 +546,6 @@ On second on click of the button
 | ServiceComponent | Service `onCreate()` | Service `onDestroy()` |
 
 <h3> <----------------------------------------------------------> Singleton Scope </h3> 
+  
+<h3> <----------------------------------------------------------> Hierarchy </h3> 
+
