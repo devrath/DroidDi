@@ -7,5 +7,5 @@ This project demonstrates how to use various dependency injection methodologies 
 | --- |
 | [What is Dependency Injection](https://github.com/devrath/DroidDi/wiki/What-is-Dependency-Injection) |
 | [Why dependency injection is needed](https://github.com/devrath/DroidDi/wiki/Why-dependency-injection-is-needed) |
-| [Dagger](https://github.com/devrath/DroidDi/wiki/Dependency-Injection--Dagger2) |
-| [Hilt](https://github.com/devrath/DroidDi/wiki/Dependency-Injection-Hilt) |
+| [Dependency Injection Dagger](https://github.com/devrath/DroidDi/wiki/Dependency-Injection--Dagger2) |
+| [Dependency Injection Hilt](https://github.com/devrath/DroidDi/wiki/Dependency-Injection-Hilt) |
