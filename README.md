@@ -5,10 +5,8 @@
 <a><img src="https://img.shields.io/badge/Hilt-Dependency%20Injection-yellowgreen" ></a>
 </p>
 
-
 <p align="center"><a><img align="left" src="https://github.com/devrath/devrath/blob/master/images/description.png" width="70" height="70" alt="Description" title="Description"></a></p> This project describes what is dependency injection, why dependency injection is needed and also different DI tools like Dagger and hilt which are widely used in android development.
 
----
 
 | For the documentation wiki links |
 | --- |
