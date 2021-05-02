@@ -9,3 +9,7 @@ This project demonstrates how to use various dependency injection methodologies 
 | [Why dependency injection is needed](https://github.com/devrath/DroidDi/wiki/Why-dependency-injection-is-needed) |
 | [Dependency Injection Dagger](https://github.com/devrath/DroidDi/wiki/Dependency-Injection--Dagger2) |
 | [Dependency Injection Hilt](https://github.com/devrath/DroidDi/wiki/Dependency-Injection-Hilt) |
+
+<p align="center">
+<a><img src="https://forthebadge.com/images/badges/built-for-android.svg"></a>
+</p>
