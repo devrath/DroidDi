@@ -1,7 +1,15 @@
 ![Banner](images/Logo-new.png)
 
-# DroidDi
+<p align="center">
+<a><img src="https://img.shields.io/badge/Dagger2-Dependency%20Injection-orange"></a>
+<a><img src="https://img.shields.io/badge/Hilt-Dependency%20Injection-yellowgreen" ></a>
+</p>
+
+---
+
 This project demonstrates how to use various dependency injection methodologies in android
+
+---
 
 | For the documentation wiki links |
 | --- |
