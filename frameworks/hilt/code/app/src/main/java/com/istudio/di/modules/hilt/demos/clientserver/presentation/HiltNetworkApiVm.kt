@@ -10,6 +10,9 @@ import com.istudio.di.modules.hilt.demos.clientserver.domain.MainRepository
 import com.istudio.di.modules.hilt.demos.clientserver.utils.NetworkHelper
 import com.istudio.di.modules.hilt.demos.clientserver.utils.Resource
 import dagger.hilt.android.lifecycle.HiltViewModel
+import kotlinx.coroutines.Dispatchers
+import kotlinx.coroutines.flow.catch
+import kotlinx.coroutines.flow.flowOn
 import kotlinx.coroutines.launch
 import javax.inject.Inject
 
@@ -31,10 +34,15 @@ class HiltNetworkApiVm @Inject constructor(
         viewModelScope.launch {
             _users.postValue(Resource.loading(null))
             if (networkHelper.isNetworkConnected()) {
-                mainRepositoryImpl.getUsers().let {
-                    if (it.isSuccessful) {
-                        _users.postValue(Resource.success(it.body()))
-                    } else _users.postValue(Resource.error(it.errorBody().toString(), null))
+                viewModelScope.launch {
+                    mainRepositoryImpl.getUsers()
+                        .flowOn(Dispatchers.IO)
+                        .catch { e ->
+                            _users.postValue(Resource.error(e.message.toString(), null))
+                        }
+                        .collect {
+                            _users.postValue(Resource.success(it))
+                        }
                 }
             } else _users.postValue(Resource.error("No internet connection", null))
         }
