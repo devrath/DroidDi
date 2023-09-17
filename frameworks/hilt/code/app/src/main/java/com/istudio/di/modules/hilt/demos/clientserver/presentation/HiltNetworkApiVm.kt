@@ -1,11 +1,12 @@
-package com.istudio.di.modules.hilt.demos.clientserver.ui
+package com.istudio.di.modules.hilt.demos.clientserver.presentation
 
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
 import com.istudio.di.modules.hilt.demos.clientserver.data.model.User
-import com.istudio.di.modules.hilt.demos.clientserver.data.repository.MainRepository
+import com.istudio.di.modules.hilt.demos.clientserver.data.repository.MainRepositoryImpl
+import com.istudio.di.modules.hilt.demos.clientserver.domain.MainRepository
 import com.istudio.di.modules.hilt.demos.clientserver.utils.NetworkHelper
 import com.istudio.di.modules.hilt.demos.clientserver.utils.Resource
 import dagger.hilt.android.lifecycle.HiltViewModel
@@ -14,7 +15,7 @@ import javax.inject.Inject
 
 @HiltViewModel
 class HiltNetworkApiVm @Inject constructor(
-    private val mainRepository: MainRepository,
+    private val mainRepositoryImpl: MainRepository,
     private val networkHelper: NetworkHelper
 ) : ViewModel() {
 
@@ -30,7 +31,7 @@ class HiltNetworkApiVm @Inject constructor(
         viewModelScope.launch {
             _users.postValue(Resource.loading(null))
             if (networkHelper.isNetworkConnected()) {
-                mainRepository.getUsers().let {
+                mainRepositoryImpl.getUsers().let {
                     if (it.isSuccessful) {
                         _users.postValue(Resource.success(it.body()))
                     } else _users.postValue(Resource.error(it.errorBody().toString(), null))

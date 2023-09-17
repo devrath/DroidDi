@@ -1,4 +1,4 @@
-package com.istudio.di.modules.hilt.demos.clientserver.ui
+package com.istudio.di.modules.hilt.demos.clientserver.presentation
 
 import android.view.LayoutInflater
 import com.istudio.di.databinding.ItemLayoutBinding

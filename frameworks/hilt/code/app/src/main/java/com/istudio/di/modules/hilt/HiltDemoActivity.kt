@@ -2,10 +2,8 @@ package com.istudio.di.modules.hilt
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import com.istudio.di.R
 import com.istudio.di.databinding.ActivityHiltDemoBinding
-import com.istudio.di.databinding.ActivityHiltNetworkApiBinding
-import com.istudio.di.modules.hilt.demos.clientserver.ui.HiltNetworkApiActivity
+import com.istudio.di.modules.hilt.demos.clientserver.presentation.HiltNetworkApiActivity
 import com.istudio.di.utils.startActivity
 import dagger.hilt.android.AndroidEntryPoint
 

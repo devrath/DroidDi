@@ -1,4 +1,4 @@
-package com.istudio.di.modules.hilt.demos.clientserver.ui
+package com.istudio.di.modules.hilt.demos.clientserver.presentation
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
@@ -8,8 +8,6 @@ import androidx.activity.viewModels
 import androidx.lifecycle.Observer
 import androidx.recyclerview.widget.DividerItemDecoration
 import androidx.recyclerview.widget.LinearLayoutManager
-import com.istudio.di.R
-import com.istudio.di.databinding.ActivityHiltDemoBinding
 import com.istudio.di.databinding.ActivityHiltNetworkApiBinding
 import com.istudio.di.modules.hilt.demos.clientserver.data.model.User
 import com.istudio.di.modules.hilt.demos.clientserver.utils.Status
