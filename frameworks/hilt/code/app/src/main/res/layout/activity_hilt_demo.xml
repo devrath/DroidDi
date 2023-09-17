@@ -10,9 +10,9 @@
     tools:context=".MainActivity">
 
     <Button
-        android:id="@+id/hiltId"
+        android:id="@+id/hiltNetworkApiDemiId"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/str_hilt" />
+        android:text="@string/str_network_api_demo" />
 
 </LinearLayout>

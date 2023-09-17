@@ -10,17 +10,17 @@ plugins {
 
 android {
     namespace = "com.istudio.di"
-    compileSdk = 33
+    compileSdk = 34
 
     defaultConfig {
         applicationId = "com.istudio.di"
         minSdk = 24
-        targetSdk = 33
+        targetSdk = 34
         versionCode = 1
         versionName = "1.0"
 
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
-        
+
         // End point URL
         val url: String = "https://5e510330f2c0d300147c034c.mockapi.io/"
         buildConfigField("String", "BASE_URL", "\"$url\"")
@@ -36,15 +36,16 @@ android {
         }
     }
     compileOptions {
-        sourceCompatibility = JavaVersion.VERSION_1_8
-        targetCompatibility = JavaVersion.VERSION_1_8
+        sourceCompatibility = JavaVersion.VERSION_17
+        targetCompatibility = JavaVersion.VERSION_17
     }
     kotlinOptions {
-        jvmTarget = "1.8"
+        jvmTarget = "17"
     }
     // View binding
     buildFeatures {
         viewBinding = true
+        buildConfig = true
     }
     // Allow references to generated code
     kapt {

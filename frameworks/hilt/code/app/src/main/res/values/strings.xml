@@ -1,4 +1,7 @@
 <resources>
     <string name="app_name">code</string>
     <string name="str_hilt">HILT</string>
+
+    <string name="str_network_api_demo">Network API Demo</string>
+
 </resources>

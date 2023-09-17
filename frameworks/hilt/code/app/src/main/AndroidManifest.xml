@@ -5,7 +5,6 @@
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
     <uses-permission android:name="android.permission.INTERNET" />
 
-
     <application
         android:name=".DiApplication"
         android:allowBackup="true"
@@ -17,6 +16,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Code"
         tools:targetApi="31">
+        <activity
+            android:name=".modules.hilt.demos.clientserver.ui.HiltNetworkApiActivity"
+            android:exported="false" />
         <activity
             android:name=".modules.hilt.HiltDemoActivity"
             android:exported="false" />
