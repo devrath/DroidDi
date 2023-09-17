@@ -1,12 +1,13 @@
-package com.istudio.di.modules.hilt.demos.clientserver.presentation
+package com.istudio.di.modules.hilt.demos.clientserver.presentation.vm
 
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
 import com.istudio.di.modules.hilt.demos.clientserver.data.model.User
-import com.istudio.di.modules.hilt.demos.clientserver.data.repository.MainRepositoryImpl
 import com.istudio.di.modules.hilt.demos.clientserver.domain.MainRepository
+import com.istudio.di.modules.hilt.demos.clientserver.presentation.state.NetworkApiDemoUiState
+import com.istudio.di.modules.hilt.demos.clientserver.presentation.state.NetworkApiUiState
 import com.istudio.di.modules.hilt.demos.clientserver.utils.NetworkHelper
 import com.istudio.di.modules.hilt.demos.clientserver.utils.Resource
 import dagger.hilt.android.lifecycle.HiltViewModel
@@ -22,9 +23,9 @@ class HiltNetworkApiVm @Inject constructor(
     private val networkHelper: NetworkHelper
 ) : ViewModel() {
 
-    private val _users = MutableLiveData<Resource<List<User>>>()
-    val users: LiveData<Resource<List<User>>>
-        get() = _users
+    private val _state = MutableLiveData<NetworkApiDemoUiState>()
+    val state : LiveData<NetworkApiDemoUiState> get() = _state
+
 
     init {
         fetchUsers()
@@ -32,19 +33,24 @@ class HiltNetworkApiVm @Inject constructor(
 
     private fun fetchUsers() {
         viewModelScope.launch {
-            _users.postValue(Resource.loading(null))
+
+            // Notify that UI is loading
+            _state.value = NetworkApiDemoUiState.Loading(isLoading = true)
+
             if (networkHelper.isNetworkConnected()) {
                 viewModelScope.launch {
                     mainRepositoryImpl.getUsers()
                         .flowOn(Dispatchers.IO)
                         .catch { e ->
-                            _users.postValue(Resource.error(e.message.toString(), null))
+                            _state.value = NetworkApiDemoUiState.Error(message = "No internet connection")
                         }
                         .collect {
-                            _users.postValue(Resource.success(it))
+                            _state.value = NetworkApiDemoUiState.Data(data = it)
                         }
                 }
-            } else _users.postValue(Resource.error("No internet connection", null))
+            } else {
+                _state.value = NetworkApiDemoUiState.Error(message = "No internet connection")
+            }
         }
     }
 

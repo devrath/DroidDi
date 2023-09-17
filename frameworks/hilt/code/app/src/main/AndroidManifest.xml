@@ -17,7 +17,7 @@
         android:theme="@style/Theme.Code"
         tools:targetApi="31">
         <activity
-            android:name=".modules.hilt.demos.clientserver.presentation.HiltNetworkApiActivity"
+            android:name=".modules.hilt.demos.clientserver.presentation.activity.HiltNetworkApiActivity"
             android:exported="false" />
         <activity
             android:name=".modules.hilt.HiltDemoActivity"

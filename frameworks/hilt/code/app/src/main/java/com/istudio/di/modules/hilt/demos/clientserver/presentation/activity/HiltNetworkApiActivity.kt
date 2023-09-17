@@ -1,4 +1,4 @@
-package com.istudio.di.modules.hilt.demos.clientserver.presentation
+package com.istudio.di.modules.hilt.demos.clientserver.presentation.activity
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
@@ -10,6 +10,8 @@ import androidx.recyclerview.widget.DividerItemDecoration
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.istudio.di.databinding.ActivityHiltNetworkApiBinding
 import com.istudio.di.modules.hilt.demos.clientserver.data.model.User
+import com.istudio.di.modules.hilt.demos.clientserver.presentation.state.NetworkApiDemoUiState
+import com.istudio.di.modules.hilt.demos.clientserver.presentation.vm.HiltNetworkApiVm
 import com.istudio.di.modules.hilt.demos.clientserver.utils.Status
 import dagger.hilt.android.AndroidEntryPoint
 
@@ -43,26 +45,26 @@ class HiltNetworkApiActivity : AppCompatActivity() {
     }
 
     private fun setupObserver() {
-        viewModel.users.observe(this, Observer {
-            when (it.status) {
-                Status.SUCCESS -> {
-
-                    it.data?.let { users -> renderList(users) }
+        viewModel.state.observe(this, Observer {
+            when (it) {
+                is NetworkApiDemoUiState.Data -> {
+                    renderList(it.data)
                     binding.apply {
                         progressBar.visibility = View.GONE
                         peopleListViewId.visibility = View.VISIBLE
                     }
                 }
-                Status.LOADING -> {
+
+                is NetworkApiDemoUiState.Error -> {
+                    binding.progressBar.visibility = View.GONE
+                    Toast.makeText(this, it.message, Toast.LENGTH_LONG).show()
+                }
+
+                is NetworkApiDemoUiState.Loading -> {
                     binding.apply {
                         progressBar.visibility = View.VISIBLE
                         peopleListViewId.visibility = View.GONE
                     }
-                }
-                Status.ERROR -> {
-                    //Handle Error
-                    binding.progressBar.visibility = View.GONE
-                    Toast.makeText(this, it.message, Toast.LENGTH_LONG).show()
                 }
             }
         })
