@@ -1,8 +1,6 @@
 package com.istudio.di.modules.hilt.demos.clientserver.di
 
 import com.istudio.di.BuildConfig
-import com.istudio.di.modules.hilt.demos.clientserver.data.api.ApiHelper
-import com.istudio.di.modules.hilt.demos.clientserver.data.api.ApiHelperImpl
 import com.istudio.di.modules.hilt.demos.clientserver.data.api.ApiService
 import dagger.Module
 import dagger.Provides
@@ -50,8 +48,5 @@ class ApplicationModule {
     @Singleton
     fun provideApiService(retrofit: Retrofit): ApiService = retrofit.create(ApiService::class.java)
 
-    @Provides
-    @Singleton
-    fun provideApiHelper(apiHelper: ApiHelperImpl): ApiHelper = apiHelper
 
 }
