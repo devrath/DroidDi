@@ -1,4 +1,4 @@
-package com.istudio.di.modules.hilt.demos.clientserver.presentation.activity
+package com.istudio.di.modules.hilt.demos.clientserver.presentation.xml.activity
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
@@ -10,18 +10,17 @@ import androidx.recyclerview.widget.DividerItemDecoration
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.istudio.di.databinding.ActivityHiltNetworkApiBinding
 import com.istudio.di.modules.hilt.demos.clientserver.data.model.User
-import com.istudio.di.modules.hilt.demos.clientserver.presentation.state.NetworkApiDemoUiState
-import com.istudio.di.modules.hilt.demos.clientserver.presentation.vm.HiltNetworkApiVm
-import com.istudio.di.modules.hilt.demos.clientserver.utils.Status
+import com.istudio.di.modules.hilt.demos.clientserver.presentation.xml.state.NetworkApiDemoUiState
+import com.istudio.di.modules.hilt.demos.clientserver.presentation.xml.vm.HiltNetworkXmlApiVm
 import dagger.hilt.android.AndroidEntryPoint
 
 @AndroidEntryPoint
-class HiltNetworkApiActivity : AppCompatActivity() {
+class HiltNetworkXmlApiActivity : AppCompatActivity() {
 
     private lateinit var binding: ActivityHiltNetworkApiBinding
     private lateinit var adapter: MainAdapter
 
-    private val viewModel: HiltNetworkApiVm by viewModels()
+    private val viewModel: HiltNetworkXmlApiVm by viewModels()
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)

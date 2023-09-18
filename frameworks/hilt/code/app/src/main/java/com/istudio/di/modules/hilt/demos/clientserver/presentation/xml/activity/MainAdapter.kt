@@ -1,4 +1,4 @@
-package com.istudio.di.modules.hilt.demos.clientserver.presentation.activity
+package com.istudio.di.modules.hilt.demos.clientserver.presentation.xml.activity
 
 import android.view.LayoutInflater
 import com.istudio.di.databinding.ItemLayoutBinding

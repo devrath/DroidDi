@@ -1,15 +1,12 @@
-package com.istudio.di.modules.hilt.demos.clientserver.presentation.vm
+package com.istudio.di.modules.hilt.demos.clientserver.presentation.xml.vm
 
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
-import com.istudio.di.modules.hilt.demos.clientserver.data.model.User
 import com.istudio.di.modules.hilt.demos.clientserver.domain.MainRepository
-import com.istudio.di.modules.hilt.demos.clientserver.presentation.state.NetworkApiDemoUiState
-import com.istudio.di.modules.hilt.demos.clientserver.presentation.state.NetworkApiUiState
+import com.istudio.di.modules.hilt.demos.clientserver.presentation.xml.state.NetworkApiDemoUiState
 import com.istudio.di.modules.hilt.demos.clientserver.utils.NetworkHelper
-import com.istudio.di.modules.hilt.demos.clientserver.utils.Resource
 import dagger.hilt.android.lifecycle.HiltViewModel
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.flow.catch
@@ -18,7 +15,7 @@ import kotlinx.coroutines.launch
 import javax.inject.Inject
 
 @HiltViewModel
-class HiltNetworkApiVm @Inject constructor(
+class HiltNetworkXmlApiVm @Inject constructor(
     private val mainRepositoryImpl: MainRepository,
     private val networkHelper: NetworkHelper
 ) : ViewModel() {

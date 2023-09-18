@@ -1,4 +1,4 @@
-package com.istudio.di.modules.hilt.demos.clientserver.presentation.state
+package com.istudio.di.modules.hilt.demos.clientserver.presentation.xml.state
 
 import com.istudio.di.modules.hilt.demos.clientserver.data.model.User
 
