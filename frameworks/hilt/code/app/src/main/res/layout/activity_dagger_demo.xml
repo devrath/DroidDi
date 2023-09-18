@@ -10,15 +10,9 @@
     tools:context=".MainActivity">
 
     <Button
-        android:id="@+id/hiltId"
+        android:id="@+id/daggerConceptsPracticalId"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/str_hilt" />
-
-    <Button
-        android:id="@+id/daggerId"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="@string/str_dagger" />
+        android:text="@string/str_dagger_concepts_in_practical" />
 
 </LinearLayout>

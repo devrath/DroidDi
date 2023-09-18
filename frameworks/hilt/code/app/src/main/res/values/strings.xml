@@ -1,9 +1,10 @@
 <resources>
     <string name="app_name">code</string>
     <string name="str_hilt">HILT</string>
+    <string name="str_dagger">DAGGER</string>
 
     <string name="str_network_xml_api_demo">Network API Demo - XML</string>
     <string name="str_network_compose_api_demo">Network API Demo - COMPOSE</string>
-    <string name="title_activity_test">Test</string>
+    <string name="str_dagger_concepts_in_practical">Dagger concepts in practical</string>
 
 </resources>
