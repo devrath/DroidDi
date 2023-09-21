@@ -9,5 +9,6 @@
     <string name="constructor_injection">Constructor Injection</string>
     <string name="field_injection">Field Injection</string>
     <string name="injecting_interface">Injecting interface</string>
+    <string name="injecting_third_party">Injecting third party classes</string>
 
 </resources>

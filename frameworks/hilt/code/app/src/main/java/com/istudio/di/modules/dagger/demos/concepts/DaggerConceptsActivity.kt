@@ -6,6 +6,7 @@ import com.istudio.di.databinding.ActivityDaggerConceptsBinding
 import com.istudio.di.modules.dagger.demos.concepts.components.DaggerCarComponent
 import com.istudio.di.modules.dagger.demos.concepts.components.DaggerLaptopComponent
 import com.istudio.di.modules.dagger.demos.concepts.components.DaggerMobileComponent
+import com.istudio.di.modules.dagger.demos.concepts.components.DaggerRemoteComponent
 import com.istudio.di.modules.dagger.demos.concepts.implementations.device.Mobile
 import com.istudio.di.modules.dagger.demos.concepts.implementations.vehicle.Car
 import javax.inject.Inject
@@ -41,6 +42,11 @@ class DaggerConceptsActivity : AppCompatActivity() {
             injectingInterfaceId.setOnClickListener {
                 val laptopComponent = DaggerLaptopComponent.create().getLaptop()
                 laptopComponent.runLaptop()
+            }
+            // Injecting third party classes
+            injectingThirdPartyId.setOnClickListener {
+                val samsungMobileComponent = DaggerRemoteComponent.create().getMobile()
+                samsungMobileComponent.runMobile()
             }
         }
     }
