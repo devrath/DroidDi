@@ -10,5 +10,6 @@
     <string name="field_injection">Field Injection</string>
     <string name="injecting_interface">Injecting interface</string>
     <string name="injecting_third_party">Injecting third party classes</string>
+    <string name="injecting_values_at_runtime">Injecting values at runtime</string>
 
 </resources>

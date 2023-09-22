@@ -7,8 +7,10 @@ import com.istudio.di.modules.dagger.demos.concepts.components.DaggerCarComponen
 import com.istudio.di.modules.dagger.demos.concepts.components.DaggerLaptopComponent
 import com.istudio.di.modules.dagger.demos.concepts.components.DaggerMobileComponent
 import com.istudio.di.modules.dagger.demos.concepts.components.DaggerRemoteComponent
+import com.istudio.di.modules.dagger.demos.concepts.components.DaggerWatchComponent
 import com.istudio.di.modules.dagger.demos.concepts.implementations.device.Mobile
 import com.istudio.di.modules.dagger.demos.concepts.implementations.vehicle.Car
+import com.istudio.di.modules.dagger.demos.concepts.modules.WatchModule
 import javax.inject.Inject
 
 class DaggerConceptsActivity : AppCompatActivity() {
@@ -47,6 +49,11 @@ class DaggerConceptsActivity : AppCompatActivity() {
             injectingThirdPartyId.setOnClickListener {
                 val samsungMobileComponent = DaggerRemoteComponent.create().getMobile()
                 samsungMobileComponent.runMobile()
+            }
+            // Injecting values at runtime
+            injectValAtRuntimeId.setOnClickListener {
+                val comp = DaggerWatchComponent.builder().watchModule(WatchModule(20)).build()
+                comp.getWatch().buildWatch()
             }
         }
     }

@@ -33,5 +33,11 @@
         android:layout_height="wrap_content"
         android:text="@string/injecting_third_party" />
 
+    <Button
+        android:id="@+id/injectValAtRuntimeId"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/injecting_values_at_runtime" />
+
 
 </LinearLayout>
