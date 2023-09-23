@@ -5,6 +5,7 @@ import android.os.Bundle
 import com.istudio.di.databinding.ActivityDaggerConceptsBinding
 import com.istudio.di.modules.dagger.demos.concepts.components.DaggerCarComponent
 import com.istudio.di.modules.dagger.demos.concepts.components.computer.DaggerLaptopComponent
+import com.istudio.di.modules.dagger.demos.concepts.components.os.DaggerOsComponent
 import com.istudio.di.modules.dagger.demos.concepts.components.tvremote.DaggerMobileComponent
 import com.istudio.di.modules.dagger.demos.concepts.components.tvremote.DaggerRemoteComponent
 import com.istudio.di.modules.dagger.demos.concepts.components.watch.DaggerWatchComponent
@@ -54,6 +55,11 @@ class DaggerConceptsActivity : AppCompatActivity() {
             injectValAtRuntimeId.setOnClickListener {
                 val comp = DaggerWatchComponent.builder().watchModule(WatchModule(20)).build()
                 comp.getWatch().buildWatch()
+            }
+            // Using Qualifiers
+            usingQualifiersId.setOnClickListener {
+                val comp = DaggerOsComponent.create().getMobileOs()
+                comp.displayOSType()
             }
         }
     }
