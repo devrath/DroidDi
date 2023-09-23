@@ -4,13 +4,13 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import com.istudio.di.databinding.ActivityDaggerConceptsBinding
 import com.istudio.di.modules.dagger.demos.concepts.components.DaggerCarComponent
-import com.istudio.di.modules.dagger.demos.concepts.components.DaggerLaptopComponent
-import com.istudio.di.modules.dagger.demos.concepts.components.DaggerMobileComponent
-import com.istudio.di.modules.dagger.demos.concepts.components.DaggerRemoteComponent
-import com.istudio.di.modules.dagger.demos.concepts.components.DaggerWatchComponent
+import com.istudio.di.modules.dagger.demos.concepts.components.computer.DaggerLaptopComponent
+import com.istudio.di.modules.dagger.demos.concepts.components.tvremote.DaggerMobileComponent
+import com.istudio.di.modules.dagger.demos.concepts.components.tvremote.DaggerRemoteComponent
+import com.istudio.di.modules.dagger.demos.concepts.components.watch.DaggerWatchComponent
 import com.istudio.di.modules.dagger.demos.concepts.implementations.device.Mobile
 import com.istudio.di.modules.dagger.demos.concepts.implementations.vehicle.Car
-import com.istudio.di.modules.dagger.demos.concepts.modules.WatchModule
+import com.istudio.di.modules.dagger.demos.concepts.modules.watch.WatchModule
 import javax.inject.Inject
 
 class DaggerConceptsActivity : AppCompatActivity() {

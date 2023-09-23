@@ -1,4 +1,4 @@
-package com.istudio.di.modules.dagger.demos.concepts.modules
+package com.istudio.di.modules.dagger.demos.concepts.modules.tvremote
 
 import com.istudio.di.modules.dagger.demos.concepts.implementations.tvremote.SamsungRemote
 import dagger.Module

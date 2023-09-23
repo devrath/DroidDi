@@ -1,4 +1,4 @@
-package com.istudio.di.modules.dagger.demos.concepts.modules
+package com.istudio.di.modules.dagger.demos.concepts.modules.watch
 
 import com.istudio.di.modules.dagger.demos.concepts.implementations.watch.Watch
 import com.istudio.di.modules.dagger.demos.concepts.implementations.watch.WatchBattery
