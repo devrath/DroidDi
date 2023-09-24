@@ -19,9 +19,9 @@
         <activity
             android:name=".modules.dagger.demos.subcomponents.DaggerSubComponentsActivity"
             android:exported="false" />
-        <activity
+       <!-- <activity
             android:name=".modules.dagger.demos.scopes.DaggerScopesActivity"
-            android:exported="false" />
+            android:exported="false" />-->
         <activity
             android:name=".modules.dagger.demos.concepts.DaggerConceptsActivity"
             android:exported="false" />
@@ -38,7 +38,7 @@
             android:name=".modules.hilt.HiltDemoActivity"
             android:exported="false" />
         <activity
-            android:name=".MainActivity"
+            android:name=".modules.dagger.demos.scopes.DaggerScopesActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
