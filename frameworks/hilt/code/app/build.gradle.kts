@@ -117,8 +117,8 @@ dependencies {
     implementation("androidx.compose.material:material-icons-core:1.5.1")
     implementation("androidx.compose.material:material-icons-extended:1.5.1")
     implementation("androidx.lifecycle:lifecycle-viewmodel-compose:2.7.0-alpha02")
-    implementation("androidx.navigation:navigation-compose:2.7.2")
+    implementation("androidx.navigation:navigation-compose:2.7.3")
     implementation("androidx.constraintlayout:constraintlayout-compose:1.1.0-alpha12")
-    implementation("androidx.activity:activity-compose:1.8.0-beta01")
+    implementation("androidx.activity:activity-compose:1.8.0-rc01")
     androidTestImplementation("androidx.compose.ui:ui-test-junit4:1.5.1")
 }
