@@ -12,5 +12,6 @@
     <string name="injecting_third_party">Injecting third party classes</string>
     <string name="injecting_values_at_runtime">Injecting values at runtime</string>
     <string name="using_qualifiers">Using Qualifiers</string>
+    <string name="injecting_at_runtime_using_component_factory">Injecting at runtime using component factory</string>
 
 </resources>

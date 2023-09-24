@@ -40,6 +40,12 @@
         android:text="@string/injecting_values_at_runtime" />
 
     <Button
+        android:id="@+id/injectValAtRuntimeComponentFactoryId"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/injecting_at_runtime_using_component_factory" />
+
+    <Button
         android:id="@+id/usingQualifiersId"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
