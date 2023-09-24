@@ -15,4 +15,16 @@
         android:layout_height="wrap_content"
         android:text="@string/str_dagger_concepts_in_practical" />
 
+    <Button
+        android:id="@+id/daggerScopingConceptsId"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/dagger_scoping_concepts" />
+
+    <Button
+        android:id="@+id/daggerSubComponentsId"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/dagger_sub_components_concepts" />
+
 </LinearLayout>

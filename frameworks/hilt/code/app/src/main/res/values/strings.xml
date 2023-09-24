@@ -5,7 +5,7 @@
 
     <string name="str_network_xml_api_demo">Network API Demo - XML</string>
     <string name="str_network_compose_api_demo">Network API Demo - COMPOSE</string>
-    <string name="str_dagger_concepts_in_practical">Dagger concepts in practical</string>
+    <string name="str_dagger_concepts_in_practical">Basic Dagger Concepts</string>
     <string name="constructor_injection">Constructor Injection</string>
     <string name="field_injection">Field Injection</string>
     <string name="injecting_interface">Injecting interface</string>
@@ -13,5 +13,7 @@
     <string name="injecting_values_at_runtime">Injecting values at runtime</string>
     <string name="using_qualifiers">Using Qualifiers</string>
     <string name="injecting_at_runtime_using_component_factory">Injecting at runtime using component factory</string>
+    <string name="dagger_scoping_concepts">Dagger Scoping Concepts</string>
+    <string name="dagger_sub_components_concepts">Dagger Sub Components Concepts</string>
 
 </resources>
