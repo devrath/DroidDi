@@ -17,5 +17,6 @@
     <string name="dagger_sub_components_concepts">Dagger Sub Components Concepts</string>
     <string name="normal_intro_demo_scope">Normal Intro Demo Scope</string>
     <string name="application_scoping">Application Scoping</string>
+    <string name="initiate">Initiate</string>
 
 </resources>
