@@ -15,5 +15,7 @@
     <string name="injecting_at_runtime_using_component_factory">Injecting at runtime using component factory</string>
     <string name="dagger_scoping_concepts">Dagger Scoping Concepts</string>
     <string name="dagger_sub_components_concepts">Dagger Sub Components Concepts</string>
+    <string name="normal_intro_demo_scope">Normal Intro Demo Scope</string>
+    <string name="application_scoping">Application Scoping</string>
 
 </resources>
