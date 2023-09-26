@@ -26,7 +26,7 @@ class CustomScopeActivity : AppCompatActivity() {
     private fun setOnClickListeners() {
 
         binding.apply {
-            initiateId.setOnClickListener {
+            initiateUsingModuleId.setOnClickListener {
 
                 val component =  DaggerActivityComponent.builder()
                     .applicationComponent((application as DiApplication).provideApplicationComponent())
@@ -39,6 +39,10 @@ class CustomScopeActivity : AppCompatActivity() {
                 val imageService1 = component.provideImageProcessingService()
 
                 PrintUtils.printLog("Injected")
+            }
+
+            initiateUsingComponentBuilderId.setOnClickListener {
+                
             }
         }
     }

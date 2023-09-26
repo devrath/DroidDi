@@ -19,5 +19,7 @@
     <string name="application_scoping">Application Scoping</string>
     <string name="initiate">Initiate</string>
     <string name="custom_scoping">Custom Scoping</string>
+    <string name="initiate_using_module">Initiate using module</string>
+    <string name="initiate_using_component_builder">Initiate using component builder</string>
 
 </resources>

@@ -10,9 +10,15 @@
     tools:context=".MainActivity">
 
     <Button
-        android:id="@+id/initiateId"
+        android:id="@+id/initiateUsingModuleId"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/initiate" />
+        android:text="@string/initiate_using_module" />
+
+    <Button
+        android:id="@+id/initiateUsingComponentBuilderId"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/initiate_using_component_builder" />
 
 </LinearLayout>
