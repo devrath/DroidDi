@@ -10,21 +10,9 @@
     tools:context=".MainActivity">
 
     <Button
-        android:id="@+id/normalIntroDemoScopeId"
+        android:id="@+id/initiateId"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/normal_intro_demo_scope" />
-
-    <Button
-        android:id="@+id/applicationScopeId"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="@string/application_scoping" />
-
-    <Button
-        android:id="@+id/customScopeId"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="@string/custom_scoping" />
+        android:text="@string/initiate" />
 
 </LinearLayout>

@@ -18,5 +18,6 @@
     <string name="normal_intro_demo_scope">Normal Intro Demo Scope</string>
     <string name="application_scoping">Application Scoping</string>
     <string name="initiate">Initiate</string>
+    <string name="custom_scoping">Custom Scoping</string>
 
 </resources>

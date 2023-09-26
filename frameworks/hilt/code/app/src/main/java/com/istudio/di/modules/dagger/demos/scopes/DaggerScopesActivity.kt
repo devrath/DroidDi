@@ -5,6 +5,7 @@ import android.os.Bundle
 import com.istudio.di.R
 import com.istudio.di.databinding.ActivityDaggerScopesBinding
 import com.istudio.di.modules.dagger.demos.scopes.applicationscope.ApplicationScopeActivity
+import com.istudio.di.modules.dagger.demos.scopes.customscope.CustomScopeActivity
 import com.istudio.di.modules.dagger.demos.scopes.introdemo.IntroScopeDemoActivity
 import com.istudio.di.utils.startActivity
 
@@ -23,6 +24,7 @@ class DaggerScopesActivity : AppCompatActivity() {
         binding.apply {
             normalIntroDemoScopeId.setOnClickListener { startActivity<IntroScopeDemoActivity>() }
             applicationScopeId.setOnClickListener { startActivity<ApplicationScopeActivity>() }
+            customScopeId.setOnClickListener { startActivity<CustomScopeActivity>() }
         }
     }
 
