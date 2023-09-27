@@ -17,6 +17,9 @@
         android:theme="@style/Theme.Code"
         tools:targetApi="31">
         <activity
+            android:name=".modules.dagger.demos.clientserver.presentation.DaggerNetworkXmlApiActivity"
+            android:exported="false" />
+        <activity
             android:name=".modules.dagger.demos.subcomponents.builder.DaggerSubComponentsBuilderActivity"
             android:exported="false" />
         <activity
