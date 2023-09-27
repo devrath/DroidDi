@@ -1,4 +1,4 @@
-package com.istudio.di.modules.dagger.demos.scopes.customscope.implementations
+package com.istudio.di.modules.dagger.demos.scopes.customscope.implementations.usingmodule
 
 import com.istudio.di.utils.PrintUtils
 import javax.inject.Inject

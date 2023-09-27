@@ -1,12 +1,10 @@
 package com.istudio.di
 
 import android.app.Application
-import com.istudio.di.modules.dagger.demos.scopes.customscope.components.ApplicationComponent
-import com.istudio.di.modules.dagger.demos.scopes.customscope.components.DaggerApplicationComponent
+import com.istudio.di.modules.dagger.demos.scopes.customscope.components.usingmodule.ApplicationComponent
+import com.istudio.di.modules.dagger.demos.scopes.customscope.components.usingmodule.DaggerApplicationComponent
 import com.istudio.di.modules.dagger.demos.scopes.introdemo.components.ConnectionComponent
 import com.istudio.di.modules.dagger.demos.scopes.introdemo.components.DaggerConnectionComponent
-import com.istudio.di.modules.dagger.demos.scopes.introdemo.implementations.connection.HttpsConnection
-import com.istudio.di.modules.dagger.demos.scopes.introdemo.modules.HttpsConnectionModule
 import dagger.hilt.android.HiltAndroidApp
 
 @HiltAndroidApp

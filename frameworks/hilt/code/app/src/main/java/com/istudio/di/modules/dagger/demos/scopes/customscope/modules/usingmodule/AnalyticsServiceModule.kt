@@ -1,6 +1,6 @@
-package com.istudio.di.modules.dagger.demos.scopes.customscope.modules
+package com.istudio.di.modules.dagger.demos.scopes.customscope.modules.usingmodule
 
-import com.istudio.di.modules.dagger.demos.scopes.customscope.implementations.AnalyticsService
+import com.istudio.di.modules.dagger.demos.scopes.customscope.implementations.usingmodule.AnalyticsService
 import dagger.Module
 import dagger.Provides
 import dagger.hilt.migration.DisableInstallInCheck

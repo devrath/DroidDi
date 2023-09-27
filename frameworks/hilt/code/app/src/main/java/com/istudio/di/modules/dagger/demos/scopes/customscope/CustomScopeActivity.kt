@@ -4,17 +4,18 @@ import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import com.istudio.di.DiApplication
 import com.istudio.di.databinding.ActivityCustomScopeBinding
-import com.istudio.di.modules.dagger.demos.scopes.customscope.components.DaggerActivityComponent
-import com.istudio.di.modules.dagger.demos.scopes.customscope.components.DaggerApplicationComponent
-import com.istudio.di.modules.dagger.demos.scopes.customscope.implementations.AnalyticsService
-import com.istudio.di.modules.dagger.demos.scopes.customscope.implementations.ImageProcessingService
-import com.istudio.di.modules.dagger.demos.scopes.customscope.modules.ImageProcessingServiceModule
+import com.istudio.di.modules.dagger.demos.scopes.customscope.components.usingcomponent.DaggerNetworkComponent
+import com.istudio.di.modules.dagger.demos.scopes.customscope.components.usingmodule.DaggerActivityComponent
+import com.istudio.di.modules.dagger.demos.scopes.customscope.implementations.usingcomponent.CustomRetrofit
+import com.istudio.di.modules.dagger.demos.scopes.customscope.modules.usingmodule.ImageProcessingServiceModule
 import com.istudio.di.utils.PrintUtils
 import javax.inject.Inject
 
 class CustomScopeActivity : AppCompatActivity() {
 
     private lateinit var binding: ActivityCustomScopeBinding
+
+    @Inject lateinit var retrofit : CustomRetrofit
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -42,7 +43,12 @@ class CustomScopeActivity : AppCompatActivity() {
             }
 
             initiateUsingComponentBuilderId.setOnClickListener {
-                
+                val component = DaggerNetworkComponent.factory()
+                    .create((application as DiApplication).provideApplicationComponent())
+                    .inject(this@CustomScopeActivity)
+                PrintUtils.printLog("Injected")
+                retrofit.initiateRetrofit()
+                PrintUtils.printLog("Retrofit called")
             }
         }
     }
