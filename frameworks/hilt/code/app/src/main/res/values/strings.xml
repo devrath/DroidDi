@@ -21,5 +21,7 @@
     <string name="custom_scoping">Custom Scoping</string>
     <string name="initiate_using_module">Initiate using module</string>
     <string name="initiate_using_component_builder">Initiate using component builder</string>
+    <string name="sub_component_factory">Sub-component factory</string>
+    <string name="sub_component_builder">Sub-component Builder</string>
 
 </resources>

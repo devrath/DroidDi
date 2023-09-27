@@ -17,6 +17,12 @@
         android:theme="@style/Theme.Code"
         tools:targetApi="31">
         <activity
+            android:name=".modules.dagger.demos.subcomponents.builder.DaggerSubComponentsBuilderActivity"
+            android:exported="false" />
+        <!--<activity
+            android:name=".modules.dagger.demos.subcomponents.factory.DaggerSubComponentsFactoryActivity"
+            android:exported="false" />-->
+        <activity
             android:name=".modules.dagger.demos.scopes.customscope.CustomScopeActivity"
             android:exported="false" />
         <activity
@@ -25,9 +31,9 @@
         <activity
             android:name=".modules.dagger.demos.scopes.introdemo.IntroScopeDemoActivity"
             android:exported="false" />
-       <!-- <activity
+        <activity
             android:name=".modules.dagger.demos.subcomponents.DaggerSubComponentsActivity"
-            android:exported="false" />-->
+            android:exported="false" />
         <activity
             android:name=".modules.dagger.demos.scopes.DaggerScopesActivity"
             android:exported="false" />
@@ -47,7 +53,7 @@
             android:name=".modules.hilt.HiltDemoActivity"
             android:exported="false" />
         <activity
-            android:name=".modules.dagger.demos.subcomponents.DaggerSubComponentsActivity"
+            android:name=".modules.dagger.demos.subcomponents.factory.DaggerSubComponentsFactoryActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
