@@ -10,15 +10,9 @@
     tools:context=".MainActivity">
 
     <Button
-        android:id="@+id/subComponentFactoryId"
+        android:id="@+id/initiateId"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/sub_component_factory" />
-
-    <Button
-        android:id="@+id/subComponentBuilderId"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="@string/sub_component_builder" />
+        android:text="@string/initiate" />
 
 </LinearLayout>
