@@ -56,7 +56,7 @@
             android:name=".modules.hilt.HiltDemoActivity"
             android:exported="false" />
         <activity
-            android:name=".modules.dagger.demos.clientserver.presentation.DaggerNetworkXmlApiActivity"
+            android:name=".modules.dagger.demos.clientserver.presentation.xml.activity.DaggerNetworkXmlApiActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
