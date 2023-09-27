@@ -5,6 +5,8 @@ import com.istudio.di.modules.dagger.demos.scopes.customscope.components.usingmo
 import com.istudio.di.modules.dagger.demos.scopes.customscope.components.usingmodule.DaggerApplicationComponent
 import com.istudio.di.modules.dagger.demos.scopes.introdemo.components.ConnectionComponent
 import com.istudio.di.modules.dagger.demos.scopes.introdemo.components.DaggerConnectionComponent
+import com.istudio.di.modules.dagger.demos.subcomponents.builder.components.DaggerUserBuilderComponent
+import com.istudio.di.modules.dagger.demos.subcomponents.builder.components.UserBuilderComponent
 import com.istudio.di.modules.dagger.demos.subcomponents.factory.components.DaggerUserComponent
 import com.istudio.di.modules.dagger.demos.subcomponents.factory.components.UserComponent
 import dagger.hilt.android.HiltAndroidApp
@@ -15,16 +17,19 @@ class DiApplication : Application() {
     private lateinit var connComp : ConnectionComponent
     private lateinit var appComponent : ApplicationComponent
     private lateinit var userComponent : UserComponent
+    private lateinit var userBuilderComponent : UserBuilderComponent
 
     override fun onCreate() {
         super.onCreate()
         connComp = DaggerConnectionComponent.builder().build()
         appComponent = DaggerApplicationComponent.builder().build()
         userComponent = DaggerUserComponent.builder().build()
+        userBuilderComponent = DaggerUserBuilderComponent.builder().build()
     }
 
     fun provideHttpConnection(): ConnectionComponent { return connComp }
     fun provideApplicationComponent(): ApplicationComponent { return appComponent }
     fun provideDaggerUserComponent(): UserComponent { return userComponent }
+    fun provideDaggerUserBuilderComponent(): UserBuilderComponent { return userBuilderComponent }
 
 }

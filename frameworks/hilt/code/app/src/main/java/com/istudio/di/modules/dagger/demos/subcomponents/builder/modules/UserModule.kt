@@ -1,6 +1,6 @@
-package com.istudio.di.modules.dagger.demos.subcomponents.factory.modules
+package com.istudio.di.modules.dagger.demos.subcomponents.builder.modules
 
-import com.istudio.di.modules.dagger.demos.subcomponents.factory.implementations.User
+import com.istudio.di.modules.dagger.demos.subcomponents.builder.implementations.User
 import dagger.Module
 import dagger.Provides
 import dagger.hilt.migration.DisableInstallInCheck
