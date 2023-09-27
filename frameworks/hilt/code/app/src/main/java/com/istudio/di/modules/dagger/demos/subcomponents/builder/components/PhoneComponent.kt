@@ -11,7 +11,7 @@ interface PhoneComponent {
     fun inject(activity: DaggerSubComponentsBuilderActivity)
 
 
-    @Subcomponent.Factory
+    @Subcomponent.Builder
     interface Builder{
         fun build() : PhoneComponent
 
