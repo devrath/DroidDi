@@ -15,4 +15,10 @@
         android:layout_height="wrap_content"
         android:text="@string/intoset" />
 
+    <Button
+        android:id="@+id/elementsIntoSetId"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/elements_into_set" />
+
 </LinearLayout>
