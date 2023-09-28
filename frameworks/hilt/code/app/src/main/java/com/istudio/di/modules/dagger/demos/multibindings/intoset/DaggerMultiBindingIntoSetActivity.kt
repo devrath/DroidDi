@@ -28,6 +28,8 @@ class DaggerMultiBindingIntoSetActivity : AppCompatActivity() {
                 // Inject the component into the activity
                 val comp = DaggerTelivisionComponent.builder().build()
                 comp.inject(this@DaggerMultiBindingIntoSetActivity)
+                // Print the entire set
+                println(telivision)
                 // Iterate the set of objects
                 telivision.forEach { tv ->
                     if(tv is Samsung){
