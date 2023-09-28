@@ -25,5 +25,5 @@
     <string name="sub_component_builder">Sub-component Builder</string>
     <string name="dagger_multi_bindings">Dagger Multi Bindings</string>
     <string name="intoset">IntoSet</string>
-    <string name="elements_into_set">Elements into set</string>
+    <string name="elements_into_set">ElementsIntoSet</string>
 </resources>
