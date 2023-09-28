@@ -4,6 +4,7 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import com.istudio.di.databinding.ActivityDaggerDemoSelectionBinding
 import com.istudio.di.modules.dagger.demos.concepts.DaggerConceptsActivity
+import com.istudio.di.modules.dagger.demos.multibindings.DaggerMultiBindingsSelectionActivity
 import com.istudio.di.modules.dagger.demos.scopes.DaggerScopesActivity
 import com.istudio.di.modules.dagger.demos.subcomponents.DaggerSubComponentsActivity
 import com.istudio.di.utils.startActivity
@@ -25,6 +26,7 @@ class DaggerDemoSelectionActivity : AppCompatActivity() {
             daggerConceptsPracticalId.setOnClickListener { startActivity<DaggerConceptsActivity>() }
             daggerScopingConceptsId.setOnClickListener { startActivity<DaggerScopesActivity>() }
             daggerSubComponentsId.setOnClickListener { startActivity<DaggerSubComponentsActivity>() }
+            daggerMultiBindingsId.setOnClickListener { startActivity<DaggerMultiBindingsSelectionActivity>() }
         }
     }
 

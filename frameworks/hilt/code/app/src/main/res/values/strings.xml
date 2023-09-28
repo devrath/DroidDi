@@ -23,5 +23,6 @@
     <string name="initiate_using_component_builder">Initiate using component builder</string>
     <string name="sub_component_factory">Sub-component factory</string>
     <string name="sub_component_builder">Sub-component Builder</string>
-
+    <string name="dagger_multi_bindings">Dagger Multi Bindings</string>
+    <string name="intoset">IntoSet</string>
 </resources>

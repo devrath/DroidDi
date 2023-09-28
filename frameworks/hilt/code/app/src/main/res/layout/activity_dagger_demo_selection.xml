@@ -26,5 +26,11 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="@string/dagger_sub_components_concepts" />
+
+    <Button
+        android:id="@+id/daggerMultiBindingsId"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/dagger_multi_bindings" />
     
 </LinearLayout>
