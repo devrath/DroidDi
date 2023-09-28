@@ -26,4 +26,5 @@
     <string name="dagger_multi_bindings">Dagger Multi Bindings</string>
     <string name="intoset">IntoSet</string>
     <string name="elements_into_set">ElementsIntoSet</string>
+    <string name="intomap">IntoMap</string>
 </resources>
