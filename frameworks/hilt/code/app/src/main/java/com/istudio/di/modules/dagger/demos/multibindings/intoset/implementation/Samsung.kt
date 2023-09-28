@@ -4,6 +4,6 @@ import javax.inject.Inject
 
 class Samsung @Inject constructor() : Telivision {
     override fun name(): String {
-        return "Samsung"
+        return "Samsung ^-^ Output"
     }
 }

@@ -7,15 +7,20 @@ import dagger.Binds
 import dagger.Module
 import dagger.Provides
 import dagger.hilt.migration.DisableInstallInCheck
+import dagger.multibindings.ClassKey
+import dagger.multibindings.IntoSet
+import dagger.multibindings.Multibinds
 
 @Module
 @DisableInstallInCheck
-abstract class TelivisionModule {
-
-   /* @Binds
-    abstract fun providesSamsungTv(implementation : Samsung) : Telivision
+interface TelivisionModule {
 
     @Binds
-    abstract fun providesLgTv(implementation : Lg) : Telivision*/
+    @IntoSet
+    fun providesSamsungTv(implementation : Samsung) : Telivision
+
+    @Binds
+    @IntoSet
+    fun providesLgTv(implementation : Lg) : Telivision
 
 }
