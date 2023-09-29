@@ -8,6 +8,7 @@ import com.istudio.di.modules.hilt.demos.clientserver.presentation.compose.activ
 import com.istudio.di.modules.hilt.demos.clientserver.presentation.xml.activity.HiltNetworkXmlApiActivity
 import com.istudio.di.modules.hilt.demos.injection.constructor.HiltConstructorInjectionActivity
 import com.istudio.di.modules.hilt.demos.injection.field.HiltFieldInjectionActivity
+import com.istudio.di.modules.hilt.demos.injection.interfaceInject.HiltInterfaceInjectionActivity
 import com.istudio.di.utils.startActivity
 import dagger.hilt.android.AndroidEntryPoint
 
@@ -27,6 +28,7 @@ class HiltDemoActivity : AppCompatActivity() {
             hiltClientServerId.setOnClickListener { startActivity<HiltClientServerActivity>() }
             constructorInjectionId.setOnClickListener { startActivity<HiltConstructorInjectionActivity>() }
             fieldInjectionId.setOnClickListener { startActivity<HiltFieldInjectionActivity>() }
+            interfaceInjectionId.setOnClickListener { startActivity<HiltInterfaceInjectionActivity>() }
         }
     }
 }

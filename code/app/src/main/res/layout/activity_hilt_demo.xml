@@ -27,5 +27,11 @@
         android:layout_height="wrap_content"
         android:text="@string/field_injection" />
 
+    <Button
+        android:id="@+id/interfaceInjectionId"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/interface_injection" />
+
 
 </LinearLayout>
