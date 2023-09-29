@@ -33,5 +33,11 @@
         android:layout_height="wrap_content"
         android:text="@string/interface_injection" />
 
+    <Button
+        android:id="@+id/hiltQualifiersId"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/hilt_qualifiers_demo" />
+
 
 </LinearLayout>

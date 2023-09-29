@@ -29,4 +29,5 @@
     <string name="intomap">IntoMap</string>
     <string name="hilt_client_server_demos">Hilt client server demos</string>
     <string name="interface_injection">Interface Injection</string>
+    <string name="hilt_qualifiers_demo">Hilt qualifiers Demo</string>
 </resources>
