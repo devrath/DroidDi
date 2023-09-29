@@ -10,22 +10,9 @@
     tools:context=".MainActivity">
 
     <Button
-        android:id="@+id/hiltClientServerId"
+        android:id="@+id/initiateId"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/hilt_client_server_demos" />
-
-    <Button
-        android:id="@+id/constructorInjectionId"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="@string/constructor_injection" />
-
-    <Button
-        android:id="@+id/fieldInjectionId"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="@string/field_injection" />
-
+        android:text="@string/initiate" />
 
 </LinearLayout>

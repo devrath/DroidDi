@@ -6,6 +6,8 @@ import com.istudio.di.databinding.ActivityHiltDemoBinding
 import com.istudio.di.modules.hilt.demos.clientserver.HiltClientServerActivity
 import com.istudio.di.modules.hilt.demos.clientserver.presentation.compose.activity.HiltNetworkComposeApiActivity
 import com.istudio.di.modules.hilt.demos.clientserver.presentation.xml.activity.HiltNetworkXmlApiActivity
+import com.istudio.di.modules.hilt.demos.injection.constructor.HiltConstructorInjectionActivity
+import com.istudio.di.modules.hilt.demos.injection.field.HiltFieldInjectionActivity
 import com.istudio.di.utils.startActivity
 import dagger.hilt.android.AndroidEntryPoint
 
@@ -23,6 +25,8 @@ class HiltDemoActivity : AppCompatActivity() {
     private fun setOnClickListeners() {
         binding.apply {
             hiltClientServerId.setOnClickListener { startActivity<HiltClientServerActivity>() }
+            constructorInjectionId.setOnClickListener { startActivity<HiltConstructorInjectionActivity>() }
+            fieldInjectionId.setOnClickListener { startActivity<HiltFieldInjectionActivity>() }
         }
     }
 }
