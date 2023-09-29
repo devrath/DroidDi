@@ -14,6 +14,8 @@ This repository contains the snippets and use cases of various dependency inject
 
 ## `𝙳𝚊𝚐𝚐𝚎𝚛`
 
+<div align="center">
+
 | **`Contents of Dagger concepts`** | 
 | --------------------------------- |
 | ``Constructor injection`` |
@@ -33,5 +35,6 @@ This repository contains the snippets and use cases of various dependency inject
 | ``Using sub-components with the builder way`` |
 | ``Dagger multi-binding`` |
 
+</div>
 
   
