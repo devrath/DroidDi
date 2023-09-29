@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".modules.hilt.demos.clientserver.presentation.xml.activity.HiltNetworkXmlApiActivity">
+    tools:context=".modules.hilt.demos.clientserver_demo.presentation.xml.activity.HiltNetworkXmlApiActivity">
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/peopleListViewId"
