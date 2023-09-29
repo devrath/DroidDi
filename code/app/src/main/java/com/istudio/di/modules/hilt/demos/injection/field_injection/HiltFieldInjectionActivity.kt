@@ -1,9 +1,9 @@
-package com.istudio.di.modules.hilt.demos.injection.field
+package com.istudio.di.modules.hilt.demos.injection.field_injection
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import com.istudio.di.databinding.ActivityHiltFieldInjectionBinding
-import com.istudio.di.modules.hilt.demos.injection.field.implementation.Computer
+import com.istudio.di.modules.hilt.demos.injection.field_injection.implementation.Computer
 import dagger.hilt.android.AndroidEntryPoint
 import javax.inject.Inject
 

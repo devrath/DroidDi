@@ -1,12 +1,9 @@
-package com.istudio.di.modules.hilt.demos.injection.constructor
+package com.istudio.di.modules.hilt.demos.injection.constructor_injection
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import com.istudio.di.R
-import com.istudio.di.databinding.ActivityDaggerMultiBindingIntoSetBinding
 import com.istudio.di.databinding.ActivityHiltConstructorInjectionBinding
-import com.istudio.di.modules.hilt.demos.injection.constructor.implementation.Car
-import com.istudio.di.modules.hilt.demos.injection.field.implementation.Computer
+import com.istudio.di.modules.hilt.demos.injection.constructor_injection.implementation.Car
 import dagger.hilt.android.AndroidEntryPoint
 import javax.inject.Inject
 

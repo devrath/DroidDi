@@ -1,4 +1,4 @@
-package com.istudio.di.modules.hilt.demos.injection.interfaceInject.implementation
+package com.istudio.di.modules.hilt.demos.injection.interface_Injection.implementation
 
 import com.istudio.di.utils.PrintUtils
 
