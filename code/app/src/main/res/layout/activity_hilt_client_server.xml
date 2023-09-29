@@ -10,10 +10,16 @@
     tools:context=".MainActivity">
 
     <Button
-        android:id="@+id/hiltClientServerId"
+        android:id="@+id/hiltNetworkXmlApiDemoId"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/hilt_client_server_demos" />
+        android:text="@string/str_network_xml_api_demo" />
+
+    <Button
+        android:id="@+id/hiltNetworkComposeApiDemoId"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/str_network_compose_api_demo" />
 
 
 </LinearLayout>

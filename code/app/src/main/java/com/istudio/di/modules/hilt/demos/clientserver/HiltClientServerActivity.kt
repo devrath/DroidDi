@@ -1,28 +1,27 @@
-package com.istudio.di.modules.hilt
+package com.istudio.di.modules.hilt.demos.clientserver
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import com.istudio.di.R
+import com.istudio.di.databinding.ActivityHiltClientServerBinding
 import com.istudio.di.databinding.ActivityHiltDemoBinding
-import com.istudio.di.modules.hilt.demos.clientserver.HiltClientServerActivity
 import com.istudio.di.modules.hilt.demos.clientserver.presentation.compose.activity.HiltNetworkComposeApiActivity
 import com.istudio.di.modules.hilt.demos.clientserver.presentation.xml.activity.HiltNetworkXmlApiActivity
 import com.istudio.di.utils.startActivity
-import dagger.hilt.android.AndroidEntryPoint
 
-@AndroidEntryPoint
-class HiltDemoActivity : AppCompatActivity() {
+class HiltClientServerActivity : AppCompatActivity() {
 
-    private lateinit var binding: ActivityHiltDemoBinding
+    private lateinit var binding: ActivityHiltClientServerBinding
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        binding = ActivityHiltDemoBinding.inflate(layoutInflater)
+        binding = ActivityHiltClientServerBinding.inflate(layoutInflater)
         setContentView(binding.root)
         setOnClickListeners();
     }
-
     private fun setOnClickListeners() {
         binding.apply {
-            hiltClientServerId.setOnClickListener { startActivity<HiltClientServerActivity>() }
+            hiltNetworkXmlApiDemoId.setOnClickListener { startActivity<HiltNetworkXmlApiActivity>() }
+            hiltNetworkComposeApiDemoId.setOnClickListener { startActivity<HiltNetworkComposeApiActivity>() }
         }
     }
 }

@@ -27,4 +27,5 @@
     <string name="intoset">IntoSet</string>
     <string name="elements_into_set">ElementsIntoSet</string>
     <string name="intomap">IntoMap</string>
+    <string name="hilt_client_server_demos">Hilt client server demos</string>
 </resources>
