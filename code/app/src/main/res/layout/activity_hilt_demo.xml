@@ -39,5 +39,10 @@
         android:layout_height="wrap_content"
         android:text="@string/hilt_qualifiers_demo" />
 
+    <Button
+        android:id="@+id/hiltScopingId"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/hilt_scoping" />
 
 </LinearLayout>
