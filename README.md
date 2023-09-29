@@ -34,6 +34,9 @@ This repository contains the snippets and use cases of various dependency inject
 | ``Using sub-components with the factory way`` |
 | ``Using sub-components with the builder way`` |
 | ``Dagger multi-binding`` |
+| ``Dagger multi-binding IntoSet`` |
+| ``Dagger multi-binding ElementsIntoSet`` |
+| ``Dagger multi-binding IntoMap`` |
 
 </div>
 
