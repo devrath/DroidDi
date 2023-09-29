@@ -9,6 +9,8 @@ This repository contains the snippets and use cases of various dependency inject
 | ------------ |
 | [`𝙳𝚎𝚙𝚎𝚗𝚍𝚎𝚗𝚌𝚢 𝙸𝚗𝚓𝚎𝚌𝚝𝚒𝚘𝚗`](https://github.com/devrath/DroidDi/wiki/Dependency-injection) |
 | [``𝙳𝚊𝚐𝚐𝚎𝚛``](https://github.com/devrath/DroidDi/tree/main#%F0%9D%99%B3%F0%9D%9A%8A%F0%9D%9A%90%F0%9D%9A%90%F0%9D%9A%8E%F0%9D%9A%9B) |
+| `𝙳𝚊𝚐𝚐𝚎𝚛-𝙷𝚒𝚕𝚝` |
+| `𝙺𝚘𝚒𝚗` |
 
 </div>
 
