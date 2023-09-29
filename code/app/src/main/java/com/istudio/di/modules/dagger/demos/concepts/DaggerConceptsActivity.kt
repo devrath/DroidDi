@@ -3,7 +3,7 @@ package com.istudio.di.modules.dagger.demos.concepts
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import com.istudio.di.databinding.ActivityDaggerConceptsBinding
-import com.istudio.di.modules.dagger.demos.concepts.components.DaggerCarComponent
+import com.istudio.di.modules.dagger.demos.concepts.components.car.DaggerCarComponent
 import com.istudio.di.modules.dagger.demos.concepts.components.computer.DaggerLaptopComponent
 import com.istudio.di.modules.dagger.demos.concepts.components.os.DaggerOsComponent
 import com.istudio.di.modules.dagger.demos.concepts.components.service.DaggerMessageServiceComponent
