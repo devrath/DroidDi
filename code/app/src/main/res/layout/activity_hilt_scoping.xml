@@ -13,18 +13,30 @@
         android:id="@+id/notASingleTonId"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Not s singleton" />
+        android:text="@string/not_a_singleton" />
 
     <Button
         android:id="@+id/singletonWithoutComponentId"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Singleton without using singletonComponent" />
+        android:text="@string/singleton_without_using_singletoncomponent" />
 
     <Button
         android:id="@+id/singletonCompWithoutSingletonAnnotationId"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="SingletonComponent without singleton annotation" />
+        android:text="@string/singletoncomponent_without_singleton_annotation" />
+
+    <Button
+        android:id="@+id/singletonCompWithSingletonAnnotationId"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/singletoncomponent_with_singleton_annotation" />
+
+    <Button
+        android:id="@+id/actScopedWithActivityAnnotationId"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/activity_component_with_activity_scoped_annotation" />
 
 </LinearLayout>

@@ -31,4 +31,9 @@
     <string name="interface_injection">Interface Injection</string>
     <string name="hilt_qualifiers_demo">Hilt qualifiers Demo</string>
     <string name="hilt_scoping">Hilt Scoping</string>
+    <string name="not_a_singleton">Not a singleton</string>
+    <string name="singleton_without_using_singletoncomponent">Singleton without using singletonComponent</string>
+    <string name="singletoncomponent_without_singleton_annotation">SingletonComponent without singleton annotation</string>
+    <string name="singletoncomponent_with_singleton_annotation">SingletonComponent with singleton annotation</string>
+    <string name="activity_component_with_activity_scoped_annotation">Activity component with activity scoped annotation</string>
 </resources>
