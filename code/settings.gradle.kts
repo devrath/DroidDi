@@ -15,3 +15,4 @@ dependencyResolutionManagement {
 
 rootProject.name = "code"
 include(":app")
+include(":hilt-demo-module")

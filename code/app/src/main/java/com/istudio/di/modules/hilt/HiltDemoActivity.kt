@@ -11,6 +11,7 @@ import com.istudio.di.modules.hilt.demos.multibinding_demo.HiltMultiBindingsSele
 import com.istudio.di.modules.hilt.demos.qualifiers_demo.HiltQualifiersActivity
 import com.istudio.di.modules.hilt.demos.scoping_demo.HiltScopingActivity
 import com.istudio.di.utils.startActivity
+import com.istudio.hilt_demo_module.HiltMultiModuleScenarioActivity
 import dagger.hilt.android.AndroidEntryPoint
 
 @AndroidEntryPoint
@@ -33,6 +34,7 @@ class HiltDemoActivity : AppCompatActivity() {
             hiltQualifiersId.setOnClickListener { startActivity<HiltQualifiersActivity>() }
             hiltScopingId.setOnClickListener { startActivity<HiltScopingActivity>() }
             hiltMultiBindingsId.setOnClickListener { startActivity<HiltMultiBindingsSelectionActivity>() }
+            hiltMultiModuleInverseId.setOnClickListener { startActivity<HiltMultiModuleScenarioActivity>() }
         }
     }
 }

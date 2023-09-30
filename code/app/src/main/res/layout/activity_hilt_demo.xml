@@ -51,4 +51,10 @@
         android:layout_height="wrap_content"
         android:text="@string/hilt_multi_bindings" />
 
+    <Button
+        android:id="@+id/hiltMultiModuleInverseId"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Hilt multi-module inverse dependency" />
+
 </LinearLayout>
