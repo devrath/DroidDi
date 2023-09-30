@@ -37,4 +37,5 @@
     <string name="singletoncomponent_with_singleton_annotation">SingletonComponent with singleton annotation</string>
     <string name="activity_component_with_activity_scoped_annotation">Activity component with activity scoped annotation</string>
     <string name="hilt_multi_bindings">Hilt multi-bindings</string>
+    <string name="koin">KOIN</string>
 </resources>

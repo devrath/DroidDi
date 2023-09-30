@@ -43,7 +43,7 @@ android {
         targetCompatibility = JavaVersion.VERSION_17
     }
     kotlinOptions {
-        jvmTarget = "17"
+        jvmTarget = JavaVersion.VERSION_17.toString()
     }
     // View binding
     buildFeatures {
@@ -90,6 +90,10 @@ dependencies {
     androidTestImplementation(platform("androidx.compose:compose-bom:2023.03.00"))
     debugImplementation("androidx.compose.ui:ui-test-manifest")
     kapt("com.google.dagger:hilt-android-compiler:2.44")
+
+    // <-- Koin ->
+    // Koin for Kotlin apps
+    implementation("io.insert-koin:koin-bom:3.5.1")
 
     // <-- Recycler view ->
     implementation("androidx.recyclerview:recyclerview:1.3.1")

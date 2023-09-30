@@ -5,6 +5,7 @@ import android.os.Bundle
 import com.istudio.di.databinding.ActivityMainBinding
 import com.istudio.di.modules.dagger.DaggerDemoSelectionActivity
 import com.istudio.di.modules.hilt.HiltDemoActivity
+import com.istudio.di.modules.koin.KoinDemoSelectionActivity
 import com.istudio.di.utils.startActivity
 
 class MainActivity : AppCompatActivity() {
@@ -21,6 +22,7 @@ class MainActivity : AppCompatActivity() {
         binding.apply {
             hiltId.setOnClickListener { startActivity<HiltDemoActivity>() }
             daggerId.setOnClickListener { startActivity<DaggerDemoSelectionActivity>() }
+            koinId.setOnClickListener { startActivity<KoinDemoSelectionActivity>() }
         }
     }
 
