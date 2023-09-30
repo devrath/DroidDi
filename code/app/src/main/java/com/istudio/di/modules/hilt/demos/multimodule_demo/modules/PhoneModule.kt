@@ -11,8 +11,6 @@ import dagger.hilt.components.SingletonComponent
 @Module
 @InstallIn(SingletonComponent::class)
 interface PhoneModule {
-
     @Binds
     fun providePhone(phone: Xiaomi) : Phone
-
 }
