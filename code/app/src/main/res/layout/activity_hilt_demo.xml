@@ -45,4 +45,10 @@
         android:layout_height="wrap_content"
         android:text="@string/hilt_scoping" />
 
+    <Button
+        android:id="@+id/hiltMultiBindingsId"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/hilt_multi_bindings" />
+
 </LinearLayout>
