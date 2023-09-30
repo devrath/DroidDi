@@ -42,4 +42,30 @@ This repository contains the snippets and use cases of various dependency inject
 
 </div>
 
+-----
+
+## `𝙳𝚊𝚐𝚐𝚎𝚛-𝙷𝚒𝚕𝚝`
+
+<div align="center">
+
+| **`Contents of Dagger concepts`** | 
+| --------------------------------- |
+| ``About Hilt`` |
+| ``Components hilt supports`` |
+| ``Component lifetimes`` |
+| ``Component scopes`` |
+| ``Component Hierarchy`` |
+| ``Dagger compared with hilt`` |
+| ``Constructor Injection`` |
+| ``Field Injection`` |
+| ``Interface Injection`` |
+| ``Using qualifiers`` |
+| ``Hilt multi-binding IntoSet`` |
+| ``Hilt multi-binding ElementsIntoSet`` |
+| ``Hilt multi-binding IntoMap`` |
+| ``Assisted Injection`` |
+| ``Dagger-Hilt in multimodule`` |
+
+</div>
+
   
