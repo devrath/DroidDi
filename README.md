@@ -21,7 +21,7 @@ This repository contains the snippets and use cases of various dependency inject
 | --------------------------------- |
 | [``Constructor injection``](https://github.com/devrath/DroidDi/wiki/Dagger-%E2%80%90-Constructor-injection) |
 | [``Field injection``](https://github.com/devrath/DroidDi/wiki/Dagger-%E2%80%90-Field-injection#activities) |
-| ``Interface injection`` |
+| [``Interface injection``](https://github.com/devrath/DroidDi/wiki/Dagger-%E2%80%90-Interface-injection) |
 | ``Injecting third party classes`` |
 | ``Injecting values at runtime by creating module`` |
 | ``Named annotation and qualifiers`` |
