@@ -48,6 +48,7 @@ class CustomScopeActivity : AppCompatActivity() {
                     .inject(this@CustomScopeActivity)
                 PrintUtils.printLog("Injected")
                 retrofit.initiateRetrofit()
+                PrintUtils.printLog("retrofit INSTANCE- > ${retrofit.hashCode()}")
                 PrintUtils.printLog("Retrofit called")
             }
         }
