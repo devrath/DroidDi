@@ -67,7 +67,7 @@ This repository contains the snippets and use cases of various dependency inject
 | ``Component Hierarchy`` |
 | ``Dagger compared with hilt`` |
 | ``Constructor Injection`` |
-| ``Field Injection`` |
+| [``Field Injection``](https://github.com/devrath/DroidDi/wiki/Hilt-%E2%80%90-Field-Injection) |
 | ``Interface Injection`` |
 | ``Using qualifiers`` |
 | ``Hilt multi-binding IntoSet`` |
