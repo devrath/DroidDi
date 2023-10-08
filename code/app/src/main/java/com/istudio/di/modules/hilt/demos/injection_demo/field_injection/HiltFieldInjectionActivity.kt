@@ -4,6 +4,7 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import com.istudio.di.databinding.ActivityHiltFieldInjectionBinding
 import com.istudio.di.modules.hilt.demos.injection_demo.field_injection.implementation.Computer
+import com.istudio.di.utils.PrintUtils
 import dagger.hilt.android.AndroidEntryPoint
 import javax.inject.Inject
 
@@ -25,7 +26,8 @@ class HiltFieldInjectionActivity : AppCompatActivity() {
     private fun setOnClickListeners() {
         binding.apply {
             initiateId.setOnClickListener {
-                println(computer.start())
+                PrintUtils.printLog("Computer instance -> "+computer.hashCode().toString())
+                computer.start()
             }
         }
     }
