@@ -6,6 +6,7 @@ import com.istudio.di.DiApplication
 import com.istudio.di.R
 import com.istudio.di.databinding.ActivityApplicationScopeBinding
 import com.istudio.di.databinding.ActivityDaggerDemoSelectionBinding
+import com.istudio.di.utils.PrintUtils
 
 class ApplicationScopeActivity : AppCompatActivity() {
 
@@ -22,7 +23,7 @@ class ApplicationScopeActivity : AppCompatActivity() {
         binding.apply {
             initiateId.setOnClickListener {
                 val connComp1 = (application as DiApplication).provideHttpConnection()
-                println(connComp1)
+                PrintUtils.printLog(connComp1.hashCode().toString())
             }
         }
     }
