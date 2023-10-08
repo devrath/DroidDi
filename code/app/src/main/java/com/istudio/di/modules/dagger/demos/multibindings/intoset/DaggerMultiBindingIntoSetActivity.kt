@@ -7,6 +7,7 @@ import com.istudio.di.modules.dagger.demos.multibindings.intoset.components.Dagg
 import com.istudio.di.modules.dagger.demos.multibindings.intoset.implementation.Lg
 import com.istudio.di.modules.dagger.demos.multibindings.intoset.implementation.Samsung
 import com.istudio.di.modules.dagger.demos.multibindings.intoset.implementation.Telivision
+import com.istudio.di.utils.PrintUtils
 import javax.inject.Inject
 
 class DaggerMultiBindingIntoSetActivity : AppCompatActivity() {
@@ -29,15 +30,15 @@ class DaggerMultiBindingIntoSetActivity : AppCompatActivity() {
                 val comp = DaggerTelivisionComponent.builder().build()
                 comp.inject(this@DaggerMultiBindingIntoSetActivity)
                 // Print the entire set
-                println(telivision)
+                PrintUtils.printLog(telivision.toString())
                 // Iterate the set of objects
                 telivision.forEach { tv ->
                     if(tv is Samsung){
                         // Access Samsung specific functionalities
-                        println(tv.name())
+                        PrintUtils.printLog(tv.name())
                     }else if(tv is Lg){
                         // Access Lg specific functionalities
-                        println(tv.name())
+                        PrintUtils.printLog(tv.name())
                     }
                 }
             }
