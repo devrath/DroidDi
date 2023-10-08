@@ -28,7 +28,7 @@ This repository contains the snippets and use cases of various dependency inject
 | [``Injecting values at runtime by component factory``](https://github.com/devrath/DroidDi/wiki/Dagger-%E2%80%90-Injecting-values-at-runtime-by-component-factory) |
 | [``Scoping, normal example using singleton``](https://github.com/devrath/DroidDi/wiki/Dagger-%E2%80%90-Scoping,-normal-example-using-singleton) |
 | [``Creating application-wide singleton``](https://github.com/devrath/DroidDi/wiki/Dagger-%E2%80%90-Creating-application%E2%80%90wide-singleton#application) |
-| ``When to use @provides and when to use @binds`` |
+| [``When to use @provides and when to use @binds``](https://github.com/devrath/DroidDi/wiki/Dagger-%E2%80%90-When-to-use-@provides-and-when-to-use-@binds#example-for-module) |
 | ``Some theory about component and scope relationship`` |
 | ``Using component builder for scoping purpose`` |
 | ``Sub-components and its significance`` |
