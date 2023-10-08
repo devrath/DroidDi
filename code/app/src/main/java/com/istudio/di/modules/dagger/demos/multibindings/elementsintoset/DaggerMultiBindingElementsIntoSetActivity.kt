@@ -13,6 +13,7 @@ import com.istudio.di.modules.dagger.demos.multibindings.elementsintoset.impleme
 import com.istudio.di.modules.dagger.demos.multibindings.intoset.implementation.Lg
 import com.istudio.di.modules.dagger.demos.multibindings.intoset.implementation.Samsung
 import com.istudio.di.modules.dagger.demos.multibindings.intoset.implementation.Telivision
+import com.istudio.di.utils.PrintUtils
 import javax.inject.Inject
 
 class DaggerMultiBindingElementsIntoSetActivity : AppCompatActivity() {
@@ -35,14 +36,14 @@ class DaggerMultiBindingElementsIntoSetActivity : AppCompatActivity() {
                 val component = DaggerCarComponent.builder().build()
                 component.inject(this@DaggerMultiBindingElementsIntoSetActivity)
                 // Print the entire set
-                println(car)
+                PrintUtils.printLog(car.toString())
                 car.forEach { c ->
                     if(c is Maruti){
                         // Access Maruti specific functionalities
-                        println(c.name())
+                        PrintUtils.printLog(c.name())
                     }else if(c is Hyundai){
                         // Access hyundai specific functionalities
-                        println(c.name())
+                        PrintUtils.printLog(c.name())
                     }
                 }
 
