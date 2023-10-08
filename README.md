@@ -42,7 +42,7 @@ This repository contains the snippets and use cases of various dependency inject
 | [``Using sub-components with the builder way``](https://github.com/devrath/DroidDi/wiki/Dagger-%E2%80%90-Using-sub%E2%80%90components-with-the-builder-way) |
 | ``Dagger multi-binding`` |
 | [``Dagger multi-binding IntoSet``](https://github.com/devrath/DroidDi/wiki/Dagger-%E2%80%90-multi-binding-IntoSet) |
-| ``Dagger multi-binding ElementsIntoSet`` |
+| [``Dagger multi-binding ElementsIntoSet``](https://github.com/devrath/DroidDi/wiki/Dagger-%E2%80%90-multi-binding-ElementsIntoSet) |
 | ``Dagger multi-binding IntoMap`` |
 
 </div>
