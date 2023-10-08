@@ -33,7 +33,7 @@ This repository contains the snippets and use cases of various dependency inject
 | [``Scoping using module``](https://github.com/devrath/DroidDi/wiki/Dagger-%E2%80%90-Scoping-using-module) |
 | [``Scoping using component factory``](https://github.com/devrath/DroidDi/wiki/Dagger-%E2%80%90-Scoping-using-component-factory) |
 | [``Sub-components and its significance``](https://github.com/devrath/DroidDi/wiki/Dagger-%E2%80%90-Sub%E2%80%90components-and-its-significance) |
-| ``Using sub-components with the factory way`` |
+| [``Using sub-components with the factory way``](https://github.com/devrath/DroidDi/wiki/Dagger-%E2%80%90-Using-sub%E2%80%90components-with-the-factory-way) |
 | ``Using sub-components with the builder way`` |
 | ``Dagger multi-binding`` |
 | ``Dagger multi-binding IntoSet`` |
