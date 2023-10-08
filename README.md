@@ -43,7 +43,7 @@ This repository contains the snippets and use cases of various dependency inject
 | ``Dagger multi-binding`` |
 | [``Dagger multi-binding IntoSet``](https://github.com/devrath/DroidDi/wiki/Dagger-%E2%80%90-multi-binding-IntoSet) |
 | [``Dagger multi-binding ElementsIntoSet``](https://github.com/devrath/DroidDi/wiki/Dagger-%E2%80%90-multi-binding-ElementsIntoSet) |
-| ``Dagger multi-binding IntoMap`` |
+| [``Dagger multi-binding IntoMap``](https://github.com/devrath/DroidDi/wiki/Dagger-%E2%80%90-multi-binding-IntoMap) |
 
 </div>
 
