@@ -14,6 +14,7 @@ This repository contains the snippets and use cases of various dependency inject
 </div>
 
 ## `𝙳𝚊𝚐𝚐𝚎𝚛`
+<img src="https://github.com/devrath/DroidDi/blob/main/assets/dagger2_banner_new.png" >
 
 <div align="center">
 
