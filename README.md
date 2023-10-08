@@ -46,8 +46,11 @@ This repository contains the snippets and use cases of various dependency inject
 -----
 
 ## `𝙳𝚊𝚐𝚐𝚎𝚛-𝙷𝚒𝚕𝚝`
-<img src="https://github.com/devrath/DroidDi/blob/main/assets/hilt_banner_new.png" >
+<div align="center">
 
+  <img src="https://github.com/devrath/DroidDi/blob/main/assets/hilt_banner_2.png" >
+  
+</div>
 
 <div align="center">
 
