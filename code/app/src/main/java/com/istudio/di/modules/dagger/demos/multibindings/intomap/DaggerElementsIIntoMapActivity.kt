@@ -5,6 +5,7 @@ import androidx.appcompat.app.AppCompatActivity
 import com.istudio.di.databinding.ActivityDaggerElementsIntoMapBinding
 import com.istudio.di.modules.dagger.demos.multibindings.intomap.components.DaggerPenComponent
 import com.istudio.di.modules.dagger.demos.multibindings.intomap.implementation.Pen
+import com.istudio.di.utils.PrintUtils
 import javax.inject.Inject
 
 class DaggerElementsIIntoMapActivity : AppCompatActivity() {
@@ -32,7 +33,7 @@ class DaggerElementsIIntoMapActivity : AppCompatActivity() {
 
                 for ((key, value) in pen) {
                     // Access specific functionalities
-                    println("$key = $value")
+                    PrintUtils.printLog("$key = $value")
                 }
             }
         }
