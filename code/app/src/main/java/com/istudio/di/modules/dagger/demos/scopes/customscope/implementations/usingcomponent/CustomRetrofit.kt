@@ -13,11 +13,11 @@ class CustomRetrofit @Inject constructor(
 ){
 
     fun initiateRetrofit() {
-        PrintUtils.printLog("INSTANCE+$serializer")
-        PrintUtils.printLog("INSTANCE+$networkCore")
-        PrintUtils.printLog("INSTANCE+$analyticsService")
-        analyticsService.trackEvent("RETROFIT")
         PrintUtils.printLog("Custom retrofit initiate method is invoked!")
+        PrintUtils.printLog("serializer INSTANCE+${serializer.hashCode()}")
+        PrintUtils.printLog("networkCore INSTANCE+${networkCore.hashCode()}")
+        PrintUtils.printLog("analyticsService INSTANCE+${analyticsService.hashCode()}")
+        analyticsService.trackEvent("RETROFIT")
     }
 
 
