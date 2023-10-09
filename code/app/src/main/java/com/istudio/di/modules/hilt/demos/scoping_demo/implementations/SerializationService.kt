@@ -5,8 +5,12 @@ import javax.inject.Inject
 
 class SerializationService  @Inject constructor() {
 
+    init {
+        PrintUtils.printLog("HiltNetworkService class is built")
+    }
+
     fun serializeData(data : String) {
-        PrintUtils.printLog(data)
+        PrintUtils.printLog("Reference address:-> $data")
     }
 
 }
