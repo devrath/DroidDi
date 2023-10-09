@@ -71,7 +71,7 @@ This repository contains the snippets and use cases of various dependency inject
 | [``Interface Injection``](https://github.com/devrath/DroidDi/wiki/Hilt-%E2%80%90-Interface-Injection) |
 | [``Using qualifiers``](https://github.com/devrath/DroidDi/wiki/Hilt-%E2%80%90-Using-qualifiers) |
 | [``Hilt multi-binding IntoSet``](https://github.com/devrath/DroidDi/wiki/Hilt-%E2%80%90-multi-binding-IntoSet) |
-| ``Hilt multi-binding ElementsIntoSet`` |
+| [``Hilt multi-binding ElementsIntoSet``](https://github.com/devrath/DroidDi/wiki/Hilt-%E2%80%90-multi-binding-ElementsIntoSet) |
 | ``Hilt multi-binding IntoMap`` |
 | ``Assisted Injection`` |
 | ``Dagger-Hilt in multimodule`` |
