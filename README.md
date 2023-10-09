@@ -68,7 +68,7 @@ This repository contains the snippets and use cases of various dependency inject
 | [``Accessing activity and application context``](https://github.com/devrath/DroidDi/wiki/Hilt-%E2%80%90-Accessing-activity-and-application-context) |
 | [``Constructor Injection``](https://github.com/devrath/DroidDi/wiki/Hilt-%E2%80%90-Constructor-Injection) |
 | [``Field Injection``](https://github.com/devrath/DroidDi/wiki/Hilt-%E2%80%90-Field-Injection) |
-| ``Interface Injection`` |
+| [``Interface Injection``](https://github.com/devrath/DroidDi/wiki/Dagger-%E2%80%90-Interface-Injection) |
 | ``Using qualifiers`` |
 | ``Hilt multi-binding IntoSet`` |
 | ``Hilt multi-binding ElementsIntoSet`` |
