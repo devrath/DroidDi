@@ -7,6 +7,7 @@ import com.istudio.di.databinding.ActivityHiltInterfaceInjectionBinding
 import com.istudio.di.databinding.ActivityHiltQualifiersBinding
 import com.istudio.di.modules.hilt.demos.qualifiers_demo.implementations.Cat
 import com.istudio.di.modules.hilt.demos.qualifiers_demo.qualifiers.AmericanCat
+import com.istudio.di.utils.PrintUtils
 import dagger.hilt.android.AndroidEntryPoint
 import javax.inject.Inject
 
@@ -28,7 +29,8 @@ class HiltQualifiersActivity : AppCompatActivity() {
     private fun setOnClickListeners() {
         binding.apply {
             initiateId.setOnClickListener {
-                println(cat.getName())
+                PrintUtils.printLog("Cat instance -> "+cat.hashCode().toString())
+                PrintUtils.printLog(cat.getName())
             }
         }
     }
