@@ -4,6 +4,7 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import com.istudio.di.databinding.ActivityHiltInterfaceInjectionBinding
 import com.istudio.di.modules.hilt.demos.injection_demo.interface_Injection.implementation.Religion
+import com.istudio.di.utils.PrintUtils
 import dagger.hilt.android.AndroidEntryPoint
 import javax.inject.Inject
 
@@ -24,7 +25,8 @@ class HiltInterfaceInjectionActivity : AppCompatActivity() {
     private fun setOnClickListeners() {
         binding.apply {
             initiateId.setOnClickListener {
-                println(religion.getReligionName())
+                PrintUtils.printLog("Religion instance -> "+religion.hashCode().toString())
+                PrintUtils.printLog(religion.getReligionName())
             }
         }
     }
