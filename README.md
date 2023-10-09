@@ -77,10 +77,8 @@ This repository contains the snippets and use cases of various dependency inject
 | [``Hilt ‐ Scoping with just @Singletion annotation and without @SingletonComponent annotation``](https://github.com/devrath/DroidDi/wiki/Hilt-%E2%80%90-Scoping-with-just-@Singletion-annotation-and-without-@SingletonComponent-annotation) |
 | [``Hilt ‐ Scoping without @Singletion annotation and with @SingletonComponent annotation``](https://github.com/devrath/DroidDi/wiki/Hilt-%E2%80%90-Scoping-without-@Singletion-annotation-and-with-@SingletonComponent-annotation) |
 | [``Hilt ‐ Scoping with with both @Singletion and @SingletonComponent annotations``](https://github.com/devrath/DroidDi/wiki/Hilt-%E2%80%90-Scoping-with-with-both-@Singletion-and-@SingletonComponent-annotations) |
-| ``Assisted Injection`` |
-| ``Dagger-Hilt in multimodule`` |
-
-
+| [``Hilt ‐ Scoping with @ActivityComponent annotation and @ActivityScoped provider``](https://github.com/devrath/DroidDi/wiki/Hilt-%E2%80%90-Scoping-with-@ActivityComponent-annotation-and-@ActivityScoped-provider) |
+| [``Assisted Injection``](https://github.com/devrath/AssistedInjection) |
 
 
 </div>
