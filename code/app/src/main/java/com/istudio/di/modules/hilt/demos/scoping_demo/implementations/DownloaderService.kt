@@ -5,8 +5,12 @@ import javax.inject.Inject
 
 class DownloaderService @Inject constructor(){
 
+    init {
+        PrintUtils.printLog("DownloaderService class is built")
+    }
+
     fun downloadData(data : String) {
-        PrintUtils.printLog(data)
+        PrintUtils.printLog("Reference address:-> $data")
     }
 
 }
