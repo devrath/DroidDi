@@ -65,7 +65,7 @@ This repository contains the snippets and use cases of various dependency inject
 | [``Component scopes and lifetimes``](https://github.com/devrath/DroidDi/wiki/Hilt-%E2%80%90-About-Hilt#component-lifetimes-and-scopes) |
 | [``Component Hierarchy``](https://github.com/devrath/DroidDi/wiki/Hilt-%E2%80%90-About-Hilt#component-hierarchy) |
 | [``Dagger compared with hilt``](https://github.com/devrath/DroidDi/wiki/Hilt-%E2%80%90-About-Hilt#dagger-compared-with-hilt) |
-| [``Accessing activity and application context``]() |
+| [``Accessing activity and application context``](https://github.com/devrath/DroidDi/wiki/Hilt-%E2%80%90-Accessing-activity-and-application-context) |
 | [``Constructor Injection``](https://github.com/devrath/DroidDi/wiki/Hilt-%E2%80%90-Constructor-Injection) |
 | [``Field Injection``](https://github.com/devrath/DroidDi/wiki/Hilt-%E2%80%90-Field-Injection) |
 | ``Interface Injection`` |
