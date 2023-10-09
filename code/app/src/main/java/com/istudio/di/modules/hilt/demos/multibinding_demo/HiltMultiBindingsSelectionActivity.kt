@@ -17,12 +17,12 @@ import javax.inject.Inject
 class HiltMultiBindingsSelectionActivity : AppCompatActivity() {
 
     private lateinit var binding: ActivityHiltMultiBindingsSelectionBinding
+    // IntoSet
+    @Inject lateinit var countries : Set<@JvmSuppressWildcards Country>
+    // ElementsIntoSet
+    @Inject lateinit var planets : Set<@JvmSuppressWildcards Planet>
     // IntoMap
     @Inject lateinit var cities : Map<Class<*>,@JvmSuppressWildcards City>
-    // ElementsIntoSet
-    @Inject lateinit var countries : Set<@JvmSuppressWildcards Country>
-    // IntoSet
-    @Inject lateinit var planets : Set<@JvmSuppressWildcards Planet>
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -33,18 +33,18 @@ class HiltMultiBindingsSelectionActivity : AppCompatActivity() {
 
     private fun setOnClickListeners() {
         binding.apply {
-            intoMapId.setOnClickListener {
-                // IntoMap
-                cities.forEach { city ->
+            usingIntoSetId.setOnClickListener {
+                // IntoSet
+                countries.forEach { country ->
                     PrintUtils.printLog("<------------------------------------>")
-                    PrintUtils.printLog("KEY:->"+city.key)
-                    PrintUtils.printLog("VALUE:->"+city.value)
-                    PrintUtils.printLog(city.hashCode().toString())
+                    PrintUtils.printLog(country.hashCode().toString())
+                    PrintUtils.printLog("COUNTRY INSTANCE:->${country.hashCode()}")
+                    PrintUtils.printLog("COUNTRY:-> $country")
                     PrintUtils.printLog("<------------------------------------>")
                 }
             }
-            usingIntoSetId.setOnClickListener {
-                // IntoSet
+            elementsIntoSetId.setOnClickListener {
+                // ElementsIntoSet
                 planets.forEach { planet ->
                     PrintUtils.printLog("<------------------------------------>")
                     PrintUtils.printLog("PLANET INSTANCE:->${planet.hashCode()}")
@@ -52,8 +52,8 @@ class HiltMultiBindingsSelectionActivity : AppCompatActivity() {
                     PrintUtils.printLog("<------------------------------------>")
                 }
             }
-            elementsIntoSetId.setOnClickListener {
-                // ElementsIntoSet
+            intoMapId.setOnClickListener {
+                // IntoMap
                 cities.forEach { city ->
                     PrintUtils.printLog("<------------------------------------>")
                     PrintUtils.printLog("KEY:->"+city.key)
