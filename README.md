@@ -74,6 +74,7 @@ This repository contains the snippets and use cases of various dependency inject
 | [``Hilt multi-binding ElementsIntoSet``](https://github.com/devrath/DroidDi/wiki/Hilt-%E2%80%90-multi-binding-ElementsIntoSet) |
 | [``Hilt multi-binding IntoMap``](https://github.com/devrath/DroidDi/wiki/Hilt-%E2%80%90-multi-binding-IntoMap) |
 | [``Hilt ‐ Scoping with just @Inject and without scoping components``](https://github.com/devrath/DroidDi/wiki/Hilt-%E2%80%90-Scoping-with-just-@Inject-and-without-scoping-components) |
+| [``Hilt ‐ Scoping with just @Singletion annotation and without @SingletonComponent annotation``](https://github.com/devrath/DroidDi/wiki/Hilt-%E2%80%90-Scoping-with-just-@Singletion-annotation-and-without-@SingletonComponent-annotation) |
 | ``Assisted Injection`` |
 | ``Dagger-Hilt in multimodule`` |
 
