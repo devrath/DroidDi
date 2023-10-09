@@ -5,8 +5,12 @@ import javax.inject.Inject
 
 class ImageProcessingService @Inject constructor() {
 
+    init {
+        PrintUtils.printLog("ImageProcessingService class is built")
+    }
+
     fun processImage(data : String) {
-        PrintUtils.printLog(data)
+        PrintUtils.printLog("Reference address:-> $data")
     }
 
 }
