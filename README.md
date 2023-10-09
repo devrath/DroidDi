@@ -60,7 +60,7 @@ This repository contains the snippets and use cases of various dependency inject
 
 | **`Contents of Dagger concepts`** | 
 | --------------------------------- |
-| ``About Hilt`` |
+| [``About Hilt``](https://github.com/devrath/DroidDi/wiki/Hilt-%E2%80%90-About-Hilt) |
 | [``Components hilt supports``](https://github.com/devrath/DroidDi/wiki/Hilt-%E2%80%90-About-Hilt#hilt-currently-supports-the-following-android-classes) |
 | [``Component scopes and lifetimes``](https://github.com/devrath/DroidDi/wiki/Hilt-%E2%80%90-About-Hilt#component-lifetimes-and-scopes) |
 | [``Component Hierarchy``](https://github.com/devrath/DroidDi/wiki/Hilt-%E2%80%90-About-Hilt#component-hierarchy) |
