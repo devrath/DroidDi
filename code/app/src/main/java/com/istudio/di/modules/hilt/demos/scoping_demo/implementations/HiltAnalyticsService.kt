@@ -7,8 +7,12 @@ import javax.inject.Singleton
 @Singleton
 class HiltAnalyticsService @Inject constructor() {
 
+    init {
+        PrintUtils.printLog("HiltAnalyticsService class is built")
+    }
+
     fun logAnalytics(data : String) {
-        PrintUtils.printLog(data)
+        PrintUtils.printLog("Reference address:-> $data")
     }
 
 }
