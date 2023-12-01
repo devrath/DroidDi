@@ -3,8 +3,8 @@
 
 <img src="https://github.com/devrath/devrath/blob/master/images/kotlin_logo.png" align="right" title="Kotlin Logo" width="120">
 
-# DroidDi 💉
-This repository contains the snippets and use cases of various dependency injection frameworks
+# 𝙳𝚛𝚘𝚒𝚍𝙳𝚒 💉
+𝚃𝚑𝚒𝚜 𝚛𝚎𝚙𝚘𝚜𝚒𝚝𝚘𝚛𝚢 𝚌𝚘𝚗𝚝𝚊𝚒𝚗𝚜 𝚝𝚑𝚎 𝚜𝚗𝚒𝚙𝚙𝚎𝚝𝚜 𝚊𝚗𝚍 𝚞𝚜𝚎 𝚌𝚊𝚜𝚎𝚜 𝚘𝚏 𝚞𝚜𝚒𝚗𝚐 𝚟𝚊𝚛𝚒𝚘𝚞𝚜 𝚍𝚎𝚙𝚎𝚗𝚍𝚎𝚗𝚌𝚢 𝚒𝚗𝚓𝚎𝚌𝚝𝚒𝚘𝚗 𝚏𝚛𝚊𝚖𝚎𝚠𝚘𝚛𝚔𝚜
 
 <div align="center">
   
