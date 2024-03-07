@@ -101,6 +101,7 @@
 | --------------------------------- |
 | [`What is koin`](https://github.com/devrath/DroidDi/wiki/koin:-What-is-koin) |
 | [`Logging with koin for Android`](https://github.com/devrath/DroidDi/wiki/koin:-Logging-with-koin-for-Android) |
+| [`Loading Properties`](https://github.com/devrath/DroidDi/wiki/koin:-Loading-Properties) |
 
 </div>
   
