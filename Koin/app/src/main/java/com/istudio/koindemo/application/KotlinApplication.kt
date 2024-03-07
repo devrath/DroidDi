@@ -1,6 +1,7 @@
 package com.istudio.koindemo.application
 
 import android.app.Application
+import com.istudio.koindemo.di.singletonService
 import com.istudio.koindemo.di.viewModelModules
 import org.koin.android.ext.koin.androidContext
 import org.koin.android.ext.koin.androidFileProperties
@@ -19,7 +20,8 @@ class KotlinApplication : Application() {
             // use properties from assets/koin.properties
             androidFileProperties()
             // view models
-            modules(viewModelModules)
+            val allModules = listOf(viewModelModules, singletonService)
+            modules(allModules)
         }
     }
 }

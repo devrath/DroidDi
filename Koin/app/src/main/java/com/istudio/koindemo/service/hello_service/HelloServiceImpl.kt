@@ -1,4 +1,4 @@
-package com.istudio.koindemo.service
+package com.istudio.koindemo.service.hello_service
 
 class HelloServiceImpl : HelloService {
 
