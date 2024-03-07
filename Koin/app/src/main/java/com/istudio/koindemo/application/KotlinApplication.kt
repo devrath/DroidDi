@@ -1,6 +1,7 @@
 package com.istudio.koindemo.application
 
 import android.app.Application
+import com.istudio.koindemo.di.viewModelModules
 import org.koin.android.ext.koin.androidContext
 import org.koin.android.ext.koin.androidFileProperties
 import org.koin.android.ext.koin.androidLogger
@@ -17,6 +18,8 @@ class KotlinApplication : Application() {
             androidLogger()
             // use properties from assets/koin.properties
             androidFileProperties()
+            // view models
+            modules(viewModelModules)
         }
     }
 }

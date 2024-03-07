@@ -67,6 +67,15 @@ dependencies {
     debugImplementation(libs.androidx.ui.tooling)
     debugImplementation(libs.androidx.ui.test.manifest)
 
+
+    // Navigation
+    implementation ("androidx.navigation:navigation-compose:2.7.5")
+    // Lifecycle
+    implementation("androidx.lifecycle:lifecycle-viewmodel-ktx:2.4.1")
+    implementation("androidx.lifecycle:lifecycle-livedata-ktx:2.4.1")
+    implementation("androidx.lifecycle:lifecycle-runtime-ktx:2.4.1")
+
+
     implementation(platform("io.insert-koin:koin-bom:3.5.3"))
 
     // Declare the koin dependencies that you need
@@ -83,4 +92,7 @@ dependencies {
     // Works with test libraries too!
     testImplementation("io.insert-koin:koin-test-junit4")
     testImplementation("io.insert-koin:koin-android-test")
+
+
+
 }

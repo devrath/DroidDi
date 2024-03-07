@@ -1,4 +1,4 @@
-package com.istudio.koindemo
+package com.istudio.koindemo.main
 
 import android.os.Bundle
 import androidx.activity.ComponentActivity
@@ -10,23 +10,44 @@ import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
+import androidx.navigation.compose.NavHost
+import androidx.navigation.compose.composable
+import androidx.navigation.compose.rememberNavController
+import com.istudio.koindemo.modules.module_selection.ModuleDemo
+import com.istudio.koindemo.modules.module_selection.ModuleSelectionScreen
 import com.istudio.koindemo.ui.theme.KoinDemoTheme
+import org.koin.androidx.viewmodel.ext.android.viewModel
 
 class MainActivity : ComponentActivity() {
+
+    val viewModel: MainViewModel by viewModel()
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContent {
             KoinDemoTheme {
-                // A surface container using the 'background' color from the theme
                 Surface(
                     modifier = Modifier.fillMaxSize(),
                     color = MaterialTheme.colorScheme.background
                 ) {
-                    Greeting("Android")
+
+                    val navController = rememberNavController()
+
+                    NavHost(
+                        navController = navController,
+                        startDestination = ModuleDemo.DemoSelection.rout
+                    ) {
+                        // Selection Screen
+                        composable(ModuleDemo.DemoSelection.rout) {
+                            ModuleSelectionScreen(navController = navController)
+                        }
+                    }
                 }
             }
         }
     }
+
+
 }
 
 @Composable
