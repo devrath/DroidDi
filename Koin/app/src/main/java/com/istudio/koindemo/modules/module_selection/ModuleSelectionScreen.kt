@@ -25,7 +25,7 @@ fun ModuleSelectionScreen(navController: NavHostController) {
         Spacer(modifier = Modifier.height(16.dp))
 
         AppButton(text = "Variable Injection", onClick = {
-            navController.navigate(ModuleDemo.ViewInjection.rout)
+            navController.navigate(ModuleDemo.VariableInjection.rout)
         })
 
     }

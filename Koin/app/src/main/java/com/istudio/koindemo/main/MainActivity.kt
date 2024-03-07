@@ -13,6 +13,7 @@ import androidx.compose.ui.tooling.preview.Preview
 import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
 import androidx.navigation.compose.rememberNavController
+import com.istudio.koindemo.modules.module_demos.variable_injection.VariableInjectionComposable
 import com.istudio.koindemo.modules.module_selection.ModuleDemo
 import com.istudio.koindemo.modules.module_selection.ModuleSelectionScreen
 import com.istudio.koindemo.ui.theme.KoinDemoTheme
@@ -40,6 +41,10 @@ class MainActivity : ComponentActivity() {
                         // Selection Screen
                         composable(ModuleDemo.DemoSelection.rout) {
                             ModuleSelectionScreen(navController = navController)
+                        }
+                        // Variable Injection Screen
+                        composable(ModuleDemo.VariableInjection.rout) {
+                            VariableInjectionComposable(navController = navController)
                         }
                     }
                 }
