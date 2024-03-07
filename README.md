@@ -100,6 +100,7 @@
 | **`Contents of koin concepts`** | 
 | --------------------------------- |
 | [`What is koin`](https://github.com/devrath/DroidDi/wiki/koin:-What-is-koin) |
+| [`Logging with koin for Android`](https://github.com/devrath/DroidDi/wiki/koin:-Logging-with-koin-for-Android) |
 
 </div>
   
