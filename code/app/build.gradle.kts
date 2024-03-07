@@ -93,7 +93,7 @@ dependencies {
 
     // <-- Koin ->
     // Koin for Kotlin apps
-    implementation("io.insert-koin:koin-bom:3.5.1")
+    //implementation("io.insert-koin:koin-bom:3.5.1")
 
     // <-- Recycler view ->
     implementation("androidx.recyclerview:recyclerview:1.3.1")
@@ -125,8 +125,5 @@ dependencies {
     implementation("androidx.constraintlayout:constraintlayout-compose:1.1.0-alpha12")
     implementation("androidx.activity:activity-compose:1.8.0-rc01")
     androidTestImplementation("androidx.compose.ui:ui-test-junit4:1.5.1")
-
-    // Hilt module
-    implementation(project(":hilt-demo-module"))
 
 }
