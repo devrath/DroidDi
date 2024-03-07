@@ -89,7 +89,7 @@ dependencies {
     implementation("androidx.hilt:hilt-navigation-compose:1.1.0-alpha01")
     androidTestImplementation(platform("androidx.compose:compose-bom:2024.02.02"))
     debugImplementation("androidx.compose.ui:ui-test-manifest")
-    kapt("com.google.dagger:hilt-android-compiler:2.44")
+    kapt("com.google.dagger:hilt-android-compiler:2.48")
 
     // <-- Koin ->
     // Koin for Kotlin apps
