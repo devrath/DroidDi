@@ -96,11 +96,11 @@ dependencies {
     //implementation("io.insert-koin:koin-bom:3.5.1")
 
     // <-- Recycler view ->
-    implementation("androidx.recyclerview:recyclerview:1.3.1")
+    implementation("androidx.recyclerview:recyclerview:1.3.2")
     implementation("android.arch.lifecycle:extensions:1.1.1")
 
     // <-- Image Library ->
-    implementation("com.github.bumptech.glide:glide:4.11.0")
+    implementation("com.github.bumptech.glide:glide:4.12.0")
     implementation("io.coil-kt:coil-compose:2.4.0")
 
 
