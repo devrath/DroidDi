@@ -115,9 +115,9 @@ dependencies {
     implementation("org.jetbrains.kotlinx:kotlinx-coroutines-core:1.7.1")
 
     // <-- Compose ->
-    implementation("androidx.compose.ui:ui:1.5.1")
-    implementation("androidx.compose.material:material:1.5.1")
-    implementation("androidx.compose.ui:ui-tooling:1.5.1")
+    implementation("androidx.compose.ui:ui:1.6.3")
+    implementation("androidx.compose.material:material:1.6.3")
+    implementation("androidx.compose.ui:ui-tooling:1.6.3")
     implementation("androidx.compose.material:material-icons-core:1.5.1")
     implementation("androidx.compose.material:material-icons-extended:1.5.1")
     implementation("androidx.lifecycle:lifecycle-viewmodel-compose:2.7.0-alpha02")
