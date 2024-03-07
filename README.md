@@ -13,6 +13,7 @@
 | [`𝙳𝚎𝚙𝚎𝚗𝚍𝚎𝚗𝚌𝚢 𝙸𝚗𝚓𝚎𝚌𝚝𝚒𝚘𝚗`](https://github.com/devrath/DroidDi/wiki/Dependency-injection) |
 | [``𝙳𝚊𝚐𝚐𝚎𝚛𝟸``](https://github.com/devrath/DroidDi/tree/main#%F0%9D%99%B3%F0%9D%9A%8A%F0%9D%9A%90%F0%9D%9A%90%F0%9D%9A%8E%F0%9D%9A%9B) |
 | [``𝙳𝚊𝚐𝚐𝚎𝚛-𝙷𝚒𝚕𝚝``](https://github.com/devrath/DroidDi/blob/main/README.md#%F0%9D%99%B3%F0%9D%9A%8A%F0%9D%9A%90%F0%9D%9A%90%F0%9D%9A%8E%F0%9D%9A%9B-%F0%9D%99%B7%F0%9D%9A%92%F0%9D%9A%95%F0%9D%9A%9D) |
+| [`𝙺𝚘𝚒𝚗`](https://github.com/devrath/DroidDi/blob/main/README.md#%F0%9D%99%BA%F0%9D%9A%98%F0%9D%9A%92%F0%9D%9A%97) |
 
 </div>
 
@@ -86,6 +87,23 @@
 
 </div>
 
+
+## `𝙺𝚘𝚒𝚗`
+<div align="center">
+  
+![1_uMJ8WIYkogIGGAs3KQ27KA](https://github.com/devrath/DroidDi/assets/1456191/59dca806-f78f-40d3-9b73-c9ed1b550d94)
+
+</div>
+
+<div align="center">
+
+| **`Contents of koin concepts`** | 
+| --------------------------------- |
+| [`What is koin`](https://github.com/devrath/DroidDi/wiki/koin:-What-is-koin) |
+| [`Logging with koin for Android`](https://github.com/devrath/DroidDi/wiki/koin:-Logging-with-koin-for-Android) |
+| [`Loading Properties`](https://github.com/devrath/DroidDi/wiki/koin:-Loading-Properties) |
+
+</div>
   
 ## **`𝚂𝚞𝚙𝚙𝚘𝚛𝚝`** ☕
 𝙸𝚏 𝚢𝚘𝚞 𝚏𝚎𝚎𝚕 𝚕𝚒𝚔𝚎 𝚜𝚞𝚙𝚙𝚘𝚛𝚝 𝚖𝚎 𝚊 𝚌𝚘𝚏𝚏𝚎𝚎 𝚏𝚘𝚛 𝚖𝚢 𝚎𝚏𝚏𝚘𝚛𝚝𝚜, 𝙸 𝚠𝚘𝚞𝚕𝚍 𝚐𝚛𝚎𝚊𝚝𝚕𝚢 𝚊𝚙𝚙𝚛𝚎𝚌𝚒𝚊𝚝𝚎 𝚒𝚝.</br>
