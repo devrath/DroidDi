@@ -102,6 +102,7 @@
 | [`What is koin`](https://github.com/devrath/DroidDi/wiki/koin:-What-is-koin) |
 | [`Logging with koin for Android`](https://github.com/devrath/DroidDi/wiki/koin:-Logging-with-koin-for-Android) |
 | [`Loading Properties`](https://github.com/devrath/DroidDi/wiki/koin:-Loading-Properties) |
+| [`Injecting the view‐model in activity`](https://github.com/devrath/DroidDi/wiki/koin:-Injecting-the-view%E2%80%90model-in-activity) |
 
 </div>
   
