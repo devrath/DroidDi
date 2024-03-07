@@ -9,13 +9,17 @@ import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.platform.LocalContext
 import androidx.navigation.NavHostController
+import com.istudio.koindemo.service.hello_service.HelloService
 import com.istudio.koindemo.ui.composables.AppButton
 import org.koin.androidx.compose.koinViewModel
+import org.koin.compose.koinInject
+import org.koin.java.KoinJavaComponent.inject
 
 @Composable
 fun VariableInjectionComposable(navController: NavHostController) {
 
     val vm = koinViewModel<VariableInjectionVm>()
+    val myService = koinInject<HelloService>()
 
     Column(
         modifier = Modifier.fillMaxSize(),
@@ -26,7 +30,7 @@ fun VariableInjectionComposable(navController: NavHostController) {
         val cxt = LocalContext.current
 
         AppButton(text = "Variable injection Demo", onClick = {
-            Toast.makeText(cxt,vm.demo(),Toast.LENGTH_LONG).show()
+            Toast.makeText(cxt,myService.doSomething(),Toast.LENGTH_LONG).show()
         })
 
 
