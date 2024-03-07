@@ -104,6 +104,7 @@
 | [`Loading Properties`](https://github.com/devrath/DroidDi/wiki/koin:-Loading-Properties) |
 | [`Injecting the view‐model in activity`](https://github.com/devrath/DroidDi/wiki/koin:-Injecting-the-view%E2%80%90model-in-activity) |
 | [`Injecting the view‐model in compose`](https://github.com/devrath/DroidDi/wiki/koin:-Injecting-the-view%E2%80%90model-in-compose) |
+| [`Injecting the interface in constructor of viewModel`](https://github.com/devrath/DroidDi/wiki/koin:-Injecting-the-interface-in-constructor-of-viewModel) |
 
 </div>
   
