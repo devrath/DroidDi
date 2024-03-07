@@ -97,7 +97,7 @@
 
 <div align="center">
 
-| **`Contents of Dagger concepts`** | 
+| **`Contents of koin concepts`** | 
 | --------------------------------- |
 | [`What is koin`](https://github.com/devrath/DroidDi/wiki/koin:-What-is-koin) |
 
