@@ -106,6 +106,7 @@
 | [`Injecting the view‐model in compose`](https://github.com/devrath/DroidDi/wiki/koin:-Injecting-the-view%E2%80%90model-in-compose) |
 | [`Injecting the interface in constructor of viewModel`](https://github.com/devrath/DroidDi/wiki/koin:-Injecting-the-interface-in-constructor-of-viewModel) |
 | [`Variable injection in compose`](https://github.com/devrath/DroidDi/wiki/koin:-Variable-injection-in-compose) |
+| [`Dagger and Koin compared`](https://github.com/devrath/DroidDi/wiki/Dagger-and-Koin-compared) |
 
 </div>
   
